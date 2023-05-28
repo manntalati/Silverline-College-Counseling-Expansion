@@ -4,7 +4,7 @@ import Reach from "./components/Reach.js";
 function App() {
 	return (
 		<div className="App">
-			<Reach></Reach>
+			<Reach/>
 		</div>
 	);
 }
