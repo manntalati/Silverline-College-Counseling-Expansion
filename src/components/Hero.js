@@ -1,6 +1,6 @@
 import React from 'react';
 
-class About extends React.Component {
+class Hero extends React.Component {
     render() {
   return (
     <header style={{ paddingLeft: 0 }}>
