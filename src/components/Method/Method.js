@@ -1,5 +1,6 @@
 import React from "react";
 import SpecialtyBox from "./SpecialtyBox";
+import Tutors from "./Tutors";
 
 const Method = () => {
 	return (
@@ -10,6 +11,7 @@ const Method = () => {
 					title={"Test title"}
 					desc={"lorem ipsum"}
 				/>
+				<Tutors/>
 			</div>
 		</>
 	);
