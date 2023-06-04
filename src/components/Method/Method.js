@@ -2,6 +2,7 @@ import React from "react";
 import SpecialtyBox from "./SpecialtyBox";
 import Tutors from "./Tutors";
 import TutoringSystem from "./TutoringSystem";
+import SilverlineSpecialties from "./SilverlineSpecialties";
 
 const Method = () => {
 	return (
@@ -14,6 +15,7 @@ const Method = () => {
 				/>
 				<TutoringSystem/>
 				<Tutors/>
+				<SilverlineSpecialties/>
 			</div>
 		</>
 	);
