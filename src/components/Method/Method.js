@@ -2,6 +2,7 @@ import React from "react";
 import Tutors from "./Tutors";
 import TutoringSystem from "./TutoringSystem";
 import SilverlineSpecialties from "./SilverlineSpecialties";
+import Footer from "../Footer";
 
 const Method = () => {
 	return (
@@ -11,6 +12,7 @@ const Method = () => {
 				<Tutors />
 				<SilverlineSpecialties />
 			</div>
+			<Footer />
 		</>
 	);
 };
