@@ -4,6 +4,7 @@ import Footer from "./components/Footer.js";
 import Method from "./components/Method/Method";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Partners from "./components/Partners";
+import Lectures from "./components/Lectures";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             element={
               <>
                 <Reach />
+                <Lectures />
                 <Footer />
               </>
             }
