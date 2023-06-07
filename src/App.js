@@ -5,6 +5,7 @@ import Method from "./components/Method/Method";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <>
                 <Reach />
                 <Lectures />
+                <Team />
                 <Footer />
               </>
             }
