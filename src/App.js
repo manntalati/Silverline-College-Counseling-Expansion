@@ -5,6 +5,7 @@ import Method from "./components/Method/Method";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           />
           <Route path="method" element={<Method />} />
           <Route path="partners" element={<Partners />} />
+          <Route path="reviews" element={<Reviews />} />
         </Routes>
       </Router>
     </div>
