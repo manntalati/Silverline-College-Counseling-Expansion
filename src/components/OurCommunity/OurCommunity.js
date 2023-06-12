@@ -4,10 +4,12 @@ import OurReach from "./OurReach";
 import Opportunities from "./Opportunities";
 import QuickHelp from "./QuickHelp";
 import Discord from "./Discord";
+import AboutOurCommunity from "./AboutOurCommunity";
 
 const OurCommunity = () => {
   return (
     <>
+      <AboutOurCommunity/>
       <OurReach />
       <Opportunities />
       <Discord />
