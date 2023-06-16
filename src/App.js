@@ -8,6 +8,9 @@ import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
+import Faq from "./components/Faq";
+import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
 	return (
@@ -29,6 +32,10 @@ function App() {
 					<Route path="partners" element={<Partners />} />
 					<Route path="reviews" element={<Reviews />} />
 					<Route path="community" element={<OurCommunity />} />
+					<Route path="faq" element={<Faq />} />
+          <Route path="services" element={<Services />} />
+          <Route path="about" element={<About />} />
+          <Route path="Team" element={<Team />} />
 				</Routes>
 			</Router>
 		</div>
