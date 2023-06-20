@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 const content = [
     {
-        name: "Shanti",
-        des: "A Parent",
-        content: "“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Tutoring to any parent I meet”"
+        name: "Rithvik",
+        des: "High School Sophomore",
+        content: "“ I got so much help for AP exams, and it was free to top it all off. My tutor was very helpful and helped me get 5's on my exams!”"
     },
     {
         name: "Shanti",
@@ -12,9 +12,14 @@ const content = [
         content: "“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Tutoring to any parent I meet”"
     },
     {
-        name: "Shanti",
-        des: "A Parent",
-        content: "“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Tutoring to any parent I meet”"
+        name: "Li Jian",
+        des: "8th Grader",
+        content: "“Silverline Tutoring is great! I really liked the instant help feature on discord. I was able to get help with any questions I had instantly.”"
+    },
+    {
+        name: "Rithin",
+        des: "High School Junior",
+        content: "“I was looking to get help in chess because there wasn't many opportunities for me to learn where I lived. My tutor helped me a lot. He taught me many different strategies from opening to endgames. He always made time to tutor me and did so with a passion.”"
     }
 ]
 
@@ -29,7 +34,7 @@ export default function Testimonials() {
                 <h1 style={{fontSize: "30px", textTransform: "uppercase", fontWeight: 700, color: "white"}}>Testimonials</h1>
                 <div style={{height: 35}}/>
                 <div style={{width: "60%", overflow: "hidden"}}>
-                    <div style={{display: "flex", flexDirection: "row", flexWrap: "nowrap", borderColor: "white", borderWidth: 2, width: "300%", overflow: "hidden", position: "relative", left: `-${100*val}%`, transition: '0.35s'}}>
+                    <div style={{display: "flex", flexDirection: "row", flexWrap: "nowrap", borderColor: "white", borderWidth: 2, width: `${content.length*100}%`, overflow: "hidden", position: "relative", left: `-${100*val}%`, transition: '0.35s'}}>
                         {
                             content.map(c => <TestimonialItem {...c}/>)
                         }
