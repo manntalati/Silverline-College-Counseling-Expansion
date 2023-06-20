@@ -22,7 +22,7 @@ function App() {
 								<Reach />
 								<Lectures />
 								<Team />
-
+								<Testimonials/>
 								<Footer />
 							</>
 						}
@@ -31,7 +31,6 @@ function App() {
 					<Route path="partners" element={<Partners />} />
 					<Route path="reviews" element={<Reviews />} />
 					<Route path="community" element={<OurCommunity />} />
-					<Route path="test" element={<Testimonials/>} />
 				</Routes>
 			</Router>
 		</div>
