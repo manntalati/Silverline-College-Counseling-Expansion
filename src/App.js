@@ -8,6 +8,7 @@ import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
+import Testimonials from "./components/Testimonials";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 								<Reach />
 								<Lectures />
 								<Team />
+
 								<Footer />
 							</>
 						}
@@ -29,6 +31,7 @@ function App() {
 					<Route path="partners" element={<Partners />} />
 					<Route path="reviews" element={<Reviews />} />
 					<Route path="community" element={<OurCommunity />} />
+					<Route path="test" element={<Testimonials/>} />
 				</Routes>
 			</Router>
 		</div>
