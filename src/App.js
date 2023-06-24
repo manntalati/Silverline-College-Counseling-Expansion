@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
+import Services from "./components/Services.js";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 
@@ -22,6 +23,7 @@ function App() {
 								<Lectures />
 								<Team />
 								<Footer />
+								
 							</>
 						}
 					/>
@@ -29,6 +31,7 @@ function App() {
 					<Route path="partners" element={<Partners />} />
 					<Route path="reviews" element={<Reviews />} />
 					<Route path="community" element={<OurCommunity />} />
+					<Route path="services" element={<Services />} />
 				</Routes>
 			</Router>
 		</div>
