@@ -8,6 +8,7 @@ import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
+import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -24,6 +25,7 @@ function App() {
 								<Reach />
 								<Lectures />
 								<Team />
+								<Testimonials/>
 								<Footer />
 							</>
 						}
