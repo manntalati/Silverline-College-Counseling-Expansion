@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import "./css/style.css";
+import "./styles/style.css";
 import Reach from "./components/Reach.js";
 import Footer from "./components/Footer.js";
 import Method from "./components/Method/Method";
