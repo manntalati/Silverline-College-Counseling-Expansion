@@ -24,7 +24,7 @@ const Lectures = () => {
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
                         <img src="images/Home/lectures/tom.png" alt="shivam shah" className="img-fluid" />
                       </a>
-                      <div className="bg-white m-body">
+                      <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Tom Campbell</h5>
                         <h6 style={{ padding: '5px', borderRadius: '5px', background: '#ffffff', color: 'black', textAlign: 'center' }}>
                           Pomona admissions officer
@@ -50,7 +50,7 @@ const Lectures = () => {
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
                         <img src="images/Home/lectures/emily.png" alt="shivam shah" className="img-fluid" />
                       </a>
-                      <div className="bg-white m-body">
+                      <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Emily Hanscom</h5>
                         <h6 style={{ padding: '5px', borderRadius: '5px', background: '#ffffff', color: 'black', textAlign: 'center' }}>
                           Junior @ Marist College
@@ -75,7 +75,7 @@ const Lectures = () => {
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
                         <img src="images/Home/lectures/vishant.png" alt="shivam shah" className="img-fluid" />
                       </a>
-                      <div className="bg-white m-body">
+                      <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Vishant Raajkumar</h5>
                         <h6 style={{ padding: '5px', borderRadius: '5px', background: '#ffffff', color: 'black', textAlign: 'center' }}>
                           Freshman @ Carnegie Mellon University
@@ -100,7 +100,7 @@ const Lectures = () => {
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
                         <img src="images/Home/lectures/shivani.png" alt="shivam shah" className="img-fluid" />
                       </a>
-                      <div className="bg-white m-body">
+                      <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Shivanni Satish</h5>
                         <h6 style={{ padding: '5px', borderRadius: '5px', background: '#ffffff', color: 'black', textAlign: 'center' }}>
                           University of Texas @ Dallas Freshman
