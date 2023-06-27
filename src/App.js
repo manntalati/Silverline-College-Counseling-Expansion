@@ -1,8 +1,9 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./css/style.css";
 import Reach from "./components/Reach.js";
 import Footer from "./components/Footer.js";
 import Method from "./components/Method/Method";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
@@ -13,35 +14,36 @@ import Faq from "./components/Faq";
 import About from "./components/About";
 import Services from "./components/Services";
 
+
 function App() {
-	return (
-		<div className="App">
-			<Router>
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<Reach />
-								<Lectures />
-								<Team />
-								<Testimonials/>
-								<Footer />
-							</>
-						}
-					/>
-					<Route path="method" element={<Method />} />
-					<Route path="partners" element={<Partners />} />
-					<Route path="reviews" element={<Reviews />} />
-					<Route path="community" element={<OurCommunity />} />
-					<Route path="faq" element={<Faq />} />
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Reach />
+                <Lectures />
+                <Team />
+                <Testimonials />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="method" element={<Method />} />
+          <Route path="partners" element={<Partners />} />
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="community" element={<OurCommunity />} />
+          <Route path="faq" element={<Faq />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="team" element={<Team />} />
-				</Routes>
-			</Router>
-		</div>
-	);
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
 export default App;
