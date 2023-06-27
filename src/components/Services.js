@@ -1,4 +1,3 @@
-/*
 export default function Services() {
   return (
 
@@ -90,8 +89,6 @@ export default function Services() {
 
   );
 }
-*/
-import React from 'react';
 
 const Services = () => {
   return (
