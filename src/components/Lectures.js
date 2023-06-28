@@ -18,11 +18,12 @@ const Lectures = () => {
           <div className="col-lg-12" data-aos="fade-up" data-aos-delay="200">
             <div className="destination-slider-wrap">
               <div className="destination-slider1">
+
                 <div className="destination">
                   <div className="mt-3">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/tom.png" alt="shivam shah" className="img-fluid" />
+                        <img src={require("../images/Home/lectures/tom.png")} alt="Tom" className="img-fluid" />
                       </a>
                       <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Tom Campbell</h5>
@@ -44,11 +45,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/emily.png" alt="shivam shah" className="img-fluid" />
+                        <img src={require("../images/Home/lectures/emily.png")} alt="Emily" className="img-fluid" />
                       </a>
                       <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Emily Hanscom</h5>
@@ -69,11 +71,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/vishant.png" alt="shivam shah" className="img-fluid" />
+                        <img src={require("../images/Home/lectures/vishant.png")} alt="Vishant" className="img-fluid" />
                       </a>
                       <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Vishant Raajkumar</h5>
@@ -94,11 +97,12 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="destination">
                   <div className="mt-4">
                     <div className="media-entry media-entry-original">
                       <a href="#" target="_blank" style={{ background: 'none' }} className="text-center">
-                        <img src="images/Home/lectures/shivani.png" alt="shivam shah" className="img-fluid" />
+                        <img src={require("../images/Home/lectures/shivani.png")} alt="Shivani" className="img-fluid" />
                       </a>
                       <div className="m-body">
                         <h5 style={{ textAlign: 'center' }}>Shivanni Satish</h5>
@@ -120,6 +124,7 @@ const Lectures = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
