@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from '../App';
 
 test('renders the navigation menu', () => {
   const { getByText } = render(<App />);
-  
+
   const homeLink = getByText('Home');
   const aboutLink = getByText('About Us ▾');
   const servicesLink = getByText('Services');
@@ -18,7 +18,7 @@ test('renders the navigation menu', () => {
 
 test('renders the testimonials section', () => {
   const { getByText } = render(<App />);
-  
+
   const testimonialsTitle = getByText('Testimonials');
   const testimonial1 = getByText('Rithvik');
   const testimonial2 = getByText('Shanti');
