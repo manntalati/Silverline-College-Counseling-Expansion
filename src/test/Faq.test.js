@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Faq from '../Faq';
+import Faq from '../components/Faq';
 
 describe('FAQ component', () => {
   test('renders frequently asked questions', () => {
