@@ -15,37 +15,34 @@ export default function Statistics() {
 
   const [statsList, setStatsList] = useState(statsListConst.map(stat => ({ ...stat, num: 0 })));
 
-  useEffect(() => {
-    let timeoutId;
+  const count = () => {
+    const time = 10000;
 
-    const startCounting = () => {
-      setStatsList(stats => {
-        const updatedStats = stats.map((stat, index) => {
-          if (stat.num < statsListConst[index].num) {
-            const increment = Math.ceil((statsListConst[index].num - stat.num) / 50); // Increase the increment value for faster counting
-            return { ...stat, num: Math.min(stat.num + increment, statsListConst[index].num) };
-          } else {
-            return stat;
-          }
+    for (let i = 1; i <= time; i++) {
+      setTimeout(() => {
+        setStatsList(stats => {
+          return stats.map((stat, j) => {
+            if (stat.num < statsListConst[j].num &&
+              i % Math.round(time / statsListConst[j].num) === 0) {
+              return {...stat, num: stat.num + 1};
+            } else {
+              return stat;
+            }
+          });
         });
-        return updatedStats;
-      });
+      }, 1);
+    }  
+  }
 
-      timeoutId = setTimeout(startCounting, 50); 
-    };
+  useEffect(() => {
+    document.addEventListener("aos:in:stats", () => setTimeout(count, 500));
 
-    timeoutId = setTimeout(startCounting, 1000); 
-
-    return () => clearTimeout(timeoutId); 
+    return () => setStatsList(statsListConst.map(stat => ({...stat, num: 0})));
   }, []);
 
-  const handleMouseOver = () => {
-    
-  };
-
   return (
-    <div style={{ width: "100%", background: `url(${img}) no-repeat scroll center/cover`, padding: "150px 50px", display: "flex", flexDirection: "column", alignItems: "center", gap: 50 }} onMouseOver={handleMouseOver}>
-      <h1 style={{ color: "white", fontWeight: 800, textAlign: "center", fontFamily: "'Work Sans', sans-serif" }} data-aos="fade-up">Silverline Statistics</h1>
+    <div style={{ width: "100%", background: `url(${img}) no-repeat scroll center/cover`, padding: "150px 50px", display: "flex", flexDirection: "column", alignItems: "center", gap: 50 }}>
+      <h1 style={{ color: "white", fontWeight: 800, textAlign: "center", fontFamily: "'Work Sans', sans-serif" }} data-aos="fade-up" data-aos-delay="1000" data-aos-id="stats">Silverline Statistics</h1>
       <div style={{ display: "grid", gridTemplateColumns: "auto auto auto auto", width: "60%", rowGap: 100, columnGap: 50 }}>
         {statsList.map(s => <StatItem key={s.text} {...s} />)}
       </div>
