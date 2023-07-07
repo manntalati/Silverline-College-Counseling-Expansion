@@ -5,13 +5,14 @@ const QuickHelp = () => {
     backgroundColor: "#1E2022",
     padding: "5rem",
     display: "flex",
+    justifyContent: "center", // Center the content horizontally
   };
 
   const sectionStyle = {
     display: "flex",
-		flexDirection: "row",
-		width: "75%",
-    margin: "auto"
+    flexDirection: "row",
+    width: "100%", // Set the section width to 100%
+    maxWidth: "1200px", // Limit the maximum width of the section
   };
 
   const widgetStyle = {
@@ -24,21 +25,26 @@ const QuickHelp = () => {
     fontSize: "1.1rem",
     fontWeight: "bold",
     color: "#D6D3CD",
-    width:"800px",
+    width: "100%", // Set the body width to 100%
+    maxWidth: "800px", // Limit the maximum width of the body
   };
 
   const titleStyle = {
     fontSize: "2.5rem",
     fontWeight: "bold",
     color: "#918CA1",
+    margin: 0, // Remove any default margin
+    marginBottom: "1rem", // Add margin bottom to separate title from body
   };
 
   return (
     <div style={containerStyle}>
       <div style={sectionStyle}>
-        <div className="container">
-          <h1 style={titleStyle} data-aos="fade-up">Quick Help</h1>
-					<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>          
+        <div>
+          <h1 style={titleStyle} data-aos="fade-up">
+            Quick Help
+          </h1>
+          <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
           <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
             Silverline has a dedicated Discord server where students can join
             to connect with our community and access various resources. In our
