@@ -14,12 +14,13 @@ import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
-import {useEffect} from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"
+import GetInvolved from "./components/GetInvolved";
 
 function App() {
-  useEffect(() => {AOS.init()}, []);
+	useEffect(() => { AOS.init() }, []);
 	return (
 		<div className="App">
 			<Router>
@@ -45,6 +46,7 @@ function App() {
 					<Route path="services" element={<Services />} />
 					<Route path="about" element={<About />} />
 					<Route path="team" element={<Team />} />
+					<Route path="getinvolved" element={<GetInvolved />} />
 				</Routes>
 			</Router>
 		</div>
