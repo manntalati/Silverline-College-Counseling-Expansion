@@ -10,7 +10,7 @@ export default function GetInvolved() {
         <div>
             <NavBar pageName="getInvolved" />
             <div style={{width: "100%", height: "800px"}}>
-            <img src={banner} style={{width: "100%", objectFit: "cover", height: "100%"}}/>
+            <img src={banner} style={{width: "100%", objectFit: "cover", height: "100%"}} alt="Get Involved Banner"/>
             </div>
             <div style={{backgroundColor: "#181A1B", width: "100%", padding: "100px", display: "flex", flexDirection: "column", alignItems: "center", }}>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "start", width: "60%"}}>
