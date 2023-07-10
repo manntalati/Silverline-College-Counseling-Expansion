@@ -44,7 +44,7 @@ const QuickHelp = () => {
           <h1 style={titleStyle} data-aos="fade-up">
             Quick Help
           </h1>
-          <h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
+          <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
           <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
             Silverline has a dedicated Discord server where students can join
             to connect with our community and access various resources. In our

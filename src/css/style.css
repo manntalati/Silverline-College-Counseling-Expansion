@@ -14205,6 +14205,7 @@ textarea {
 }
 
 .hero {
+  background: url(../images/about/about1.png);
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
@@ -15087,4 +15088,11 @@ textarea {
 .social-top a:hover {
   border-radius: 30px;
   background: #5270FF;
+}
+
+.overlay {
+  background-image: url(../images/about/sBG.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
 }

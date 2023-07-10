@@ -50,8 +50,8 @@ const Footer = () => {
               <a href="mailto:silverlinetutoring2021@gmail.com">
                 silverlinetutoring2021@gmail.com
               </a>
-              <div className="">Location</div>
-              <div className="">Phone #</div>
+              <div className="">Massachusetts, United States</div>
+              <a href="tel://7862959992">(786) 295-9992</a>
               <div className=""></div>
             </ul>
           </div>
