@@ -1,5 +1,7 @@
 import React from "react";
 import bannerImg from "../../images/services/services.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
   const bannerStyle = {
@@ -25,7 +27,7 @@ const Banner = () => {
     transform: "translate(-50%, -50%)",
   };
 
-  return (
+
     <div style={bannerStyle}>
       <img
         src={bannerImg}
