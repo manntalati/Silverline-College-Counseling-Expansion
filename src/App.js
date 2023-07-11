@@ -20,7 +20,9 @@ import "aos/dist/aos.css"
 import GetInvolved from "./components/GetInvolved";
 
 function App() {
-	useEffect(() => { AOS.init() }, []);
+	useEffect(() => {
+		AOS.init(); 
+	}, []);
 	return (
 		<div className="App">
 			<Router>
