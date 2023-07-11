@@ -7,7 +7,7 @@ import Method from "./components/Method/Method";
 import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
-import Services from "./components/Services.js";
+import Services from "./components/Services/Services.js";
 import Team from "./components/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
