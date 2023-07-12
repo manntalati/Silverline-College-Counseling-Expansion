@@ -29,7 +29,7 @@ const FoundingIdea = () => {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
-   // fontFamily: "Work Sans",
+
   };
 
   const imageStyle = {
@@ -45,9 +45,9 @@ const FoundingIdea = () => {
   return (
     <div style={containerStyle}>
       <div style={textStyle}>
-        <h4 style={subHeaderStyle}>OUR FOUNDING IDEA</h4>
-        <h1 style={headerStyle}>Tutoring</h1>
-        <p>
+        <h4 style={subHeaderStyle} data-aos="fade-up">OUR FOUNDING IDEA</h4>
+        <h1 style={headerStyle} data-aos="fade-up">Tutoring</h1>
+        <p data-aos="fade-up">
           Silverline Tutoring provides high-quality, free one-on-one tutoring.
           Our tutors are experts at the subjects they tutor, often in college
           and pursuing a degree in the subject they teach. They conduct sessions

@@ -84,9 +84,9 @@ const FutureIdeas = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={subHeaderStyle}>FUTURE IDEAS</h2>
-      <h1 style={headerStyle}>What's Next?</h1>
-      <p style={textStyle}>
+      <h2 style={subHeaderStyle} data-aos="fade-up">FUTURE IDEAS</h2>
+      <h1 style={headerStyle} data-aos="fade-up">What's Next?</h1>
+      <p style={textStyle} data-aos="fade-up">
         Looking forward, we hope to partner with underfunded schools and provide
         resources and tutoring for students who are looking for extra help.
         Along with that, we plan on eventually expanding our focus to developing
@@ -105,6 +105,8 @@ const FutureIdeas = () => {
           onMouseLeave={handleMouseLeaveFirstButton}
           target="_blank"
           rel="noopener noreferrer"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           Press Release
         </a>
@@ -115,6 +117,8 @@ const FutureIdeas = () => {
           onMouseLeave={handleMouseLeaveSecondButton}
           target="_blank"
           rel="noopener noreferrer"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           Join Us Today
         </a>

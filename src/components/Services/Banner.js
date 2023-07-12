@@ -7,7 +7,7 @@ const Banner = () => {
   const bannerStyle = {
     position: "relative",
     marginTop: "64px",
-    height: "400px", // Adjust the height as desired
+    height: "400px", 
   };
 
   const imageStyle = {
@@ -26,8 +26,7 @@ const Banner = () => {
     left: "50%",
     transform: "translate(-50%, -50%)",
   };
-
-
+  return (
     <div style={bannerStyle}>
       <img
         src={bannerImg}

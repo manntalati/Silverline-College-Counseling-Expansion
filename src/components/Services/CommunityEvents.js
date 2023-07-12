@@ -28,7 +28,6 @@ const CommunityEvents = () => {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
-   // fontFamily: "Work Sans",
   };
 
   const imageStyle = {
@@ -42,9 +41,9 @@ const CommunityEvents = () => {
     <div style={containerStyle}>
       <img src={lectureImg} alt="Lecture" style={imageStyle} />
       <div style={textStyle}>
-        <h4 style={subHeaderStyle}>COMMUNITY EVENTS</h4>
-        <h1 style={headerStyle}>Lectures</h1>
-        <p>
+        <h4 style={subHeaderStyle} data-aos="fade-up">COMMUNITY EVENTS</h4>
+        <h1 style={headerStyle} data-aos="fade-up">Lectures</h1>
+        <p data-aos="fade-up">
           We provide quick and informative lectures on all topics that our members request; whether it would be on college admissions or tips on self-improvement, the members typically decide the style and topic of the lecture. In the past, we have hosted multiple college-related lectures answering students' questions surrounding the whole process and allowing them to better understand how to approach their applications. Feel free to sign up to join our upcoming lectures <a href=""> here. </a>
         </p>
       </div>
