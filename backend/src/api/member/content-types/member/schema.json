@@ -4,8 +4,7 @@
   "info": {
     "singularName": "member",
     "pluralName": "members",
-    "displayName": "Member",
-    "description": ""
+    "displayName": "Member"
   },
   "options": {
     "draftAndPublish": true
@@ -15,30 +14,29 @@
     "name": {
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
     "img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "description": {
-      "type": "text"
+      ],
+      "type": "media",
+      "multiple": true
     },
     "education": {
-      "type": "text"
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
     },
     "hobbies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::hobby.hobby"
-    },
-    "linkedin": {
-      "type": "string"
     }
   }
 }
