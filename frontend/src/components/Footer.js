@@ -2,66 +2,80 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <h4>SilverLine</h4>
-            <p>
-              We made Silverline consulting exclusively designed for high
-              schoolers, by high schoolers and college students. We understand
-              the unique challenges and aspirations of students like you, and
-              that's why we're here to guide you through the exciting journey of
-              college admissions. Our team, comprised of experienced college
-              students and recent graduates, brings firsthand knowledge and
-              expertise to help you navigate the application process, craft
-              compelling essays, choose the right colleges, and maximize your
-              chances of getting accepted.
-            </p>
-          </div>
-          <div className="col-md-3">
-            <h5>Pages</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a className="footer-link " href="/about">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/team">Team</a>
-              </li>
-              <li>
-                <a href="/services">Services</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
-              <li>
-                <a href="/community">Community</a>
-              </li>
-              <li>
-                <a href="/faq">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <h5>Reach us at</h5>
-            <ul className="list-unstyled">
-              <a href="mailto:silverlinetutoring2021@gmail.com">
-                silverlinetutoring2021@gmail.com
-              </a>
-              <div className="">Massachusetts, United States</div>
-              <a href="tel://7862959992">(786) 295-9992</a>
-              <div className=""></div>
-            </ul>
-          </div>
+    <footer className="bg-dark text-light py-4"
+            style={{ backgroundColor: "#3d446a",
+                     fontFamily: "Serif"}}>
+      <div className="site-footer" 
+           style={{ backgroundColor: "#3d446a"}}>
+        <div style={{ backgroundColor: "#3d446a", 
+                      display: "grid",                 
+                      gridTemplateColumns: "repeat(3, 1fr)", 
+                      gridGap: 20 }}>
+          <h3 style={{ color: "#fffefb"}}> Silverline Tutoring </h3>
+          <h3 style={{ color: "#fffefb"}}> Navigation </h3>
+          <h3 style={{ color: "#fffefb"}}> Contact </h3>
         </div>
-        <div className="row">
-          <div className="col">
-            <hr className="border-light" />
-            <p className="text-center">
-              &copy; {new Date().getFullYear()} SilverLine. All rights reserved.
-            </p>
+        <div style={{ backgroundColor: "#3d446a", 
+                      display: "grid", 
+                      gridTemplateColumns: "repeat(3, 1fr)", 
+                      gridGap: 20 }}>
+          <p style={{ color: "grey"}}> 
+            We made Silverline consulting exclusively designed for high schoolers, by high schoolers and college students. We understand the unique challenges and aspirations of students like you, and that's why we're here to guide you through the exciting journey of college admissions. Our team, comprised of experienced college students and recent graduates, brings firsthand knowledge and expertise to help you navigate the application process, craft compelling essays, choose the right colleges, and maximize your chances of getting accepted. 
+          </p>
+          <ul>
+            <li style= {{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/about" 
+                 style={{ color: "grey"}}> About </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/team" 
+                 style={{ color: "grey"}}> Team </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/services" 
+                 style={{ color: "grey"}}> Services </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/contact" 
+                 style={{ color: "grey"}}> Contact </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/community" 
+                 style={{ color: "grey"}}> Community </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/faq" 
+                 style={{ color: "grey"}}> FAQ </a>
+            </li>
+          </ul>
+          <ul style={{ color: "grey"}}>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact"> Massachusetts, United States </a>
+            </li>
+            <li href="tel:+7862959992" 
+                style ={{listStyle:'none'}}>
+              <a className="Contact"> (786)-295-9992 </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a href="mailto:silverlinetutoring@gmail.com"
+                 className="Contact" 
+                 style={{color:"grey"}}> silverlinetutoring2021@gmail.com </a>
+            </li>
+          </ul>
+          <div className="row" 
+               style={{ backgroundColor: "#3d446a"}}>
+            <div className="col" 
+                 style={{ backgroundColor: "#3d446a"}}>
+              <p className="text-center" 
+                 style={{ color:"grey"}}> &copy; {new Date().getFullYear()} Silverline Tutoring Services | All Rights Reserved
+              </p>
+            </div>
           </div>
         </div>
       </div>
