@@ -47,6 +47,8 @@ function Team() {
 					}
 				</div>
 			</div>
+					
+			<Footer />
 		</>
 	);
 }
