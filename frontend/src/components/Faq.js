@@ -68,7 +68,7 @@ function FAQ() {
                </div>
             </div>
                         
-            <Footer />
+
          </div>
                   
       );

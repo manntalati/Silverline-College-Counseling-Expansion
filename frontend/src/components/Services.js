@@ -108,7 +108,6 @@ const Services = () => {
 				help your child achieve their academic goals.
 			</p>
 
-			<Footer />
 		</div>
 	);
 };
