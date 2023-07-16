@@ -68,6 +68,8 @@ function FAQ() {
                </div>
             </div>
          </div>
+                        
+      <Footer />
       );
 }
 
