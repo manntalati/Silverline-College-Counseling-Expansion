@@ -2,7 +2,6 @@ import React from 'react';
 
 function FAQ() {
       return (
-      <>
          <div>
             <div className="container">
                <div className="row align-items-center">
@@ -68,10 +67,10 @@ function FAQ() {
                   </div>
                </div>
             </div>
-         </div>
                         
-      <Footer />
-   </>
+            <Footer />
+         </div>
+                  
       );
 }
 
