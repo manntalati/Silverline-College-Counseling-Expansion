@@ -107,6 +107,8 @@ const Services = () => {
 				Contact us today to learn more about our services and how we can
 				help your child achieve their academic goals.
 			</p>
+
+			<Footer />
 		</div>
 	);
 };
