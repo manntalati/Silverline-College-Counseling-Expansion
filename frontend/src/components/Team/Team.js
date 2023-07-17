@@ -21,36 +21,36 @@ import TeamCard from "./TeamCard";
 
 function Team() {
 
-	// setup strapi fetching
+  // setup strapi fetching
 
-	const [members, setMembers] = useState([])
+  const [members, setMembers] = useState([])
 
-	useEffect(() => {
-		(async () => await fetch("http://localhost:1337/api/members?populate=*")
-			.then(res => res.json())
-			.then(res => {
-				console.log("data: ", res.data)
-				setMembers(res.data)
-			}))();
-	}, [])
+  // useEffect(() => {
+  // 	(async () => await fetch("http://localhost:1337/api/members?populate=*")
+  // 		.then(res => res.json())
+  // 		.then(res => {
+  // 			console.log("data: ", res.data)
+  // 			setMembers(res.data)
+  // 		}))();
+  // }, [])
 
-	return (
-		<>
-			<NavBar pageName="team" />
-			<div className="container">
-				<div
-					class="row align-items-stretch"
-					style={{ paddingTop: "5rem" }}
-				>
-					{
-						members.map(m => <TeamCard {...m.attributes} />)
-					}
-				</div>
-			</div>
-					
+  return (
+    <>
+      <NavBar pageName="team" />
+      <div className="container">
+        <div
+          class="row align-items-stretch"
+          style={{ paddingTop: "5rem" }}
+        >
+          {
+            members.map(m => <TeamCard {...m.attributes} />)
+          }
+        </div>
+      </div>
 
-		</>
-	);
+
+    </>
+  );
 }
 
 export default Team;
