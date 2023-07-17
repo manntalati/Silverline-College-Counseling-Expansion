@@ -25,7 +25,7 @@ const Footer = () => {
           <ul>
             <li style= {{listStyle:'none'}}>
               <a className="Contact" 
-                 href="" 
+                 href="/#" 
                  style={{ color: "grey"}}> Home </a>
             </li>
             <li style ={{listStyle:'none'}}>
