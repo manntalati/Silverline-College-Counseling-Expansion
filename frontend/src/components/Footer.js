@@ -25,13 +25,13 @@ const Footer = () => {
           <ul>
             <li style= {{listStyle:'none'}}>
               <a className="Contact" 
-                 href="/about" 
-                 style={{ color: "grey"}}> About </a>
+                 href="" 
+                 style={{ color: "grey"}}> Home </a>
             </li>
             <li style ={{listStyle:'none'}}>
               <a className="Contact" 
-                 href="/team" 
-                 style={{ color: "grey"}}> Team </a>
+                 href="/about" 
+                 style={{ color: "grey"}}> About Us </a>
             </li>
             <li style ={{listStyle:'none'}}>
               <a className="Contact" 
@@ -40,18 +40,18 @@ const Footer = () => {
             </li>
             <li style ={{listStyle:'none'}}>
               <a className="Contact" 
-                 href="/contact" 
-                 style={{ color: "grey"}}> Contact </a>
-            </li>
-            <li style ={{listStyle:'none'}}>
-              <a className="Contact" 
                  href="/community" 
-                 style={{ color: "grey"}}> Community </a>
+                 style={{ color: "grey"}}> Our Community </a>
             </li>
             <li style ={{listStyle:'none'}}>
               <a className="Contact" 
-                 href="/faq" 
-                 style={{ color: "grey"}}> FAQ </a>
+                 href="/getinvolved" 
+                 style={{ color: "grey"}}> Get Invovled </a>
+            </li>
+            <li style ={{listStyle:'none'}}>
+              <a className="Contact" 
+                 href="/reviews" 
+                 style={{ color: "grey"}}> Reviews </a>
             </li>
           </ul>
           <ul style={{ color: "grey"}}>
