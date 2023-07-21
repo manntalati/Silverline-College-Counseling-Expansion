@@ -114,15 +114,8 @@ const Reach = () => {
             </div>
           </div>
         </div>
-        <div className="container py-5 mt-4">
-          <a
-            href="./" /* placeholder */
-            className="btn rounded-pill text-white py-2 px-4"
-            style={{ backgroundColor: "#4D68E1" }}
-          >
-            View More Statistics
-          </a>
-        </div>
+        <p class="text-center" data-aos="fade-up" data-aos-delay="300" style={{ paddingTop: "20px" }}><a
+          href="community.html#target" class="btn btn-primary text-lg-center">View More Statistics</a></p>
       </div>
     </>
   );
