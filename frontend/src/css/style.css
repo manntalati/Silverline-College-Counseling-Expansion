@@ -15096,3 +15096,7 @@ textarea {
   background-repeat: repeat;
   background-position: center center;
 }
+
+#hero_overlay {
+  background-image: url(../images/Home/hero_1.svg);
+}

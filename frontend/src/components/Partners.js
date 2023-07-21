@@ -53,7 +53,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner1}
-                    alt="panda express"
+                    alt="The pond"
                     className="img-fluid"
                   />
                 </a>
@@ -150,7 +150,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner3}
-                    alt="bumper investing"
+                    alt="Canva"
                     className="img-fluid"
                   />
                 </a>
@@ -196,7 +196,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner4}
-                    alt="bumper investing"
+                    alt="American Red Cross"
                     className="img-fluid"
                   />
                 </a>
@@ -240,7 +240,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner5}
-                    alt="bumper investing"
+                    alt="365 to Japan"
                     className="img-fluid"
                   />
                 </a>
@@ -285,7 +285,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner6}
-                    alt="bumper investing"
+                    alt="Sultan's Marketing"
                     className="img-fluid"
                   />
                 </a>
@@ -376,7 +376,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner8}
-                    alt="panda express"
+                    alt="Equality in Forensics"
                     className="img-fluid"
                   />
                 </a>
@@ -423,7 +423,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner9}
-                    alt="panda express"
+                    alt="Chipotle of Drumhill Chelmsford, MA"
                     className="img-fluid"
                   />
                 </a>
@@ -470,7 +470,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner10}
-                    alt="panda express"
+                    alt="The Wish Project"
                     className="img-fluid"
                   />
                 </a>
@@ -517,7 +517,7 @@ const Partners = () => {
                 >
                   <img
                     src={partner11}
-                    alt="panda express"
+                    alt="Chelmsford High School"
                     className="img-fluid"
                   />
                 </a>
