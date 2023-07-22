@@ -19,6 +19,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved";
+import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
 
 function App() {
   useEffect(() => {
@@ -34,9 +36,11 @@ function App() {
               <>
                 <NavBar pageName="home" />
                 <Hero />
+                <AboutSection />
+                <ServicesSection />
                 <Reach />
                 <Lectures />
-                <Team />
+                {/* <Team /> */}
                 <Testimonials />
                 <Faq />
                 <Footer />
