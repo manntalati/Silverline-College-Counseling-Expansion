@@ -51,7 +51,6 @@ function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="reviews" element={<Reviews />} />
           <Route path="community" element={<OurCommunity />} />
-          <Route path="faq" element={<Faq />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="team" element={<Team />} />
