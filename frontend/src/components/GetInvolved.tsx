@@ -104,6 +104,7 @@ export default function GetInvolved() {
               background: "transparent",
               border: "1px solid #ccc",
             }}
+            loading="lazy"
           ></iframe>
           <br />
           <br />
@@ -125,6 +126,7 @@ export default function GetInvolved() {
               background: "transparent",
               border: "1px solid #ccc",
             }}
+            loading="lazy"
           ></iframe>
           <br />
           <p

@@ -78,9 +78,9 @@ const QuickHelp = () => {
         <iframe
           src="https://discord.com/widget?id=795627064093966348&theme=dark"
           style={widgetStyle}
-          allowtransparency="true"
-          frameBorder="0"
+          allowTransparency={true}
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          loading="lazy"
         ></iframe>
       </div>
     </div>
