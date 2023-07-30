@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import anonymous from "../images/anonymous.webp";
 
-const content = [
+interface Testimonial {
+  name: string;
+  des: string;
+  content: string;
+}
+
+const content: Testimonial[] = [
   {
     name: "Rithvik",
     des: "High School Sophomore",
@@ -28,8 +34,56 @@ const content = [
   },
 ];
 
-export default function Testimonials() {
-  const [val, setVal] = useState(0);
+const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => (
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 10,
+      width: "100%",
+    }}
+  >
+    <img
+      src={anonymous}
+      height={75}
+      width={75}
+      style={{ borderRadius: "50%" }}
+    />
+    <h3 style={{ color: "white", fontFamily: "'Work Sans', sans-serif" }}>
+      {name}
+    </h3>
+    <p style={{ color: "#b6bbd2", fontFamily: "'Work Sans', sans-serif" }}>
+      {des}
+    </p>
+    <p
+      style={{
+        fontSize: "100px",
+        color: "white",
+        fontFamily: "'Work Sans', sans-serif",
+        position: "relative",
+        top: "-20px",
+      }}
+    >
+      “
+    </p>
+    <p
+      style={{
+        color: "white",
+        position: "relative",
+        top: "-110px",
+        fontFamily: "'Work Sans', sans-serif",
+        width: "80%",
+        textAlign: "center",
+      }}
+    >
+      {content}
+    </p>
+  </div>
+);
+
+const Testimonials: React.FC = () => {
+  const [val, setVal] = useState<number>(0);
 
   return (
     <div
@@ -123,52 +177,6 @@ export default function Testimonials() {
       </div>
     </div>
   );
-}
+};
 
-const TestimonialItem = ({ name, des, content }) => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      gap: 10,
-      width: "100%",
-    }}
-  >
-    <img
-      src={anonymous}
-      height={75}
-      width={75}
-      style={{ borderRadius: "50%" }}
-    />
-    <h3 style={{ color: "white", fontFamily: "'Work Sans', sans-serif" }}>
-      {name}
-    </h3>
-    <p style={{ color: "#b6bbd2", fontFamily: "'Work Sans', sans-serif" }}>
-      {des}
-    </p>
-    <p
-      style={{
-        fontSize: "100px",
-        color: "white",
-        fontFamily: "'Work Sans', sans-serif",
-        position: "relative",
-        top: "-20px",
-      }}
-    >
-      “
-    </p>
-    <p
-      style={{
-        color: "white",
-        position: "relative",
-        top: "-110px",
-        fontFamily: "'Work Sans', sans-serif",
-        width: "80%",
-        textAlign: "center",
-      }}
-    >
-      {content}
-    </p>
-  </div>
-);
+export default Testimonials;
