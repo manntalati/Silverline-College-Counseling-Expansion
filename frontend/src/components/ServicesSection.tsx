@@ -6,7 +6,7 @@ import quality from "../images/Home/quality.webp";
 
 const ServicesSection = () => {
   return (
-    <div className="section section-3" style={{ background: "#1E2022" }}>
+    <div className="section section-3" style={{ background: "#181A1B" }}>
       <div className="container">
         <div className="row align-items-center justify-content-between  mb-5">
           <div className="col-lg-6" data-aos="fade-up">
