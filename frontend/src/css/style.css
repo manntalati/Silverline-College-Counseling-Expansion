@@ -4212,7 +4212,7 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
   color: #ffff;
-  background: none;
+  background: #2644c9;
   border-color: #5271ff;
 }
 
@@ -14554,12 +14554,12 @@ textarea {
 
 .section {
   padding-top: 7rem;
-  background: #181a1b;
+  background-color: #181a1b; 
   padding-bottom: 7rem;
 }
 
 .sectionWO {
-  background: #181a1b;
+  background-color: #181a1b;
   padding-bottom: 7rem;
 }
 

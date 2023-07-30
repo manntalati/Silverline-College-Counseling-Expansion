@@ -1,24 +1,6 @@
 import React, { useState } from "react";
 
 const FutureIdeas = () => {
-  const [isHoverFirstButton, setIsHoverFirstButton] = useState(false);
-  const [isHoverSecondButton, setIsHoverSecondButton] = useState(false);
-
-  const handleMouseEnterFirstButton = () => {
-    setIsHoverFirstButton(true);
-  };
-
-  const handleMouseLeaveFirstButton = () => {
-    setIsHoverFirstButton(false);
-  };
-
-  const handleMouseEnterSecondButton = () => {
-    setIsHoverSecondButton(true);
-  };
-
-  const handleMouseLeaveSecondButton = () => {
-    setIsHoverSecondButton(false);
-  };
 
   const containerStyle = {
     display: "flex",
@@ -60,29 +42,6 @@ const FutureIdeas = () => {
     marginBottom: "30px",
   };
 
-  const buttonStyleFirst = {
-    backgroundColor: isHoverFirstButton ? "#181A1B" : "rgba(82, 113, 255, 0.8)",
-    color: "#EAEAEA",
-    border: "2px solid #5271FF",
-    padding: "10px 25px",
-    borderRadius: "25px",
-    fontSize: "1rem",
-    fontWeight: "550",
-    transition: "background 0.3s ease",
-  };
-
-  const buttonStyleSecond = {
-    backgroundColor: isHoverSecondButton
-      ? "#181A1B"
-      : "rgba(82, 113, 255, 0.8)",
-    color: "#EAEAEA",
-    border: "2px solid #5271FF",
-    padding: "10px 25px",
-    borderRadius: "25px",
-    fontSize: "1rem",
-    fontWeight: "550",
-    transition: "background 0.3s ease",
-  };
 
   return (
     <div style={containerStyle}>
@@ -106,25 +65,17 @@ const FutureIdeas = () => {
       <div style={buttonContainerStyle}>
         <a
           href="downloads/Press_Release.pdf"
-          style={buttonStyleFirst}
-          onMouseEnter={handleMouseEnterFirstButton}
-          onMouseLeave={handleMouseLeaveFirstButton}
-          target="_blank"
-          rel="noopener noreferrer"
           data-aos="fade-up"
           data-aos-delay="100"
+          className="btn btn-primary"
         >
           Press Release
         </a>
         <a
           href="https://discord.gg/kD8aMaX2gP"
-          style={buttonStyleSecond}
-          onMouseEnter={handleMouseEnterSecondButton}
-          onMouseLeave={handleMouseLeaveSecondButton}
-          target="_blank"
-          rel="noopener noreferrer"
           data-aos="fade-up"
           data-aos-delay="100"
+          className="btn btn-primary"
         >
           Join Us Today
         </a>
