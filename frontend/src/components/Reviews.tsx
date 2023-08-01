@@ -1,8 +1,9 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-const Review = () => {
-  const styles = {
+
+const Review: React.FC = () => {
+  const styles: { [key: string]: React.CSSProperties } = {
     reviewsPage: {
       backgroundColor: "#252525",
       color: "white",
@@ -11,13 +12,13 @@ const Review = () => {
       fontFamily: "DM Sans, sans-serif",
     },
     reviewsTitle: {
-      fontSize: "48px", // Increased font size for Reviews title
-      marginBottom: "10px", // Reduced spacing below the Reviews title
+      fontSize: "48px",
+      marginBottom: "10px",
       fontFamily: "DM Sans, sans-serif",
     },
     reviewsSubtitle: {
-      fontSize: "22px", // Reduced font size for Reviews subtitles
-      margin: "5px 0", // Reduced spacing between the subtitles
+      fontSize: "22px",
+      margin: "5px 0",
       fontFamily: "DM Sans, sans-serif",
     },
     reviewsContainer: {
@@ -66,7 +67,7 @@ const Review = () => {
       fontFamily: "DM Sans, sans-serif",
     },
   };
-
+  
   return (
     <div style={styles.reviewsPage} data-testid="reviews-container">
       <NavBar pageName="reviews" />

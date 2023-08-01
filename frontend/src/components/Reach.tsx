@@ -1,6 +1,6 @@
 import React from "react";
 
-const Reach = () => {
+const Reach: React.FC = () => {
   return (
     <>
       <div
