@@ -4,7 +4,7 @@ import flexibile from "../images/Home/flexibile.webp";
 import community from "../images/Home/community.webp";
 import quality from "../images/Home/quality.webp";
 
-const ServicesSection = () => {
+const ServicesSection: React.FC = () => {
   return (
     <div className="section section-3" style={{ background: "#181A1B" }}>
       <div className="container">
