@@ -5,7 +5,7 @@ import SilverlineSpecialties from "./SilverlineSpecialties";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
 
-const Method = () => {
+const Method: React.FC = () => {
   return (
     <>
       <div style={{ backgroundColor: "#181A1B" }}>

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SpecialtyBox = ({ color, title, desc }) => {
+const SpecialtyBox: React.FC = ({ color, title, desc }) => {
   return (
     <div className="container w-35">
       <div

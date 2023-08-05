@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
-  // const [show, setShow] = useState(false);
+interface Hobby {
+  id: number;
+  attributes: {
+    hobby: string;
+  };
+}
 
-  // const showCountries = () => {
-  // 	setShow(!show);
-  // };
-  // const countriesLi = [];
-  // countries.forEach((country) =>
-  // 	countriesLi.push(<li className="mx-4">{country}</li>)
-  // );
-
-  // const [showEducation, setShowEducation] = useState(false);
-  // const [showHobbies, setShowHobbies] = useState(false);
-  // const [showLinkedin, setShowLinkedin] = useState(false);
-
-  let showEducation = false;
-  let showHobbies = false;
-  let showLinkedin = false;
+const TeamCard: React.FC = ({
+  name,
+  img,
+  description,
+  education,
+  hobbies,
+  linkedin,
+}) => {
+  let showEducation: boolean = false;
+  let showHobbies: boolean = false;
+  let showLinkedin: boolean = false;
   if (education && education.length > 0) {
     showEducation = true;
   }
@@ -30,10 +30,14 @@ const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
     showLinkedin = true;
   }
 
-  const hobbiesLi = [];
+  const hobbiesLi: JSX.Element[] = [];
   if (showHobbies === true) {
-    hobbies.data.forEach((hobby) =>
-      hobbiesLi.push(<li className="mx-4">{hobby.attributes.hobby}</li>),
+    hobbies.data.forEach((hobby: Hobby) =>
+      hobbiesLi.push(
+        <li className="mx-4" key={hobby.id}>
+          {hobby.attributes.hobby}
+        </li>,
+      ),
     );
   }
 
@@ -83,10 +87,11 @@ const TeamCard = ({ name, img, description, education, hobbies, linkedin }) => {
 
 TeamCard.propTypes = {
   name: PropTypes.string,
-  img: PropTypes.string,
+  img: PropTypes.object,
   desc: PropTypes.string,
   education: PropTypes.string,
-  hobbies: PropTypes.array,
+  hobbies: PropTypes.object,
   linkedin: PropTypes.string,
 };
+
 export default TeamCard;
