@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <div className="hero hero1 overlay" id="hero_overlay">
       <div className="container">
