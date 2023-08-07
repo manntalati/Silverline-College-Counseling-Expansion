@@ -1,14 +1,14 @@
 import React from "react";
 import shortsImg from "../../images/services/shor1ts.webp";
 
-const SocialServices = () => {
-  const containerStyle = {
+const SocialServices: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
     backgroundColor: "#181A1B",
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     flex: "1",
     padding: "40px",
     fontSize: "1.1rem",
@@ -17,20 +17,20 @@ const SocialServices = () => {
     marginRight: "50px",
   };
 
-  const subHeaderStyle = {
+  const subHeaderStyle: React.CSSProperties = {
     fontSize: "18px",
     textTransform: "uppercase",
     color: "#918CA1",
     fontWeight: "700",
   };
 
-  const headerStyle = {
+  const headerStyle: React.CSSProperties = {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
   };
 
-  const imageStyle = {
+  const imageStyle: React.CSSProperties = {
     flex: "1",
     height: "auto",
     maxWidth: "40%",
@@ -39,8 +39,13 @@ const SocialServices = () => {
 
   return (
     <div style={containerStyle}>
-      <img src={shortsImg} alt="Shorts" style={imageStyle} data-aos="fade-up" />
-      <div style={textStyle} data-aos="fade-up">
+      <img
+        src={shortsImg}
+        alt="Shorts"
+        style={{ ...imageStyle, animation: "fade-up" }}
+        data-aos="fade-up"
+      />
+      <div style={{ ...textStyle, animation: "fade-up" }} data-aos="fade-up">
         <h4 style={subHeaderStyle} data-aos="fade-up">
           SOCIAL SERVICES
         </h4>
