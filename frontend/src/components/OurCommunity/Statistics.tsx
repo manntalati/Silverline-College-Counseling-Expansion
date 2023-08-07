@@ -1,8 +1,47 @@
 import React, { useState, useEffect } from "react";
 import img from "./extraCommunity.jpg";
 
-export default function Statistics() {
-  const statsListConst = [
+interface StatItemProps {
+  num: number;
+  text: string;
+}
+
+const StatItem: React.FC<StatItemProps> = ({ num, text }) => (
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 10,
+    }}
+  >
+    <div
+      style={{
+        borderRadius: "50%",
+        border: "5px solid white",
+        aspectRatio: "1/1",
+        width: "180px",
+        height: "180px",
+        background: "rgba(145,140,161, 1)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        fontWeight: 600,
+        fontFamily: "'DM Sans', sans-serif",
+        fontSize: "60px",
+        textAlign: "center",
+      }}
+    >
+      {num}
+    </div>
+    <h2 style={{ color: "white", textAlign: "center" }}>{text}</h2>
+  </div>
+);
+
+const Statistics: React.FC = () => {
+  const statsListConst: StatItemProps[] = [
     { num: 75, text: "Average Sessions Per Week" },
     { num: 78, text: "Average Tutoring Hours Per Week" },
     { num: 108, text: "Current Enrolled Students" },
@@ -14,7 +53,7 @@ export default function Statistics() {
   ];
 
   const [statsList, setStatsList] = useState(
-    statsListConst.map((stat) => ({ ...stat, num: 0 })),
+    statsListConst.map((stat) => ({ ...stat, num: 0 }))
   );
 
   const count = () => {
@@ -79,44 +118,12 @@ export default function Statistics() {
           columnGap: 50,
         }}
       >
-        {statsList.map((s) => (
-          <StatItem key={s.text} {...s} />
+        {statsList.map((s, index) => (
+          <StatItem key={index} {...s} />
         ))}
       </div>
     </div>
   );
-}
+};
 
-const StatItem = ({ num, text }) => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: 10,
-    }}
-  >
-    <div
-      style={{
-        borderRadius: "50%",
-        border: "5px solid white",
-        aspectRatio: "1/1",
-        width: "180px",
-        height: "180px",
-        background: "rgba(145,140,161, 1)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        color: "white",
-        fontWeight: 600,
-        fontFamily: "'DM Sans', sans-serif",
-        fontSize: "60px",
-        textAlign: "center",
-      }}
-    >
-      {num}
-    </div>
-    <h2 style={{ color: "white", textAlign: "center" }}>{text}</h2>
-  </div>
-);
+export default Statistics;
