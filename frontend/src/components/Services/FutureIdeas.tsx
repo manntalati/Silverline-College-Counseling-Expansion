@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const FutureIdeas = () => {
-
-  const containerStyle = {
+const FutureIdeas: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -10,7 +9,7 @@ const FutureIdeas = () => {
     padding: "40px",
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     textAlign: "center",
     fontSize: "1.1rem",
     fontWeight: "200",
@@ -21,27 +20,26 @@ const FutureIdeas = () => {
     marginTop: "50px",
   };
 
-  const subHeaderStyle = {
+  const subHeaderStyle: React.CSSProperties = {
     fontSize: "24px",
     textTransform: "uppercase",
     color: "#918CA1",
     fontWeight: "700",
   };
 
-  const headerStyle = {
+  const headerStyle: React.CSSProperties = {
     fontSize: "42px",
     fontWeight: "bold",
     color: "white",
   };
 
-  const buttonContainerStyle = {
+  const buttonContainerStyle: React.CSSProperties = {
     display: "flex",
     justifyContent: "center",
     marginTop: "30px",
     gap: "30px",
     marginBottom: "30px",
   };
-
 
   return (
     <div style={containerStyle}>
