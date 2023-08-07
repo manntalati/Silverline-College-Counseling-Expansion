@@ -2,21 +2,21 @@ import React from "react";
 import bannerImg from "../../images/services/services.webp";
 import "aos/dist/aos.css";
 
-const Banner = () => {
-  const bannerStyle = {
+const Banner: React.FC = () => {
+  const bannerStyle: React.CSSProperties = {
     position: "relative",
     marginTop: "64px",
     height: "400px",
   };
 
-  const imageStyle = {
+  const imageStyle: React.CSSProperties = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
     filter: "brightness(50%)",
   };
 
-  const titleStyle = {
+  const titleStyle: React.CSSProperties = {
     fontSize: "4rem",
     fontWeight: "bold",
     color: "white",
