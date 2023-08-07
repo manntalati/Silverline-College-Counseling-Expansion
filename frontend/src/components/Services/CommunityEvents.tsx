@@ -1,14 +1,14 @@
 import React from "react";
 import lectureImg from "../../images/services/lectu1res 2.webp";
 
-const CommunityEvents = () => {
-  const containerStyle = {
+const CommunityEvents: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
     backgroundColor: "#181A1B",
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     flex: "1",
     padding: "40px",
     fontSize: "1.1rem",
@@ -17,20 +17,20 @@ const CommunityEvents = () => {
     marginRight: "50px",
   };
 
-  const subHeaderStyle = {
+  const subHeaderStyle: React.CSSProperties = {
     fontSize: "18px",
     textTransform: "uppercase",
     color: "#918CA1",
     fontWeight: "700",
   };
 
-  const headerStyle = {
+  const headerStyle: React.CSSProperties = {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
   };
 
-  const imageStyle = {
+  const imageStyle: React.CSSProperties = {
     flex: "1",
     height: "auto",
     maxWidth: "40%",
@@ -55,7 +55,7 @@ const CommunityEvents = () => {
           lectures answering students' questions surrounding the whole process
           and allowing them to better understand how to approach their
           applications. Feel free to sign up to join our upcoming lectures{" "}
-          <a href=""> here. </a>
+          <a href="/">here.</a>
         </p>
       </div>
     </div>
