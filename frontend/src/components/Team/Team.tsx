@@ -2,35 +2,31 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar";
 import TeamCard from "./TeamCard";
 
-// const cardLoop = () => {
-// 	let cards = [];
-// 	for (let i = 0; i < board.length; i++) {
-// 		cards.push(
-// 			<TeamCard
-// 				name={board[i].name}
-// 				img={board[i].img}
-// 				desc={board[i].desc}
-// 				education={board[i].education}
-// 				hobbies={board[i].hobbies}
-// 				linkedin={board[i].linkedin}
-// 			/>
-// 		);
-// 	}
-// 	return cards;
-// };
+interface Member {
+  id: number;
+  attributes: {
+    name: string;
+    description: string;
+    education: string;
+    linkedin: string;
+    img: {
+      data: Array<{}>;
+    };
+    hobbies: {
+      data: Array<{}>;
+    };
+  };
+}
 
-function Team() {
-  // setup strapi fetching
-
-  const [members, setMembers] = useState([]);
+const Team: React.FC = () => {
+  const [members, setMembers] = useState<Member[]>([]);
 
   // useEffect(() => {
-  // 	(async () => await fetch("http://localhost:1337/api/members?populate=*")
-  // 		.then(res => res.json())
-  // 		.then(res => {
-  // 			console.log("data: ", res.data)
-  // 			setMembers(res.data)
-  // 		}))();
+  //   (async () => await fetch("http://localhost:1337/api/members?populate=*")
+  //     .then(res => res.json())
+  //     .then(res => {
+  //       setMembers(res.data)
+  //     }))();
   // }, [])
 
   return (
@@ -38,13 +34,13 @@ function Team() {
       <NavBar pageName="team" />
       <div className="container">
         <div className="row align-items-stretch" style={{ paddingTop: "5rem" }}>
-          {members.map((m) => (
-            <TeamCard {...m.attributes} />
+          {members.map((m: Member) => (
+            <TeamCard key={m.id} {...m.attributes} />
           ))}
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Team;
