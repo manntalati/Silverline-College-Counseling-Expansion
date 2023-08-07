@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-const UpcomingEvents = () => {
+const UpcomingEvents: React.FC = () => {
   useEffect(() => {
     const tockify = document.createElement("script");
 
-    tockify["data-cfasync"] = "false";
-    tockify["data-tockify-script"] = "embed";
+    tockify.setAttribute("data-cfasync", "false");
+    tockify.setAttribute("data-tockify-script", "embed");
     tockify.src = "https://public.tockify.com/browser/embed.js";
 
     document.body.appendChild(tockify);
