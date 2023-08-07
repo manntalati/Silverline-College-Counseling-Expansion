@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 
-const CollapseBtn = ({ region, countries }) => {
+interface CollapseBtnProps {
+  region: string;
+  countries: string[];
+}
+
+const CollapseBtn: React.FC<CollapseBtnProps> = ({ region, countries }) => {
   const [show, setShow] = useState(false);
 
   const showCountries = () => {
     setShow(!show);
   };
-  const countriesLi = [];
+  const countriesLi: JSX.Element[] = [];
   countries.forEach((country) =>
-    countriesLi.push(<li className="mx-4">{country}</li>),
+    countriesLi.push(<li className="mx-4">{country}</li>)
   );
 
   return (
@@ -43,7 +47,7 @@ const CollapseBtn = ({ region, countries }) => {
           )}
         </button>
 
-        <br></br>
+        <br />
 
         {show ? <ul className="text-white py-3 my-0">{countriesLi}</ul> : null}
       </div>
@@ -51,8 +55,4 @@ const CollapseBtn = ({ region, countries }) => {
   );
 };
 
-CollapseBtn.propTypes = {
-  region: PropTypes.string,
-  countries: PropTypes.array,
-};
 export default CollapseBtn;
