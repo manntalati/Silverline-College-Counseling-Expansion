@@ -9,7 +9,7 @@ import Statistics from "./Statistics";
 import Banner from "./Banner";
 import NavBar from "../NavBar";
 
-const OurCommunity = () => {
+const OurCommunity: React.FC = () => {
   return (
     <>
       <NavBar pageName="community" />
