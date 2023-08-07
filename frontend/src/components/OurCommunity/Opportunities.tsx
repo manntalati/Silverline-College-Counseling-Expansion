@@ -1,12 +1,12 @@
 import React from "react";
 
-const Opportunities = () => {
-  const bodyStyle = {
+const Opportunities: React.FC = () => {
+  const bodyStyle: React.CSSProperties = {
     fontSize: "1.1rem",
     fontWeight: "bold",
     color: "#D6D3CD",
   };
-  const titleStyle = {
+  const titleStyle: React.CSSProperties = {
     fontSize: "2.5rem",
     fontWeight: "bold",
     color: "#918CA1",
@@ -17,11 +17,8 @@ const Opportunities = () => {
         <h1 style={titleStyle} data-aos="fade-up">
           Opportunities
         </h1>
-        <h2
-          className="heading mb-3"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        ></h2>
+        <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100" />
+
         <p
           className="my-0"
           style={bodyStyle}
