@@ -7,7 +7,8 @@ import StudentSupport from "./StudentSupport";
 import CommunityEvents from "./CommunityEvents";
 import SocialServices from "./SocialServices";
 import FutureIdeas from "./FutureIdeas";
-const Services = () => {
+
+const Services: React.FC = () => {
   return (
     <>
       <NavBar pageName="community" />

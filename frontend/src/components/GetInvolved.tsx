@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import banner from "../images/get-involved/banner.webp";
 import NavBar from "./NavBar";
 import "../assets/fonts.css";
 import Footer from "./Footer";
 
-export default function GetInvolved() {
+const GetInvolved: React.FC = () => {
   return (
     <div>
       <NavBar pageName="getInvolved" />
@@ -146,4 +146,6 @@ export default function GetInvolved() {
       <Footer />
     </div>
   );
-}
+};
+
+export default GetInvolved;

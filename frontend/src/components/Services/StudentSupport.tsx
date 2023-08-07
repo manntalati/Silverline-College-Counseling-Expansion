@@ -1,14 +1,14 @@
 import React from "react";
 import resourcesImg from "../../images/services/resources.webp";
 
-const StudentSupport = () => {
-  const containerStyle = {
+const StudentSupport: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
     backgroundColor: "#181A1B",
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     flex: "1",
     padding: "40px",
     fontSize: "1.1rem",
@@ -17,20 +17,20 @@ const StudentSupport = () => {
     marginLeft: "50px",
   };
 
-  const subHeaderStyle = {
+  const subHeaderStyle: React.CSSProperties = {
     fontSize: "18px",
     textTransform: "uppercase",
     color: "#918CA1",
     fontWeight: "700",
   };
 
-  const headerStyle = {
+  const headerStyle: React.CSSProperties = {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
   };
 
-  const imageStyle = {
+  const imageStyle: React.CSSProperties = {
     flex: "1",
     height: "auto",
     maxWidth: "40%",
@@ -64,7 +64,7 @@ const StudentSupport = () => {
       <img
         src={resourcesImg}
         alt="Resources"
-        style={imageStyle}
+        style={{ ...imageStyle, animation: "fade-up" }}
         data-aos="fade-up"
       />
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImg from "../images/Home/about_1.webp";
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
   return (
     <div className="section section-2">
       <div className="container">

@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo4.svg";
 
-import PropTypes from "prop-types";
+interface NavBarProps {
+  pageName?: string;
+}
 
-const NavBar = ({ pageName }) => {
+const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
   let elementName = "";
   switch (pageName) {
     case "home":
@@ -36,7 +38,7 @@ const NavBar = ({ pageName }) => {
       break;
     default:
       throw new Error(
-        "Please look at components/NavBar.js detectElement() for the full list",
+        "Please look at components/NavBar.js detectElement() for the full list"
       );
   }
 
@@ -139,7 +141,4 @@ const NavBar = ({ pageName }) => {
   );
 };
 
-NavBar.propTypes = {
-  pageName: PropTypes.string,
-};
 export default NavBar;

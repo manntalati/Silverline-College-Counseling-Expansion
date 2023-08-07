@@ -1,27 +1,27 @@
 import React from "react";
 
-const QuickHelp = () => {
-  const containerStyle = {
+const QuickHelp: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     backgroundColor: "#1E2022",
     padding: "5rem",
     display: "flex",
     justifyContent: "center", // Center the content horizontally
   };
 
-  const sectionStyle = {
+  const sectionStyle: React.CSSProperties = {
     display: "flex",
     flexDirection: "row",
     width: "100%", // Set the section width to 100%
     maxWidth: "1200px", // Limit the maximum width of the section
   };
 
-  const widgetStyle = {
+  const widgetStyle: React.CSSProperties = {
     width: "400px",
     height: "500px",
     border: "none",
   };
 
-  const bodyStyle = {
+  const bodyStyle: React.CSSProperties = {
     fontSize: "1.1rem",
     fontWeight: "bold",
     color: "#D6D3CD",
@@ -29,7 +29,7 @@ const QuickHelp = () => {
     maxWidth: "800px", // Limit the maximum width of the body
   };
 
-  const titleStyle = {
+  const titleStyle: React.CSSProperties = {
     fontSize: "2.5rem",
     fontWeight: "bold",
     color: "#918CA1",
@@ -44,11 +44,7 @@ const QuickHelp = () => {
           <h1 style={titleStyle} data-aos="fade-up">
             Quick Help
           </h1>
-          <h2
-            className="heading mb-3"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          ></h2>
+          <h2 className="heading mb-3" data-aos="fade-up" data-aos-delay="100"></h2>
           <p style={bodyStyle} data-aos="fade-up" data-aos-delay="200">
             Silverline has a dedicated Discord server where students can join to
             connect with our community and access various resources. In our

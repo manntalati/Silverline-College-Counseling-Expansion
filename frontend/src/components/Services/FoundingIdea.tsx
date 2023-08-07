@@ -1,14 +1,14 @@
 import React from "react";
 import tutoringImg from "../../images/services/tutoring.webp";
 
-const FoundingIdea = () => {
-  const containerStyle = {
+const FoundingIdea: React.FC = () => {
+  const containerStyle: React.CSSProperties = {
     display: "flex",
     alignItems: "center",
     backgroundColor: "#181A1B",
   };
 
-  const textStyle = {
+  const textStyle: React.CSSProperties = {
     flex: "1",
     padding: "40px",
     fontSize: "1.1rem",
@@ -18,20 +18,20 @@ const FoundingIdea = () => {
     marginLeft: "50px",
   };
 
-  const subHeaderStyle = {
+  const subHeaderStyle: React.CSSProperties = {
     fontSize: "18px",
     textTransform: "uppercase",
     color: "#918CA1",
     fontWeight: "700",
   };
 
-  const headerStyle = {
+  const headerStyle: React.CSSProperties = {
     fontSize: "46px",
     fontWeight: "bold",
     color: "white",
   };
 
-  const imageStyle = {
+  const imageStyle: React.CSSProperties = {
     flex: "1",
     height: "auto",
     maxWidth: "40%",

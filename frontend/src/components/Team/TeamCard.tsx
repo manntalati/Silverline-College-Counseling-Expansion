@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 interface Hobby {
   id: number;
@@ -8,7 +7,24 @@ interface Hobby {
   };
 }
 
-const TeamCard: React.FC = ({
+interface TeamCardProps {
+  name: string;
+  img: {
+    data: {
+      attributes: {
+        url: string;
+      };
+    }[];
+  };
+  description: string;
+  education?: string;
+  hobbies: {
+    data: Hobby[];
+  };
+  linkedin?: string;
+}
+
+const TeamCard: React.FC<TeamCardProps> = ({
   name,
   img,
   description,
@@ -19,9 +35,11 @@ const TeamCard: React.FC = ({
   let showEducation: boolean = false;
   let showHobbies: boolean = false;
   let showLinkedin: boolean = false;
+
   if (education && education.length > 0) {
     showEducation = true;
   }
+
   if (hobbies.data && hobbies.data.length > 0) {
     showHobbies = true;
   }
@@ -31,7 +49,7 @@ const TeamCard: React.FC = ({
   }
 
   const hobbiesLi: JSX.Element[] = [];
-  if (showHobbies === true) {
+  if (showHobbies) {
     hobbies.data.forEach((hobby: Hobby) =>
       hobbiesLi.push(
         <li className="mx-4" key={hobby.id}>
@@ -49,10 +67,10 @@ const TeamCard: React.FC = ({
         data-aos-delay="100"
       >
         <div className=" media-entry media-entry-original media-size0">
-          {showLinkedin === true ? (
+          {showLinkedin && (
             <a
               href={linkedin}
-              target="0"
+              target="_blank"
               style={{ backgroundColor: "transparent" }}
               className="text-center"
             >
@@ -62,36 +80,27 @@ const TeamCard: React.FC = ({
                 className="img-fluid"
               />
             </a>
-          ) : null}
+          )}
           <div className=" m-body">
             <h5 style={{ textAlign: "center" }}>{name}</h5>
             <p>{description}</p>
-            {showEducation === true ? (
+            {showEducation && (
               <p>
                 Education: <br />
                 <br /> <span style={{ color: "#AFA99E" }}>{education}</span>
               </p>
-            ) : null}
-            {showHobbies === true ? (
+            )}
+            {showHobbies && (
               <>
                 <p>Hobbies</p>
                 <ul className="text-white py-3 my-0">{hobbiesLi}</ul>{" "}
               </>
-            ) : null}
+            )}
           </div>
         </div>
       </div>
     </>
   );
-};
-
-TeamCard.propTypes = {
-  name: PropTypes.string,
-  img: PropTypes.object,
-  desc: PropTypes.string,
-  education: PropTypes.string,
-  hobbies: PropTypes.object,
-  linkedin: PropTypes.string,
 };
 
 export default TeamCard;

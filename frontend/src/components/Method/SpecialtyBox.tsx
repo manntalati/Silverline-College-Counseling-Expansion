@@ -1,7 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SpecialtyBox: React.FC = ({ color, title, desc }) => {
+interface SpecialtyBoxProps {
+  color: string;
+  title: string;
+  desc: string;
+}
+
+const SpecialtyBox: React.FC<SpecialtyBoxProps> = ({ color, title, desc }) => {
   return (
     <div className="container w-35">
       <div
@@ -13,14 +19,14 @@ const SpecialtyBox: React.FC = ({ color, title, desc }) => {
             <h2
               className="text-white my-0"
               style={{
-                fontWeight: "Bold",
+                fontWeight: "bold",
               }}
             >
               {title}
             </h2>
           </div>
           <div style={{ backgroundColor: "#333638" }}>
-            <p className="p-4 my-0" style={{ fontWeight: "Bold" }}>
+            <p className="p-4 my-0" style={{ fontWeight: "bold" }}>
               {desc}
             </p>
           </div>
@@ -31,9 +37,9 @@ const SpecialtyBox: React.FC = ({ color, title, desc }) => {
 };
 
 SpecialtyBox.propTypes = {
-  title: PropTypes.string,
-  color: PropTypes.string,
-  desc: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
 };
 
 export default SpecialtyBox;
