@@ -58,7 +58,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
             </li>
             <li className="has-children non">
               <button
-                href="/"
                 style={{
                   background: "none",
                   color: "#D7D6DA",

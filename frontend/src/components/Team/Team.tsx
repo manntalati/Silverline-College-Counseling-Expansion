@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar";
 import TeamCard from "./TeamCard";
 
-interface Member {
+export interface Hobby {
+  id: number;
+  attributes: {
+    hobby: string;
+  };
+}
+
+export interface Member {
   id: number;
   attributes: {
     name: string;
@@ -10,10 +17,14 @@ interface Member {
     education: string;
     linkedin: string;
     img: {
-      data: Array<{}>;
+      data: {
+        attributes: {
+          url: string;
+        }[];
+      };
     };
     hobbies: {
-      data: Array<{}>;
+      data: Hobby[];
     };
   };
 }
@@ -21,13 +32,13 @@ interface Member {
 const Team: React.FC = () => {
   const [members, setMembers] = useState<Member[]>([]);
 
-  // useEffect(() => {
-  //   (async () => await fetch("http://localhost:1337/api/members?populate=*")
-  //     .then(res => res.json())
-  //     .then(res => {
-  //       setMembers(res.data)
-  //     }))();
-  // }, [])
+  useEffect(() => {
+    (async () => await fetch("http://localhost:1337/api/members?populate=*")
+      .then(res => res.json())
+      .then(res => {
+        setMembers(res.data)
+      }))();
+  }, [])
 
   return (
     <>

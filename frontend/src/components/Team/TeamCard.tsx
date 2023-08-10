@@ -1,30 +1,7 @@
 import React from "react";
+import { Hobby, Member } from "./Team";
 
-interface Hobby {
-  id: number;
-  attributes: {
-    hobby: string;
-  };
-}
-
-interface TeamCardProps {
-  name: string;
-  img: {
-    data: {
-      attributes: {
-        url: string;
-      };
-    }[];
-  };
-  description: string;
-  education?: string;
-  hobbies: {
-    data: Hobby[];
-  };
-  linkedin?: string;
-}
-
-const TeamCard: React.FC<TeamCardProps> = ({
+const TeamCard: React.FC<Member["attributes"]> = ({
   name,
   img,
   description,
