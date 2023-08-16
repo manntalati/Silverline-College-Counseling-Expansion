@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 pt-7">
-            <h1 className="heading mb-4">SILVERLINE TUTORING</h1>
+            <h1 className="heading mb-4">SILVERLINE EDUCATIONAL ADVISORY SERVICES</h1>
             <h2 className="mb-5">
               Solving the education divide, one student at a time.
             </h2>
