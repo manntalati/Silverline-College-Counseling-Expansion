@@ -12,25 +12,25 @@ const content: Testimonial[] = [
     name: "Rithvik",
     des: "High School Sophomore",
     content:
-      "“ I got so much help for AP exams, and it was free to top it all off. My tutor was very helpful and helped me get 5's on my exams!”",
+      "“ Place review here”",
   },
   {
     name: "Shanti",
     des: "A Parent",
     content:
-      "“This service is so great, my child was struggling and lack confidence in math in general. Her tutor was great, and helped her through many problems and was patient with her. I would recommend Silverline Tutoring to any parent I meet”",
+      "“Place review here”",
   },
   {
     name: "Li Jian",
     des: "8th Grader",
     content:
-      "“Silverline Tutoring is great! I really liked the instant help feature on discord. I was able to get help with any questions I had instantly.”",
+      "“Place review here”",
   },
   {
     name: "Rithin",
     des: "High School Junior",
     content:
-      "“I was looking to get help in chess because there wasn't many opportunities for me to learn where I lived. My tutor helped me a lot. He taught me many different strategies from opening to endgames. He always made time to tutor me and did so with a passion.”",
+      "“Place review here”",
   },
 ];
 
