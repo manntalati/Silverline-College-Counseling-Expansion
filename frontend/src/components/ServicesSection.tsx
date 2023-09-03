@@ -12,11 +12,7 @@ const ServicesSection: React.FC = () => {
           <div className="col-lg-6" data-aos="fade-up">
             <span className="subheading">Services</span>
             <h2 className="heading mb-3">A Plethora of Resources</h2>
-            <p>
-              We understand that different students have different needs per
-              subject. Therefore, we have a team of dedicated tutors ready to
-              aid the student regardless of their needs.
-            </p>
+
           </div>
           <div
             className="col-lg-5 text-md-end"
@@ -79,10 +75,10 @@ const ServicesSection: React.FC = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Versatile Tutoring</h3>
+                    <h3>Extracurricular Programs</h3>
                     <span className="meta">
-                      We have 40+ tutors readily available to help any student
-                      in any subject from English to calculus.
+                    We offer specialized extracurricular programs to aid students in their success.
+
                     </span>
                   </div>
                 </div>
@@ -95,10 +91,9 @@ const ServicesSection: React.FC = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Flexibility</h3>
+                    <h3>Education Advisory</h3>
                     <span className="meta">
-                      Our tutors can adjust their meeting times and teaching
-                      styles per each student to maximize the student's benefit.
+                    We offer personalized educational advisory to enrich the high school experience of Silverline participants.
                     </span>
                   </div>
                 </div>
@@ -111,28 +106,14 @@ const ServicesSection: React.FC = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Community</h3>
+                    <h3>Educational Articles</h3>
                     <span className="meta">
-                      We have a vast community with helpful members and events
-                      such as trivia night, allowing each student to learn in a
-                      helpful environment.
+                    We offer articles that cover topics ranging from admissions to niche advice in order to provide Silverline participants with free access to resources.
                     </span>
                   </div>
                 </div>
                 <div className="destination">
                   <div className="thumb">
-                    <img
-                      src={quality}
-                      alt="icon for lessons"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="mt-4">
-                    <h3>Quality Lessons</h3>
-                    <span className="meta">
-                      Each tutor is carefully interviewed or certified prior to
-                      teaching, allowing for quality lesson plans for students.
-                    </span>
                   </div>
                 </div>
               </div>
