@@ -42,20 +42,14 @@ const CommunityEvents: React.FC = () => {
       <img src={lectureImg} alt="Lecture" style={imageStyle} />
       <div style={textStyle}>
         <h4 style={subHeaderStyle} data-aos="fade-up">
-          COMMUNITY EVENTS
+          FREE RESOURCES
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-          Lectures
+        Educational Blogs and Articles
         </h1>
         <p data-aos="fade-up">
-          We provide quick and informative lectures on all topics that our
-          members request; whether it would be on college admissions or tips on
-          self-improvement, the members typically decide the style and topic of
-          the lecture. In the past, we have hosted multiple college-related
-          lectures answering students' questions surrounding the whole process
-          and allowing them to better understand how to approach their
-          applications. Feel free to sign up to join our upcoming lectures{" "}
-          <a href="/">here.</a>
+        Our Content Writing team authors a plethora of valuable articles which cover a range of topics - from college admissions to niche advice regarding extracurriculars. We publish weekly blogs and articles which are free to access for Silverline Participants.
+
         </p>
       </div>
     </div>
