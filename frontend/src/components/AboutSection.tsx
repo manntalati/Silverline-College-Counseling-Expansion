@@ -19,16 +19,12 @@ const AboutSection: React.FC = () => {
             </h2>
 
             <p data-aos="fade-up" data-aos-delay="200">
-              Silverline Tutoring is an educational 501(c)(3) nonprofit
-              connecting tutors and students within our organization of over
-              5000 dedicated members. Founded by college and high school
-              students, this company recognizes the difficulty of learning—we’ve
-              all been there.
+            Silverline Tutoring is an educational 501(c)(3) nonprofit connecting high school students with enriching and inspiring resources to amplifying their education and extracurricular performance within our organization of over 5000 dedicated members. Founded by college and high school students, this company recognizes the difficulty of navigating high school — we’ve all been there.
+
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
-              From the depths of math to complex texts in English, every student
-              has struggled. We want to bridge this divide in education by
-              providing free tutoring to any student.
+            From the difficulties of finding extracurriculars, to the difficulties of succeeding in them, every student has struggled. We want to provide students with the ability to break past these barriers within extracurricular and educational performance.
+
             </p>
             <p className="my-6" data-aos="fade-up" data-aos-delay="300">
               <a href="about.html" className="btn btn-primary">
