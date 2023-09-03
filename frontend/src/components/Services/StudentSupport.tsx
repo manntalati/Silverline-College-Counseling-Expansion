@@ -45,20 +45,19 @@ const StudentSupport: React.FC = () => {
           STUDENT SUPPORT
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-          Resources
+        Extracurricular Programs
         </h1>
         <p data-aos="fade-up">
-          Here at Silverline, we offer various resources to help students on
-          standardized exams. We provide SAT problems of the day that allow
-          students to practice answering exam questions every day. We also
-          provide different online resources that will allow them to master any
-          subject they are struggling with. As for AP resources, along with
-          providing tutoring for every AP, we supply resources and free online
-          resources for every AP, which allows students to master these
-          subjects. From Princeton Review to Tutor Doctor, Silverline has all
-          the resources necessary for students. General resources can also be
-          found through the{" "}
-          <a href="https://discord.com/invite/kD8aMaX2gP">Discord Community.</a>
+        Our Silverline staff lead valuable and enriching extracurricular programs within the following areas:
+        
+      <ol>Debate</ol>
+      <ol>Science Olympiad</ol>
+      <ol>Research</ol>
+      <ol>Robotics/FIRST Program</ol>
+      <ol>FBLA/DECA</ol>
+
+Each program contains specialized curriculum, materials, and exclusive Discord benefits and categories.
+
         </p>
       </div>
       <img

@@ -47,16 +47,10 @@ const FoundingIdea: React.FC = () => {
           OUR FOUNDING IDEA
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-          Tutoring
+        Educational Advisory
         </h1>
         <p data-aos="fade-up">
-          Silverline Tutoring provides high-quality, free one-on-one tutoring.
-          Our tutors are experts at the subjects they tutor, often in college
-          and pursuing a degree in the subject they teach. They conduct sessions
-          with students over the communication platform Discord or through other
-          virtual meeting platforms like Zoom. All meetings are recorded to
-          ensure that the environment is safe for both the student and tutor
-          alike.
+        We provide educational advisory tailored specifically to the needs of each student that participates within Silverline’s programs. From admissions to extracurriculars, we are here to support high school students on the path to success.
         </p>
       </div>
       <img src={tutoringImg} alt="Tutoring" style={imageStyle} />
