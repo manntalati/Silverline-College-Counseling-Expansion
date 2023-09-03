@@ -25,16 +25,7 @@ const Opportunities: React.FC = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          As high schoolers, we acknowledge the difficulty in finding
-          opportunities such as internships or research positions. In our
-          community, we have an “Opportunities” hub that allows students to find
-          positions in these areas. Whenever a new opportunity is posted,
-          students who have signed up to receive notifications will be notified
-          of the posting. In this sense, Silverline is a diverse organization
-          that provides for students beyond just tutoring. Students receive
-          tutoring, but even more, students also have the chance to improve
-          their college applications or resumes, making Silverline the
-          all-in-one community for students.
+As high schoolers, we acknowledge the difficulty in finding opportunities such as internships or research positions. In our community, we have an “Opportunities” hub that allows students to find positions in these areas. Whenever a new opportunity is posted, students who have signed up to receive notifications will be notified of the posting. In this sense, Silverline is a diverse organization that provides for students beyond just tutoring. Students receive tutoring, but even more, students also have the chance to improve their college applications or resumes, making Silverline the all-in-one community for students.
         </p>
       </div>
     </div>
