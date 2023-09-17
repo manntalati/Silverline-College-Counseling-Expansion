@@ -48,14 +48,14 @@ function App(): JSX.Element {
               </>
             }
           />
-          <Route path="method" element={<Method />} />
-          <Route path="partners" element={<Partners />} />
-          <Route path="reviews" element={<Reviews />} />
-          <Route path="community" element={<OurCommunity />} />
-          <Route path="services" element={<Services />} />
-          <Route path="about" element={<About />} />
-          <Route path="team" element={<Team />} />
-          <Route path="getinvolved" element={<GetInvolved />} />
+          <Route path="/method" element={<Method />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/community" element={<OurCommunity />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/getinvolved" element={<GetInvolved />} />
         </Routes>
       </Router>
     </div>
