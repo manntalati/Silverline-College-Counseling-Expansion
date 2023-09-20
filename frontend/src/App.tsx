@@ -54,7 +54,6 @@ function App(): JSX.Element {
           <Route path="community" element={<OurCommunity />} />
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
-          <Route path="team" element={<Team />} />
           <Route path="getinvolved" element={<GetInvolved />} />
         </Routes>
       </Router>
