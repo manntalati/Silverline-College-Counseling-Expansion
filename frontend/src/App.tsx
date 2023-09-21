@@ -55,6 +55,8 @@ function App(): JSX.Element {
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="getinvolved" element={<GetInvolved />} />
+/>
+
         </Routes>
       </Router>
     </div>
