@@ -81,7 +81,7 @@ const Lectures: React.FC = () => {
                   </div>
                   <div style={overviewStyle}>
                     <p>
-                    Mr. Campbell answered attendees' questions live through Zoom about the admissions process. This lecture gave many high school students insight into the perspective of an admissions officer
+                    Mr. Campbell answered attendees' questions live through Zoom about the admissions process. This lecture gave many high school students insight into the perspective of an admissions officer.
                     </p>
                     
                   </div>
@@ -102,7 +102,7 @@ const Lectures: React.FC = () => {
                   <div style={overviewStyle}>
                     <p>
                     Emily joined us to talk about the college application process. The main focus of her lecture was figuring out the college application in terms of finances. 
-                    She explained the different financial avenues to achieve higher education and how to make college as affordable as possible
+                    She explained the different financial avenues to achieve higher education and how to make college as affordable as possible.
                     </p>
 
                   </div>
@@ -124,7 +124,7 @@ const Lectures: React.FC = () => {
                   </div>
                   <div style={overviewStyle}>
                     <p>
-                    Vishant’s lecture focused on optimizing your college application by centering it around a common theme that reflects you as a person, and the activities that you did
+                    Vishant’s lecture focused on optimizing your college application by centering it around a common theme that reflects you as a person, and the activities that you did.
                     </p>
                   </div>
                 </div>
