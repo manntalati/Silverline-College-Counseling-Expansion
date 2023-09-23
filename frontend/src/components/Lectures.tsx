@@ -2,7 +2,6 @@ import React from "react";
 import tom from "../images/Home/lectures/tom.webp";
 import emily from "../images/Home/lectures/emily.webp";
 import vishant from "../images/Home/lectures/vishant.webp";
-import shivani from "../images/Home/lectures/shivani.webp";
 
 const Lectures: React.FC = () => {
   const lectureStyle: React.CSSProperties = {
