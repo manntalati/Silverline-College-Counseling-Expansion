@@ -47,10 +47,10 @@ const FoundingIdea: React.FC = () => {
           OUR FOUNDING IDEA
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-        Educational Advisory
+        Extracurricular Programs
         </h1>
         <p data-aos="fade-up">
-        We provide educational advisory tailored specifically to the needs of each student that participates within Silverline’s programs. From admissions to extracurriculars, we are here to support high school students on the path to success.
+        We offer specialized extracurricular programs led by students who are top performers in each activity to aid students in their success.
         </p>
       </div>
       <img src={tutoringImg} alt="Tutoring" style={imageStyle} />

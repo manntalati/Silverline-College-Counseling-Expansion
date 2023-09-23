@@ -109,7 +109,7 @@ const Reach: React.FC = () => {
           style={{ paddingTop: "20px" }}
         >
           <a
-            href="community.html#target"
+            href="./community"
             className="btn btn-primary text-lg-center"
           >
             View More Statistics

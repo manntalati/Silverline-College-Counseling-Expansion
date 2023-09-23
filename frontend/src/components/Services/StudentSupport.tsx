@@ -45,16 +45,20 @@ const StudentSupport: React.FC = () => {
           STUDENT SUPPORT
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-        Extracurricular Programs
+        Access to Resources
         </h1>
         <p data-aos="fade-up">
-        Our Silverline staff lead valuable and enriching extracurricular programs within the following areas:
-        
-      <ol>Debate</ol>
-      <ol>Science Olympiad</ol>
-      <ol>Research</ol>
-      <ol>Robotics/FIRST Program</ol>
-      <ol>FBLA/DECA</ol>
+        We offer top of the line resources to help students thrive in their activities.
+
+      <div>
+  <ul>
+    <li>Debate</li>
+    <li>Science Olympiad</li>
+    <li>Research</li>
+    <li>Robotics/FIRST Program</li>
+    <li>FBLA/DECA</li>
+  </ul>
+</div>
 
 Each program contains specialized curriculum, materials, and exclusive Discord benefits and categories.
 

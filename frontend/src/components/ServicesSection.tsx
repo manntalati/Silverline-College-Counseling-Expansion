@@ -77,8 +77,7 @@ const ServicesSection: React.FC = () => {
                   <div className="mt-4">
                     <h3>Extracurricular Programs</h3>
                     <span className="meta">
-                    We offer specialized extracurricular programs to aid students in their success.
-
+                    We offer specialized extracurricular programs led by students who are top performers in each activity to aid students in their success.
                     </span>
                   </div>
                 </div>
@@ -91,9 +90,9 @@ const ServicesSection: React.FC = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Education Advisory</h3>
+                    <h3>Educational Advisory</h3>
                     <span className="meta">
-                    We offer personalized educational advisory to enrich the high school experience of Silverline participants.
+                    We offer top of the line resources to help students thrive in their activities.                    
                     </span>
                   </div>
                 </div>
@@ -106,9 +105,9 @@ const ServicesSection: React.FC = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <h3>Educational Articles</h3>
+                    <h3>Content</h3>
                     <span className="meta">
-                    We offer articles that cover topics ranging from admissions to niche advice in order to provide Silverline participants with free access to resources.
+                    Silverline has constant educational content to keep students up to date with news, events, and things they need to know revolving around their extracurriculars.
                     </span>
                   </div>
                 </div>
@@ -122,9 +121,10 @@ const ServicesSection: React.FC = () => {
           <br />
           <br />
           <p className="my-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="services.html" className="btn btn-primary text-lg-center">
-              View all services
-            </a>
+          <a href="./services" className="btn btn-primary text-lg-center">
+          View all services
+          </a>
+
           </p>
         </div>
       </div>

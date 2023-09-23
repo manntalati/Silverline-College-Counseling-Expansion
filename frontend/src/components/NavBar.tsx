@@ -12,9 +12,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     case "home":
       elementName = "home";
       break;
-    case "about":
-      elementName = "about";
-      break;
     case "services":
       elementName = "services";
       break;
@@ -68,9 +65,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
                 About Us ▾
               </button>
               <ul className="dropdown">
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
                 <li>
                   <Link to="/method">Method</Link>
                 </li>

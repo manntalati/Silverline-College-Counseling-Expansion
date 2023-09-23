@@ -45,11 +45,10 @@ const CommunityEvents: React.FC = () => {
           FREE RESOURCES
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-        Educational Blogs and Articles
+          Content
         </h1>
         <p data-aos="fade-up">
-        Our Content Writing team authors a plethora of valuable articles which cover a range of topics - from college admissions to niche advice regarding extracurriculars. We publish weekly blogs and articles which are free to access for Silverline Participants.
-
+        Silverline has constant educational content to keep students up to date with news, events, and things they need to know revolving around their extracurriculars
         </p>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React from "react";
 import tom from "../images/Home/lectures/tom.webp";
 import emily from "../images/Home/lectures/emily.webp";
 import vishant from "../images/Home/lectures/vishant.webp";
-import shivani from "../images/Home/lectures/shivani.webp";
 
 const Lectures: React.FC = () => {
   const lectureStyle: React.CSSProperties = {
@@ -82,15 +81,9 @@ const Lectures: React.FC = () => {
                   </div>
                   <div style={overviewStyle}>
                     <p>
-                      Our most recent lecture was by Pomona admissions
-                      officer Tom Campbell. In the questions and answer
-                      discussion, Tom answered attendees' questions live
-                      through Zoom about the admissions process. Overall,
-                      this lecture garnered great interest because it gave
-                      high schoolers insight into the perspective of an
-                      admissions officer.
+                    Mr. Campbell answered attendees' questions live through Zoom about the admissions process. This lecture gave many high school students insight into the perspective of an admissions officer.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/25/22</span></p>
+                    
                   </div>
                 </div>
               </div>
@@ -108,13 +101,10 @@ const Lectures: React.FC = () => {
                   <div style={designationStyle}>Junior @ Marist College</div>
                   <div style={overviewStyle}>
                     <p>
-                      Emily Hanscom, a junior at Marist College, joined us
-                      for our third lecture. The main focus of her lecture
-                      was figuring out the college application in terms of
-                      finances. For example, she explained the different
-                      financial avenues to achieve higher education.
+                    Emily joined us to talk about the college application process. The main focus of her lecture was figuring out the college application in terms of finances. 
+                    She explained the different financial avenues to achieve higher education and how to make college as affordable as possible.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/19/22</span></p>
+
                   </div>
                 </div>
               </div>
@@ -134,41 +124,8 @@ const Lectures: React.FC = () => {
                   </div>
                   <div style={overviewStyle}>
                     <p>
-                      Our second lecture was with Vishant Raajkumar – a
-                      rising freshman at Carnegie Mellon University.
-                      Vishant spoke about the college admissions process
-                      but focused more on the most optimal ways to frame an
-                      application.
+                    Vishant’s lecture focused on optimizing your college application by centering it around a common theme that reflects you as a person, and the activities that you did.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/14/22</span></p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4" style={lectureStyle}>
-                <a href="#" target="_blank" style={{ background: "none" }}>
-                  <img
-                    src={shivani}
-                    alt="Shivani"
-                    className="img-fluid"
-                    style={imageStyle}
-                  />
-                </a>
-                <div style={lectureInfoStyle}>
-                  <h5 style={lecturerNameStyle}>Shivanni Satish</h5>
-                  <div style={designationStyle}>
-                    Freshman @ University of Texas Dallas
-                  </div>
-                  <div style={overviewStyle}>
-                    <p>
-                      Our first lecture was with University of Dallas
-                      freshman Shivanni Satish. During this lecture, she
-                      spoke about tips for the Common Application and her
-                      own experience with it. This lecture received a fair
-                      amount of attention from Silverline students because
-                      it thoroughly explained how to be successful during
-                      the college process.
-                    </p>
-                    <p>Date: <span style={dateStyle}>8/13/22</span></p>
                   </div>
                 </div>
               </div>

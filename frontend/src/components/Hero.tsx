@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 pt-7">
-            <h1 className="heading mb-4">SILVERLINE EDUCATIONAL ADVISORY SERVICES</h1>
+            <h1 className="heading mb-4">Silverline Educational Advisory Services</h1>
             <h2 className="mb-5">
               Solving the education divide, one student at a time.
             </h2>
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
               </p>
               <p className="my-4">
                 <a
-                  href="/get-involved.html"
+                  href="/getinvolved"
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               </p>
               <p className="my-4">
                 <a
-                  href="/get-involved.html"
+                  href="/getinvolved"
                   target="_blank"
                   className="btn btn-primary"
                 >
