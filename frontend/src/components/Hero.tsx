@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
               </p>
               <p className="my-4">
                 <a
-                  href="/get-involved.html"
+                  href="/getinvolved"
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               </p>
               <p className="my-4">
                 <a
-                  href="/get-involved.html"
+                  href="/getinvolved"
                   target="_blank"
                   className="btn btn-primary"
                 >
