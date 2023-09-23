@@ -90,7 +90,7 @@ const Lectures: React.FC = () => {
                       high schoolers insight into the perspective of an
                       admissions officer.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/25/22</span></p>
+                    
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Lectures: React.FC = () => {
                       finances. For example, she explained the different
                       financial avenues to achieve higher education.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/19/22</span></p>
+
                   </div>
                 </div>
               </div>
@@ -140,35 +140,6 @@ const Lectures: React.FC = () => {
                       but focused more on the most optimal ways to frame an
                       application.
                     </p>
-                    <p>Date: <span style={dateStyle}>8/14/22</span></p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4" style={lectureStyle}>
-                <a href="#" target="_blank" style={{ background: "none" }}>
-                  <img
-                    src={shivani}
-                    alt="Shivani"
-                    className="img-fluid"
-                    style={imageStyle}
-                  />
-                </a>
-                <div style={lectureInfoStyle}>
-                  <h5 style={lecturerNameStyle}>Shivanni Satish</h5>
-                  <div style={designationStyle}>
-                    Freshman @ University of Texas Dallas
-                  </div>
-                  <div style={overviewStyle}>
-                    <p>
-                      Our first lecture was with University of Dallas
-                      freshman Shivanni Satish. During this lecture, she
-                      spoke about tips for the Common Application and her
-                      own experience with it. This lecture received a fair
-                      amount of attention from Silverline students because
-                      it thoroughly explained how to be successful during
-                      the college process.
-                    </p>
-                    <p>Date: <span style={dateStyle}>8/13/22</span></p>
                   </div>
                 </div>
               </div>
