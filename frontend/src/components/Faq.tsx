@@ -48,7 +48,7 @@ const FAQ: React.FC = () => {
     {
       question: "1. How do I signup for tutoring?",
       answer:
-        'Fill out the <a href="">student form</a> located under "get involved," and feel free to join our Discord server to learn more.',
+        'Fill out the <a href="./getinvolved">student form</a> located under "get involved," and feel free to join our Discord server to learn more.',
     },
     {
       question: "2. Where does tutoring happen?",
@@ -63,7 +63,7 @@ const FAQ: React.FC = () => {
     {
       question: "4. How do I signup to be a tutor?",
       answer:
-        'Fill out the <a href="">tutor form</a> located under "get involved," and we will reach out to you. Be prepared to answer questions during an interview as well as a short 5-10 minute lesson to demonstrate your skills in teaching. Afterwards, we will determine if you are suited to teach and the specific subjects.',
+        'Fill out the <a href="./getinvolved">tutor form</a> located under "get involved," and we will reach out to you. Be prepared to answer questions during an interview as well as a short 5-10 minute lesson to demonstrate your skills in teaching. Afterwards, we will determine if you are suited to teach and the specific subjects.',
     },
     {
       question: "5. What is the experience of the tutors?",
@@ -73,7 +73,7 @@ const FAQ: React.FC = () => {
     {
       question: "6. Who runs Silverline Tutoring?",
       answer:
-        'Silverline tutoring is run by high schoolers and college students. Our full team can be found <a href="team.html">here</a>.',
+        'Silverline tutoring is run by high schoolers and college students. Our full team can be found <a href="./team">here</a>.',
     },
   ];
 
