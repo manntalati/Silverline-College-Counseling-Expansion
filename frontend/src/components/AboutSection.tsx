@@ -24,11 +24,7 @@ const AboutSection: React.FC = () => {
             <p data-aos="fade-up" data-aos-delay="200">
             From the difficulties of finding extracurriculars, to the difficulties of succeeding in them, every student has struggled. We want to provide students with the ability to break past these barriers within extracurricular and educational performance.
             </p>
-            <p className="my-6" data-aos="fade-up" data-aos-delay="300">
-              <a href="about.html" className="btn btn-primary">
-                Read more
-              </a>
-            </p>
+
           </div>
           <div className="col-lg-6 pt-4 px-4">
             <div className="row">

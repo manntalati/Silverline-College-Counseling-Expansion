@@ -122,9 +122,10 @@ const ServicesSection: React.FC = () => {
           <br />
           <br />
           <p className="my-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="services.html" className="btn btn-primary text-lg-center">
-              View all services
-            </a>
+          <a href="./services" className="btn btn-primary text-lg-center">
+          View all services
+          </a>
+
           </p>
         </div>
       </div>
