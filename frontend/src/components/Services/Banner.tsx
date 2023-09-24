@@ -29,7 +29,7 @@ const Banner: React.FC = () => {
     <div style={bannerStyle}>
       <img src={bannerImg} alt="banner" style={imageStyle} />
       <h1 style={titleStyle} data-aos="fade-up" data-aos-delay="100">
-        Our Services
+        About Our Services
       </h1>
     </div>
   );
