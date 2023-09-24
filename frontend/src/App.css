@@ -1,0 +1,82 @@
+/* Global styles for dark mode */
+
+.dark.bg {
+	background-color: #181a1b;
+	color: #d6d3cd;
+}
+
+/* Additional styles for dark mode */
+.dark.primary {
+	color: #4d68e1;
+}
+
+.dark.primary-bg {
+	background-color: #4d68e1;
+}
+
+.dark.secondary {
+	color: #9784a1;
+}
+
+.dark.secondary-bg {
+	background-color: #9784a1;
+}
+
+.dark.accent {
+	color: #3d4469;
+}
+
+.dark.accent-bg {
+	background-color: #3d4469;
+}
+
+.dark.text {
+	color: #d6d3cd;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+	color: white;
+}
+
+/* Global styles for light mode */
+
+.light.bg {
+	background-color: #d6d3cd;
+}
+
+/* Additional styles for light mode */
+.light.primary {
+	color: #4d68e1;
+}
+
+.light.primary-bg {
+	background-color: #4d68e1;
+}
+
+.light.secondary {
+	color: #fdfcfd;
+}
+
+.light.secondary-bg {
+	background-color: #fdfcfd;
+}
+
+.light.accent {
+	color: #050508;
+}
+
+.light.accent-bg {
+	background-color: #050508;
+}
+
+.light.text {
+	color: #181a1b;
+}
+
+.light h1,
+.light h2,
+.light h3 {
+	color: black;
+}

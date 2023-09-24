@@ -21,45 +21,48 @@ import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import { ThemeProvider } from "./components/ThemeContext";
 
 function App(): JSX.Element {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
-  return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <NavBar pageName="home" />
-                <Hero />
-                <AboutSection />
-                <ServicesSection />
-                <Reach />
-                <Lectures />
-                {/* <Team /> */}
-                <Testimonials />
-                <Faq />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/method" element={<Method />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/community" element={<OurCommunity />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/getinvolved" element={<GetInvolved />} />
-        </Routes>
-      </Router>
-    </div>
-  );
+	return (
+		<ThemeProvider>
+			<div className="App">
+				<Router>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<>
+									<NavBar pageName="home" />
+									<Hero />
+									<AboutSection />
+									<ServicesSection />
+									<Reach />
+									<Lectures />
+									{/* <Team /> */}
+									<Testimonials />
+									<Faq />
+									<Footer />
+								</>
+							}
+						/>
+						<Route path="/method" element={<Method />} />
+						<Route path="/partners" element={<Partners />} />
+						<Route path="/reviews" element={<Reviews />} />
+						<Route path="/community" element={<OurCommunity />} />
+						<Route path="/services" element={<Services />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/team" element={<Team />} />
+						<Route path="/getinvolved" element={<GetInvolved />} />
+					</Routes>
+				</Router>
+			</div>
+		</ThemeProvider>
+	);
 }
 
 export default App;
