@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import CountUp from "react-countup";
 
 const Reach: React.FC = () => {
+  const [isCounting, setIsCounting] = useState(false);
+
+  useEffect(() => {
+    setIsCounting(true);
+  }, []);
+
   return (
     <>
       <div
@@ -26,7 +33,11 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    66
+                    {isCounting ? (
+                      <CountUp end={66} duration={3} />
+                    ) : (
+                      0
+                    )}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Countries
@@ -48,7 +59,11 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    5000
+                    {isCounting ? (
+                      <CountUp end={5000} duration={3} />
+                    ) : (
+                      0
+                    )}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Members
@@ -70,7 +85,11 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                   6 
+                    {isCounting ? (
+                      <CountUp end={6} duration={3} />
+                    ) : (
+                      0
+                    )}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Extracurricular programs
@@ -92,7 +111,11 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    50
+                    {isCounting ? (
+                      <CountUp end={50} duration={3} />
+                    ) : (
+                      0
+                    )}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Employees
@@ -108,10 +131,7 @@ const Reach: React.FC = () => {
           data-aos-delay="300"
           style={{ paddingTop: "20px" }}
         >
-          <a
-            href="./community"
-            className="btn btn-primary text-lg-center"
-          >
+          <a href="./community" className="btn btn-primary text-lg-center">
             View More Statistics
           </a>
         </p>
