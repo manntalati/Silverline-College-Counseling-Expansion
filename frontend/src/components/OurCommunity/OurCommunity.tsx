@@ -17,9 +17,9 @@ const OurCommunity: React.FC = () => {
       <AboutOurCommunity />
       <UpcomingEvents />
       <Statistics />
-      <QuickHelp />
+      {/* <QuickHelp /> */}
       <OurReach />
-      <Opportunities />
+      {/* <Opportunities /> */}
       <Footer />
     </>
   );
