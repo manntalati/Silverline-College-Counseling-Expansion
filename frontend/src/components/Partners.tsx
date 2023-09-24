@@ -37,7 +37,7 @@ const Partners: React.FC = () => {
                 <div className="m-body">
                   <h6 style={{ padding: "5px", borderRadius: "5px", background: "linear-gradient(90deg, rgba(90,138,236,1) 0%, rgba(230,32,254,1) 100%)", textAlign: "center" }}>The Pond</h6>
                   <p>
-                    The Pond is an all-in-one service for students applying to college. The Pond provides students with a personalized program for college entrance so they always know what to do next and how to do it. The Pond utilizes AI software to help students with the college process. To date, over 60,000 students have used the Pond to develop college lists, and they also have over 15,000 active users of the platform. The Pond and Silverline Tutoring work together to help students from all different backgrounds.
+                    The Pond is an all-in-one service for students applying to college. The Pond provides students with a personalized program for college entrance so they always know what to do next and how to do it. The Pond utilizes AI software to help students with the college process. To date, over 60,000 students have used the Pond to develop college lists, and they also have over 15,000 active users of the platform. The Pond and Silverline work together to help students from all different backgrounds.
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Partners: React.FC = () => {
                 <div className="m-body">
                   <h6 style={{ padding: "5px", borderRadius: "5px", background: "linear-gradient(90deg, rgba(244,21,32,1) 0%, rgba(0,0,0,1) 74%)", textAlign: "center" }}>Panda Express</h6>
                   <p>
-                    Panda Express is an American fast-food restaurant chain that serves American Chinese cuisine. With over 2,200 locations, it is the largest Asian-segment restaurant chain in the United States. They are working with Silverline Tutoring to help fundraise and donate resources to children in India and Ethiopia.
+                    Panda Express is an American fast-food restaurant chain that serves American Chinese cuisine. With over 2,200 locations, it is the largest Asian-segment restaurant chain in the United States. They are working with Silverline to help fundraise and donate resources to children in India and Ethiopia.
                   </p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const Partners: React.FC = () => {
                 <div className="m-body">
                   <h6 style={{ padding: "5px", borderRadius: "5px", background: "linear-gradient(90deg, rgba(69,20,0,1) 0%, rgba(168,22,18,1) 100%)", textAlign: "center" }}>Chipotle of Drumhill Chelmsford, MA</h6>
                   <p>
-                    Chipotle Mexican Grill, Inc. is an American chain of fast-casual restaurants that operates in over 5 different countries with nearly 3,000 locations. In September of 2022, they worked with Silverline Tutoring to help fundraise money. This fundraiser allowed Silverline to become one step closer to solving the educational divide. Money was redistributed to Silverline heads in Africa in order to donate to those in need.
+                    Chipotle Mexican Grill, Inc. is an American chain of fast-casual restaurants that operates in over 5 different countries with nearly 3,000 locations. In September of 2022, they worked with Silverline to help fundraise money. This fundraiser allowed Silverline to become one step closer to solving the educational divide. Money was redistributed to Silverline heads in Africa in order to donate to those in need.
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const Partners: React.FC = () => {
                 <div className="m-body">
                   <h6 style={{ padding: "5px", borderRadius: "5px", background: "linear-gradient(90deg, rgba(87,41,50,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%)", textAlign: "center" }}>Chelmsford High School</h6>
                   <p>
-                    Silverline Tutoring is partnered with Chelmsford High School. Chelmsford High School is a high school located in Chelmsford, Massachusetts, and serves nearly 1,500 students. Silverline Tutoring works to provide students with help for all academic classes and provide volunteer opportunities to students.
+                    Silverline is partnered with Chelmsford High School. Chelmsford High School is a high school located in Chelmsford, Massachusetts, and serves nearly 1,500 students. Silverline works to provide students with help for all academic classes and provide volunteer opportunities to students.
                   </p>
                 </div>
               </div>
