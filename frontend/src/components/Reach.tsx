@@ -70,10 +70,10 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                   # 
+                   6 
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
-                   of extracurricular programs
+                    Extracurricular programs
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Reach: React.FC = () => {
                     50
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
-                    employees
+                    Employees
                   </p>
                 </div>
               </div>
