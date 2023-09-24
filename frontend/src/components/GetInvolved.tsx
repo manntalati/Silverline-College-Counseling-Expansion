@@ -23,7 +23,7 @@ const GetInvolved: React.FC = () => {
         style={{
           backgroundColor: "#181A1B",
           width: "100%",
-          padding: "100px",
+          padding: "80px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -34,7 +34,7 @@ const GetInvolved: React.FC = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "start",
-            width: "60%",
+            width: "50%",
           }}
         >
           <h1
@@ -43,7 +43,22 @@ const GetInvolved: React.FC = () => {
               fontWeight: 600,
             }}
           >
-            Get Involved Today
+            Get Involved Today 
+            <a
+              href="add discord link here"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: "#7289DA", // Discord color
+                color: "white",
+                padding: "10px 20px",
+                marginLeft: "20px",
+                borderRadius: "5px",
+                textDecoration: "none",
+              }}
+            >
+              Discord
+            </a>
           </h1>
           <br />
           <p
@@ -52,10 +67,9 @@ const GetInvolved: React.FC = () => {
               fontWeight: 500,
             }}
           >
-            Getting involved with Silverline Tutoring has never been easier.
-            Below are two forms for applicants based on interested in being
-            tutored or becoming a tutor. The process for either is relatively
-            simple.
+Getting involved with Silverline has never been easier, click the button below to join our community. 
+In our discord, you’ll meet students of all ages with similar interests. 
+Alongside our employees, students help each other and discuss everything from extracurriculars to sports
           </p>
           <p
             style={{
