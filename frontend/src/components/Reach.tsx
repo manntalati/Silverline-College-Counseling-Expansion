@@ -1,12 +1,28 @@
 import React, { useState, useEffect } from "react";
-import CountUp from "react-countup";
 
 const Reach: React.FC = () => {
   const [isCounting, setIsCounting] = useState(false);
+  const [countriesCount, setCountriesCount] = useState(0);
+  const [membersCount, setMembersCount] = useState(0);
+  const [programsCount, setProgramsCount] = useState(0);
+  const [employeesCount, setEmployeesCount] = useState(0);
 
   useEffect(() => {
     setIsCounting(true);
-  }, []);
+
+    if (isCounting) {
+      const interval = setInterval(() => {
+        setCountriesCount((prevCount) => (prevCount < 66 ? prevCount + 1 : 66));
+        setMembersCount((prevCount) => (prevCount < 5000 ? prevCount + 1 : 5000));
+        setProgramsCount((prevCount) => (prevCount < 6 ? prevCount + 1 : 6));
+        setEmployeesCount((prevCount) => (prevCount < 50 ? prevCount + 1 : 50));
+      }, 30);
+
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 3000);
+    }
+  }, [isCounting]);
 
   return (
     <>
@@ -33,11 +49,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    {isCounting ? (
-                      <CountUp end={66} duration={3} />
-                    ) : (
-                      0
-                    )}
+                    {countriesCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Countries
@@ -59,11 +71,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    {isCounting ? (
-                      <CountUp end={5000} duration={3} />
-                    ) : (
-                      0
-                    )}
+                    {membersCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Members
@@ -85,11 +93,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    {isCounting ? (
-                      <CountUp end={6} duration={3} />
-                    ) : (
-                      0
-                    )}
+                    {programsCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Extracurricular programs
@@ -111,11 +115,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    {isCounting ? (
-                      <CountUp end={50} duration={3} />
-                    ) : (
-                      0
-                    )}
+                    {employeesCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Employees
