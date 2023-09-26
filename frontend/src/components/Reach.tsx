@@ -71,7 +71,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    {membersCount}
+                    5000
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Members
