@@ -10,7 +10,6 @@ import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services/Services";
-import Team from "./components/Team/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
@@ -41,21 +40,19 @@ function App(): JSX.Element {
                 <ServicesSection />
                 <Reach />
                 <Lectures />
-                {/* <Team /> */}
                 <Testimonials />
                 <Faq />
                 <Footer />
               </>
             }
           />
-          <Route path="/method" element={<Method />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/community" element={<OurCommunity />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/getinvolved" element={<GetInvolved />} />
+          <Route path="method" element={<Method />} />
+          <Route path="partners" element={<Partners />} />
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="community" element={<OurCommunity />} />
+          <Route path="services" element={<Services />} />
+          <Route path="about" element={<About />} />
+          <Route path="getinvolved" element={<GetInvolved />} />
         </Routes>
       </Router>
     </div>

@@ -18,9 +18,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     case "method":
       elementName = "method";
       break;
-    case "team":
-      elementName = "team";
-      break;
     case "partners":
       elementName = "partners";
       break;
