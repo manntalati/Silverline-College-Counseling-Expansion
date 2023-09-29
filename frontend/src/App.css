@@ -1,82 +1,71 @@
 /* Global styles for dark mode */
-
 .dark.bg {
-	background-color: #181a1b;
-	color: #d6d3cd;
+    background-color: #d6d3cd;
+    color: #2e2e2e;
 }
 
 /* Additional styles for dark mode */
 .dark.primary {
-	color: #4d68e1;
+    color: #4d68e1;
 }
 
 .dark.primary-bg {
-	background-color: #4d68e1;
+    background-color: #4d68e1;
 }
 
 .dark.secondary {
-	color: #9784a1;
+    color: #fdfcfd;
 }
 
 .dark.secondary-bg {
-	background-color: #9784a1;
+    background-color: #2e2e2e;
 }
 
 .dark.accent {
-	color: #3d4469;
+    color: #333333;
 }
 
 .dark.accent-bg {
-	background-color: #3d4469;
+    background-color: #050508;
 }
 
-.dark.text {
-	color: #d6d3cd;
-}
-
-.dark h1,
-.dark h2,
-.dark h3 {
-	color: white;
+/* Navbar color for dark mode */
+.dark.navbar {
+    background-color: #333333;
 }
 
 /* Global styles for light mode */
-
 .light.bg {
-	background-color: #d6d3cd;
+    background-color: #181a1b;
+    color: #a7a7a7;
 }
 
 /* Additional styles for light mode */
 .light.primary {
-	color: #4d68e1;
+    color: #4d68e1;
 }
 
 .light.primary-bg {
-	background-color: #4d68e1;
+    background-color: #4d68e1;
 }
 
 .light.secondary {
-	color: #fdfcfd;
+    color: #9784a1;
 }
 
 .light.secondary-bg {
-	background-color: #fdfcfd;
+    background-color: #9784a1;
 }
 
 .light.accent {
-	color: #050508;
+    color: #3d4469;
 }
 
 .light.accent-bg {
-	background-color: #050508;
+    background-color: #3d4469;
 }
 
-.light.text {
-	color: #181a1b;
-}
-
-.light h1,
-.light h2,
-.light h3 {
-	color: black;
+/* Navbar color for light mode */
+.light.navbar {
+    background-color: #616060;
 }
