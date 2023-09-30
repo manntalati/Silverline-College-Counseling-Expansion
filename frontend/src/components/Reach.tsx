@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Reach: React.FC = () => {
+  const [isCounting, setIsCounting] = useState(false);
+  const [countriesCount, setCountriesCount] = useState(0);
+  const [membersCount, setMembersCount] = useState(0);
+  const [programsCount, setProgramsCount] = useState(0);
+  const [employeesCount, setEmployeesCount] = useState(0);
+
+  useEffect(() => {
+    setIsCounting(true);
+
+    if (isCounting) {
+      const interval = setInterval(() => {
+        setCountriesCount((prevCount) => (prevCount < 66 ? prevCount + 1 : 66));
+        setMembersCount((prevCount) => (prevCount < 5000 ? prevCount + 1 : 5000));
+        setProgramsCount((prevCount) => (prevCount < 6 ? prevCount + 1 : 6));
+        setEmployeesCount((prevCount) => (prevCount < 50 ? prevCount + 1 : 50));
+      }, 30);
+
+      setTimeout(() => {
+        clearInterval(interval);
+      }, 3000);
+    }
+  }, [isCounting]);
+
   return (
     <>
       <div
@@ -26,7 +49,7 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    66
+                    {countriesCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
                     Countries
@@ -70,10 +93,10 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                   # 
+                    {programsCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
-                   of extracurricular programs
+                    Extracurricular programs
                   </p>
                 </div>
               </div>
@@ -92,10 +115,10 @@ const Reach: React.FC = () => {
                     className="card-title mt-2 mb-1"
                     style={{ fontSize: "2.5rem" }}
                   >
-                    50
+                    {employeesCount}
                   </h3>
                   <p className="card-text" style={{ fontSize: "1.4rem" }}>
-                    employees
+                    Employees
                   </p>
                 </div>
               </div>
@@ -108,10 +131,7 @@ const Reach: React.FC = () => {
           data-aos-delay="300"
           style={{ paddingTop: "20px" }}
         >
-          <a
-            href="./community"
-            className="btn btn-primary text-lg-center"
-          >
+          <a href="./community" className="btn btn-primary text-lg-center">
             View More Statistics
           </a>
         </p>
@@ -121,3 +141,4 @@ const Reach: React.FC = () => {
 };
 
 export default Reach;
+

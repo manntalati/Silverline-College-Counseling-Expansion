@@ -10,7 +10,6 @@ import Partners from "./components/Partners";
 import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services/Services";
-import Team from "./components/Team/Team";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";

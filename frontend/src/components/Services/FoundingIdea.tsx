@@ -44,13 +44,23 @@ const FoundingIdea: React.FC = () => {
     <div style={containerStyle}>
       <div style={textStyle}>
         <h4 style={subHeaderStyle} data-aos="fade-up">
-          OUR FOUNDING IDEA
+        Educational Advisory
         </h4>
         <h1 style={headerStyle} data-aos="fade-up">
-        Extracurricular Programs
+        About Silverline
         </h1>
         <p data-aos="fade-up">
-        We offer specialized extracurricular programs led by students who are top performers in each activity to aid students in their success.
+        Silverline Educational Advisory is a 501(c)(3) nonprofit connecting high school students with enriching resources to amplify their extracurricular performance. 
+        Founded by college and high school students, this company recognizes the difficulty of navigating high school and helps connect them within our community of 
+        over 5000 members worldwide
+        </p>
+        <p data-aos="fade-up">
+        From the difficulties of finding extracurriculars, to the difficulties of succeeding in them, every student has struggled. 
+        We want to provide students with the ability to break past these barriers within extracurricular and educational performance.
+        </p>
+        <p data-aos="fade-up">
+        Silverline prides itself on being free and flexible for students all across the globe by creating resources that everyone can learn from.
+        This framework has allowed us to serve thousands of students for no charge while maintaining top-notch quality.
         </p>
       </div>
       <img src={tutoringImg} alt="Tutoring" style={imageStyle} />
