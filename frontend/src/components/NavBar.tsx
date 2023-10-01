@@ -74,6 +74,9 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 								About Us ▾
 							</button>
 							<ul className="dropdown">
+							<li>
+									<Link to="/services">Our Services</Link>
+								</li>
 								<li>
 									<Link to="/method">Method</Link>
 								</li>
@@ -84,13 +87,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 									<Link to="/partners">Partners</Link>
 								</li>
 							</ul>
-						</li>
-						<li
-							className={
-								elementName === "services" ? "active" : "non"
-							}
-						>
-							<Link to="/services">Services</Link>
 						</li>
 						<li
 							className={
