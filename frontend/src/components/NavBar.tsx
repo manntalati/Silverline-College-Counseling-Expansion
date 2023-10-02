@@ -100,7 +100,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 								elementName === "getInvolved" ? "active" : "non"
 							}
 						>
-							<Link to="/getinvolved">Get Involved</Link>
+							<Link to="/getinvolved">Join Our Community</Link>
 						</li>
 						<li
 							className={
