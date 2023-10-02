@@ -112,8 +112,8 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 					</ul>
 					<ul className="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
 						<li className="cta-button">
-							<a href="mailto:silverlinetutoring2021@gmail.com">
-								Contact Us
+							<a href="/getinvolved">
+							Join Us Today
 							</a>
 						</li>
 						<li className="social-top">
