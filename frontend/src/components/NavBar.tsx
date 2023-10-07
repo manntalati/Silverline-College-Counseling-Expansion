@@ -77,9 +77,9 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 							<li>
 									<Link to="/services">Our Services</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link to="/method">Method</Link>
-								</li>
+								</li> */}
 								<li>
 									<Link to="/team">Team</Link>
 								</li>
