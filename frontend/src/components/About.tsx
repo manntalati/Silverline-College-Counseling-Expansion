@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer";
 
 interface HeadingStyle {
-  color: string;
-  fontFamily: string;
-  fontWeight: string;
+	color: string;
+	fontFamily: string;
+	fontWeight: string;
 }
 
 const About: React.FC = () => {
