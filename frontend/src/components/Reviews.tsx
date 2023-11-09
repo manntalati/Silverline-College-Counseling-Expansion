@@ -318,7 +318,7 @@ const Review: React.FC = () => {
             </div>
           </div>
           <p style={styles.reviewContent}>
-            Silverline tutoring’s superior organization, resources, and
+            Silverline Educational Advisory Services' superior organization, resources, and
             dedication to providing students with worthwhile tutoring has
             allowed me as a tutor to both increase my tutoring skills and have
             fun making an impact in the world.
