@@ -79,7 +79,7 @@ const About: React.FC = () => {
 								while still maintaining quality.
 							</p>
 
-							<h1 style={headingStyle} data-aos="fade-up">
+							<h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
 								Our Goals
 							</h1>
 							<h2
@@ -97,7 +97,7 @@ const About: React.FC = () => {
                 data-aos-delay="100"
               ></h2>
 
-							<h1 style={headingStyle} data-aos="fade-up">
+							<h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
 								Our Target Group
 							</h1>
 							<h2
