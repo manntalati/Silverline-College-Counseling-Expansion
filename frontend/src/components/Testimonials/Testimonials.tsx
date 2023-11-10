@@ -82,7 +82,7 @@ const Testimonials: React.FC = () => {
 				theme === "dark" ? styles.outerDivDark : styles.outerDivLight
 			}
 		>
-			<div className={styles.center}>
+			<div className={styles.centered}>
 				<div className={styles.innerDiv}>
 					<p className={styles.subHeader}>Satisfied Students</p>
 					<h1
