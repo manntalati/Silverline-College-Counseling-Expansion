@@ -4,7 +4,6 @@ import "./css/style.css";
 import Reach from "./components/Reach/Reach";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer";
-import Method from "./components/Method/Method";
 import Partners from "./components/Partners/Partners";
 import Lectures from "./components/Lectures/Lectures";
 import Reviews from "./components/Reviews/Reviews";
@@ -49,7 +48,6 @@ function App(): JSX.Element {
 								</>
 							}
 						/>
-						<Route path="/method" element={<Method />} />
 						<Route path="/partners" element={<Partners />} />
 						<Route path="/reviews" element={<Reviews />} />
 						<Route path="/community" element={<OurCommunity />} />

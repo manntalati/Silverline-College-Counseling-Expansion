@@ -18,9 +18,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     case "services":
       elementName = "services";
       break;
-    case "method":
-      elementName = "method";
-      break;
     case "team":
       elementName = "team";
       break;
@@ -67,9 +64,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
               <ul className="dropdown">
                 <li>
                   <Link to="/services">Our Services</Link>
-                </li>
-                <li>
-                  <Link to="/method">Method</Link>
                 </li>
                 <li>
                   <Link to="/team">Team</Link>
