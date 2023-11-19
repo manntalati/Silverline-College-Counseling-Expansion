@@ -17,7 +17,7 @@ const Review: React.FC = () => {
       fontFamily: "DM Sans, sans-serif",
     },
     reviewsSubtitle: {
-      fontSize: "22px",
+      fontSize: "2.5rem",
       margin: "5px 0",
       fontFamily: "DM Sans, sans-serif",
     },
@@ -1814,7 +1814,6 @@ const Review: React.FC = () => {
               </div>
               <p style={styles.reviewContent}></p>
             </div>
-
             <div style={styles.review}>
               <div style={styles.reviewHeader}>
                 <div>
@@ -1943,7 +1942,6 @@ const Review: React.FC = () => {
               </div>
               <p style={styles.reviewContent}></p>
             </div>
-
             <div style={styles.review}>
               <div style={styles.reviewHeader}>
                 <div>
@@ -2024,7 +2022,6 @@ const Review: React.FC = () => {
               </div>
               <p style={styles.reviewContent}></p>
             </div>
-
             <div style={styles.review}>
               <div style={styles.reviewHeader}>
                 <div>
@@ -2110,7 +2107,7 @@ const Review: React.FC = () => {
         </div>
       </div>
     </div>
-	);
+  );
 };
 
 export default Review;
