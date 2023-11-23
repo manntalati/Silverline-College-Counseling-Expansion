@@ -9,11 +9,11 @@ interface HeadingStyle {
 }
 
 const About: React.FC = () => {
-  const styles: { [key: string]: React.CSSProperties } = {
+	const styles: { [key: string]: React.CSSProperties } = {
 		aboutHeadingStyle: {
 			color: "#918CA1",
-      fontFamily: "Work Sans, sans-serif",
-      fontWeight: "800",
+			fontFamily: "Work Sans, sans-serif",
+			fontWeight: "800",
 		},
 	};
 
@@ -32,20 +32,18 @@ const About: React.FC = () => {
 					</div>
 				</div>
 			</div>
-
-      <div className="section overlay">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-12">
-              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
-                About Silverline
-              </h1>
-              <h2
-                className="heading mb-3"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              ></h2>
-
+			
+			<div className="section overlay">
+				<div className="container">
+					<div className="row align-items-center">
+						<div className="col-lg-12">
+							<h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+								About Silverline
+							</h1>
+							<h2
+							className="heading mb-3"
+							data-aos="fade-up"
+							data-aos-delay="100"></h2>
 							<p data-aos="fade-up" data-aos-delay="200">
 								Silverline Tutoring is an educational 501(c)(3)
 								nonprofit connecting high school students with
@@ -57,7 +55,6 @@ const About: React.FC = () => {
 								of navigating high school — we’ve all been
 								there.
 							</p>
-
 							<p data-aos="fade-up" data-aos-delay="300">
 								From the difficulties of finding
 								extracurriculars, to the difficulties of
@@ -66,7 +63,6 @@ const About: React.FC = () => {
 								break past these barriers within extracurricular
 								and educational performance.
 							</p>
-
 							<p data-aos="fade-up" data-aos-delay="400">
 								Silverline creates a free and flexible tutoring
 								service by finding the experts in our community
@@ -78,7 +74,6 @@ const About: React.FC = () => {
 								many students as possible at the cost of nothing
 								while still maintaining quality.
 							</p>
-
 							<h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
 								Our Goals
 							</h1>
@@ -88,14 +83,14 @@ const About: React.FC = () => {
 								data-aos-delay="100"
 							></h2>
 
-              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+            <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
                 Our Goals
-              </h1>
-              <h2
+            </h1>
+            <h2
                 className="heading mb-3"
                 data-aos="fade-up"
                 data-aos-delay="100"
-              ></h2>
+            ></h2>
 
 							<h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
 								Our Target Group
@@ -110,14 +105,14 @@ const About: React.FC = () => {
 								Didnt get text for this
 							</p>
 
-              <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
+            <h1 style={styles.aboutHeadingStyle} data-aos="fade-up">
                 Our Target Group
-              </h1>
-              <h2
+            </h1>
+            <h2
                 className="heading mb-3"
                 data-aos="fade-up"
                 data-aos-delay="100"
-              ></h2>
+            ></h2>
 
 							<p data-aos="fade-up" data-aos-delay="400">
 								Didnt get text for this

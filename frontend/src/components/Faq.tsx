@@ -65,7 +65,7 @@ const FAQ: React.FC = () => {
     {
       question: "5. What is the experience of the tutors?",
       answer:
-        "Most of our tutors are high school senior or college students. However, some of our tutors are teachers or former teachers. Regardless of the tutor, we guarantee that all of our tutors are qualified.",
+        "Most of our tutors are high school seniors or college students. However, some of our tutors are teachers or former teachers. Regardless of the tutor, we guarantee that all of our tutors are qualified.",
     },
     {
       question: "6. Who runs Silverline Educational Advisory Services?",
