@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import anonymous from "../../images/anonymous.webp";
-import styles from "./styles.module.css";
-import { useTheme } from "../ThemeContext";
+import anonymous from "../images/anonymous.webp";
+import { useTheme } from "./ThemeContext";
 
 interface Testimonial {
 	name: string;
@@ -43,6 +42,92 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 			gap: "10px",
 			width: "100%",
 		},
+		testimonialsImage: {
+			borderRadius: "50%"
+		},
+		testimonialsDarkName: {
+			color: "white",
+			fontWeight: 500,
+			marginBottom: "-0.2rem",
+		},
+		testimonialsLightName: {
+			color: "black",
+			fontWeight: 500,
+			marginBottom: "-0.2rem",
+		},
+		testimonialsDarkDes: {
+			color: "#D6D3CD !important",
+		},
+		testimonialsLightDes: {
+			color: "#181A1B !important",
+		},
+		testimonialsDarkQuoteIcon: {
+			fontSize: "6.5rem",
+			color: "white",
+			fontFamily: "Work Sans, sans-serif",
+			position: "relative",
+			marginTop: "-2rem",
+			marginBottom: "1rem",
+		},
+		testimonialsLightQuoteIcon: {
+			fontSize: "6.5rem",
+			color: "black",
+			fontFamily: "Work Sans, sans-serif",
+			position: "relative",
+			marginTop: "-2rem",
+			marginBottom: "1rem",
+		},
+		testimonialsDarkQuote: {
+			color: "#D6D3CD",
+			position: "relative",
+			top: "-110px",
+			fontFamily: "Work Sans, sans-serif",
+			width: "80%",
+			textAlign: "center",
+		},
+		testimonialsLightQuote: {
+			color: "#181A1B",
+			position: "relative",
+			top: "-110px",
+			fontFamily: "Work Sans, sans-serif",
+			width: "80%",
+			textAlign: "center",
+		},
+	}
+
+	return (
+		<div className={`nameContainer ${styles.testimonialsNameContainer}`}>
+			<img
+				src={anonymous}
+				height={75}
+				width={75}
+				style={styles.testimonialsImage}
+			/>
+			<h3
+				className={`name ${theme === "dark" ? styles.testimonialsDarkName : styles.testimonialsLightName}`}
+			>
+				{name}
+			</h3>
+			<p className={`des ${theme === "dark" ? styles.testimonialsDarkDes : styles.testimonialsLightDes}`}>
+				{des}
+			</p>
+			<p
+				className={`quoteIcon ${theme === "dark" ? styles.testimonialsDarkQuoteIcon : styles.testimonialsLightQuoteIcon}`}>
+				“
+			</p>
+			<p
+				className={`quote ${theme === "dark" ? styles.testimonialsDarkQuote : styles.testimonialsLightQuote}`}>
+				{content}
+			</p>
+		</div>
+	);
+};
+
+const Testimonials: React.FC = () => {
+	const [val, setVal] = useState<number>(0);
+	const { theme, toggleTheme } = useTheme();
+
+	const styles: {[key: string]: React.CSSProperties} = {
 		testimonialsDarkOutDiv: {
 			backgroundColor: "#181A1B",
 			width: "100%",
@@ -83,9 +168,6 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 			fontWeight: 600,
 			color: "black !important",
 			paddingBottom: "1rem",
-		},
-		testimonialsImage: {
-			borderRadius: "50%"
 		},
 		testimonialsDarkHeader: {
 			color: "white !important",
@@ -139,54 +221,6 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 		testimonialsInactiveButton: {
 			backgroundColor: "rgba(145, 140, 161, 0)",
 		},
-		testimonialsDarkName: {
-			color: "white",
-			fontWeight: 500,
-			marginBottom: "-0.2rem",
-		},
-		testimonialsLightName: {
-			color: "black",
-			fontWeight: 500,
-			marginBottom: "-0.2rem",
-		},
-		testimonialsDarkDes: {
-			color: "#D6D3CD !important",
-		},
-		testimonialsLightDes: {
-			color: "#181A1B !important",
-		},
-		testimonialsDarkQuoteIcon: {
-			fontSize: "6.5rem",
-			color: "white",
-			fontFamily: "Work Sans, sans-serif",
-			position: "relative",
-			marginTop: "-2rem",
-			marginBottom: "1rem",
-		},
-		testimonialsLightQuoteIcon: {
-			fontSize: "6.5rem",
-			color: "black",
-			fontFamily: "Work Sans, sans-serif",
-			position: "relative",
-			marginTop: "-2rem",
-			marginBottom: "1rem",
-		},
-		testimonialsDarkQuote: {
-			color: "#D6D3CD",
-			position: "relative",
-			top: "-110px",
-			fontFamily: "Work Sans, sans-serif",
-			width: "80%",
-			textAlign: "center",
-		},
-		testimonialsLightQuote: {
-			color: "#181A1B",
-			position: "relative",
-			top: "-110px",
-			fontFamily: "Work Sans, sans-serif",
-			width: "80%",
-			textAlign: "center",
-		},
 		testimonialsOverflowContainer: {
 			maxWidth: "70%",
 			overflow: "hidden",
@@ -198,71 +232,22 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 			textAlign: "center",
 			justifyContent: "center",
 		}
-	}
-
-	return (
-		<div style={styles.testimonialsNameContainer}>
-			<img
-				src={anonymous}
-				height={75}
-				width={75}
-				style={styles.testimonialsImage}
-			/>
-			<h3
-				style={
-					theme === "dark" ? styles.testimonialsDarkName : styles.testimonialsLightName
-				}
-			>
-				{name}
-			</h3>
-			<p style={theme === "dark" ? styles.testimonialsDarkDes : styles.testimonialsLightDes}>
-				{des}
-			</p>
-			<p
-				style={
-					theme === "dark"
-						? styles.testimonialsDarkQuoteIcon
-						: styles.testimonialsLightQuoteIcon
-				}
-			>
-				“
-			</p>
-			<p
-				style={
-					theme === "dark" ? styles.testimonialsDarkQuote : styles.testimonialsLightQuote
-				}
-			>
-				{content}
-			</p>
-		</div>
-	);
-};
-
-const Testimonials: React.FC = () => {
-	const [val, setVal] = useState<number>(0);
-	const { theme, toggleTheme } = useTheme();
+	};
 
 	return (
 		<div
-			className={
-				theme === "dark" ? styles.testimonialsDarkOutDiv : styles.testimonialsLightOutDiv
-			}
+			className={`outerDiv ${theme === "dark" ? styles.testimonialsDarkOutDiv : styles.testimonialsLightOutDiv}`}
 			style={styles.testimonialsCenter}
 		>
-			<div className={styles.testimonialsInnerDiv}>
-				<p className={styles.testimonialsSubHeader}>Satisfied Students</p>
+			<div className={`innerDiv ${styles.testimonialsInnerDiv}`}>
+				<p className={`subHeader ${styles.testimonialsSubHeader}`}>Satisfied Students</p>
 				<h1
-					className={
-						theme === "dark"
-							? styles.testimonialsDarkTitle
-							: styles.testimonialsLightTitle
-						}
-				>
+					className={`title ${theme === "dark" ? styles.testimonialsDarkTitle : styles.testimonialsLightTitle}`}>
 					Testimonials
 				</h1>
-				<div className={styles.testimonialsOverflowContainer}>
+				<div className={`overflowContainer ${styles.testimonialsOverflowContainer}`}>
 					<div
-						className={styles.testimonialsDynamicSlider}
+						className={`dynamicSlider ${styles.testimonialsDynamicSlider}`}
 						// cannot avoid this style
 						style={
 							{
@@ -276,7 +261,7 @@ const Testimonials: React.FC = () => {
 						))}
 					</div>
 				</div>
-				<div className={styles.testimonialsSelectorContainer}>
+				<div className={`selectorContainer ${styles.testimonialsSelectorContainer}`}>
 					{content.map((c, idx) => (
 						<div
 							key={idx}

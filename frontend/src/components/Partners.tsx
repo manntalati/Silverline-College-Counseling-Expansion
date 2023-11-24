@@ -1,19 +1,18 @@
 import React from "react";
-import Footer from "../Footer";
-import NavBar from "../NavBar/NavBar";
-import partner1 from "../../images/partners/thepond.webp";
-import partner2 from "../../images/partners/bumper.webp";
-import partner3 from "../../images/partners/canva.webp";
-import partner4 from "../../images/partners/redcross.webp";
-import partner5 from "../../images/partners/365tojapan.webp";
-import partner6 from "../../images/partners/sultan.webp";
-import partner7 from "../../images/partners/pandaexpress.webp";
-import partner8 from "../../images/partners/Equality_in_Forensics.webp";
-import partner9 from "../../images/partners/chipotle-mexican-grill-logo-svg-vector.svg";
-import partner10 from "../../images/partners/wish.webp";
-import partner11 from "../../images/partners/chelmsford.webp";
-import { useTheme } from "../ThemeContext";
-import styles from "./styles.module.css";
+import Footer from "./Footer";
+import NavBar from "./NavBar/NavBar";
+import partner1 from "../images/partners/thepond.webp";
+import partner2 from "../images/partners/bumper.webp";
+import partner3 from "../images/partners/canva.webp";
+import partner4 from "../images/partners/redcross.webp";
+import partner5 from "../images/partners/365tojapan.webp";
+import partner6 from "../images/partners/sultan.webp";
+import partner7 from "../images/partners/pandaexpress.webp";
+import partner8 from "../images/partners/Equality_in_Forensics.webp";
+import partner9 from "../images/partners/chipotle-mexican-grill-logo-svg-vector.svg";
+import partner10 from "../images/partners/wish.webp";
+import partner11 from "../images/partners/chelmsford.webp";
+import { useTheme } from "./ThemeContext";
 
 const Partners: React.FC = () => {
 	const { theme, toggleTheme } = useTheme();
