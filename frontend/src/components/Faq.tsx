@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "./ThemeContext";
 
 interface QuestionAnswer {
   question: string;
@@ -6,7 +7,29 @@ interface QuestionAnswer {
 }
 
 const FAQ: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
+    faqheaderDark: {
+      color: "white",
+      fontWeight: 600,
+    },
+    faqheaderLight: {
+      color: "black",
+      fontWeight: 600,
+    },
+    faqtextDark: {
+      color: "#d6d3cd",
+    },
+    faqtextLight: {
+      color: "#181a1b",
+    },
+    faqbgDark: {
+      backgroundColor: "#181a1b",
+    },
+    faqbgLight: {
+      backgroundColor: "#d6d3cd",
+    },
     faqContainer: {
       display: "flex",
       alignItems: "center",
@@ -75,13 +98,26 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div style={styles.faqContainer}>
+    <div style={styles.faqContainer}
+    className={`section ${
+      theme === "dark" ? styles.bgDark : styles.bgLight
+      }`}>
       <div className="container" style={styles.faqText}>
-        <h1 className="title" data-aos="fade-up" style={styles.faqHeader}>
+        <h1 className={`title ${
+							theme === "dark"
+								? styles.headerDark
+								: styles.headerLight
+						}`}
+            data-aos="fade-up" 
+            style={styles.faqHeader}>
           Frequently Asked Questions
         </h1>
         <h2
-          className="sub-heading"
+          className={`sub-heading ${
+            theme === "dark"
+              ? styles.headerDark
+              : styles.headerLight
+          }`}
           data-aos="fade-up"
           data-aos-delay="100"
           style={styles.faqSubHeader}
@@ -94,11 +130,20 @@ const FAQ: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay={200 * (index + 1)}
           >
-            <h3 className="question" style={styles.faqQuestionStyle}>
+            <h3 className={`question ${
+							theme === "dark"
+								? styles.headerDark
+								: styles.headerLight
+						}`}
+            style={styles.faqQuestionStyle}>
               {faq.question}
             </h3>
             <p
-              className="answer"
+              className={`answer ${
+                theme === "dark"
+                  ? styles.headerDark
+                  : styles.headerLight
+              }`}
               data-testid="faq-answer"
               style={styles.faqAnswerStyle}
               dangerouslySetInnerHTML={{ __html: faq.answer }}
