@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./css/style.css";
-import Reach from "./components/Reach/Reach";
+import Reach from "./components/Reach";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer";
 import Partners from "./components/Partners/Partners";
