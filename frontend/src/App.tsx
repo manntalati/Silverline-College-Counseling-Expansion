@@ -5,7 +5,7 @@ import Reach from "./components/Reach/Reach";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer";
 import Partners from "./components/Partners/Partners";
-import Lectures from "./components/Lectures/Lectures";
+import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews/Reviews";
 import Services from "./components/Services/Services";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
