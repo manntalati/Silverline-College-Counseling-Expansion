@@ -12,7 +12,7 @@ import OurCommunity from "./components/OurCommunity/OurCommunity";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
-import NavBar from "./components/NavBar/NavBar";
+import NavBar from "./components/NavBar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved/GetInvolved";

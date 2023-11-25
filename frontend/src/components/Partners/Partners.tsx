@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../NavBar";
 import partner1 from "../../images/partners/thepond.webp";
 import partner2 from "../../images/partners/bumper.webp";
 import partner3 from "../../images/partners/canva.webp";

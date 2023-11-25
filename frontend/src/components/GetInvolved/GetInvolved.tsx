@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../NavBar";
 import Footer from "../Footer";
 import styles from "./styles.module.css";
 import { useTheme } from "../ThemeContext";

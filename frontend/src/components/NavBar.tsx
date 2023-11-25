@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo4.svg";
-import { useTheme } from "../ThemeContext";
-import styles from "./styles.module.css";
+import logo from "../images/logo4.svg";
+import { useTheme } from "./ThemeContext";
 
 interface NavBarProps {
   pageName?: string;
@@ -10,6 +9,32 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
   const { theme, toggleTheme } = useTheme();
+
+  const styles: { [key: string]: React.CSSProperties} = {
+    navBarDarkBackground: {
+      backgroundColor: "#181A1B"
+    },
+    navBarLightBackground: {
+      backgroundColor: "#D6D3CD"
+    },
+    navBarLogoStyle: {
+      maxHeight: "70px",
+      marginTop: "-15px",
+    },
+    navBarButtonStyle: {
+      background: "none",
+      border: "none",
+      color: "#d7d6da",
+      paddingLeft: "20px",
+      font: "inherit",
+      cursor: "pointer",
+      outline: "inherit",
+    },
+    navBarToggleThemeButtonStyle: {
+      marginLeft: "3rem",
+    },
+  };
+
   let elementName = "";
   switch (pageName) {
     case "home":
@@ -41,13 +66,13 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 
   return (
     <nav
-      className={`site-nav ${theme === "dark" ? styles.bgDark : styles.bgLight
+      className={`site-nav ${theme === "dark" ? styles.navBarDarkBackground : styles.navBarLightBackground
         }`}
     >
       <div className="container nav1">
         <img
           alt="silverline tutoring logo"
-          className={`float-start ${styles.logo}`}
+          className={`float-start ${styles.navBarLogoStyle}`}
           src={logo}
         />
         <div className="site-navigation">
@@ -60,7 +85,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
               <Link to="/">Home</Link>
             </li>
             <li className="has-children non">
-              <button className={styles.btn}>About Us ▾</button>
+              <button className={`buttonStyle ${styles.navBarButtonStyle}`}>About Us ▾</button>
               <ul className="dropdown">
                 <li>
                   <Link to="/services">Our Services</Link>
@@ -130,7 +155,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
               </a>
               <a
                 onClick={toggleTheme}
-                className={styles.toggleThemeBtn}
+                className={`toggleButtonStyle ${styles.navBarToggleThemeButtonStyle}`}
               >
                 {theme === "dark" ? (
                   <i className="fas fa-sun"></i>

@@ -7,7 +7,7 @@ import AboutOurCommunity from "./AboutOurCommunity";
 import UpcomingEvents from "./UpcomingEvents";
 import Statistics from "./Statistics";
 import Banner from "./Banner";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../NavBar";
 
 const OurCommunity: React.FC = () => {
   return (
