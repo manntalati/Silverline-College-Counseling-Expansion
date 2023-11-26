@@ -1,19 +1,35 @@
 import React from "react";
 import resourcesImg from "../../images/services/resources.webp";
+import { useTheme } from "../ThemeContext"
 
 const StudentSupport: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
-    studentsupportContainer: {
+    studentsupportDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    studentsupportText: {
+    studentsupportLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    studentsupportDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "white",
+      marginLeft: "50px",
+    },
+    studentsupportLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "black",
       marginLeft: "50px",
     },
     studentsupportSubHeader: {
@@ -22,10 +38,15 @@ const StudentSupport: React.FC = () => {
       color: "#918CA1",
       fontWeight: "700",
     },
-    studentsupportHeader: {
+    studentsupportDarkHeader: {
       fontSize: "46px",
       fontWeight: "bold",
       color: "white",
+    },
+    studentsupportLightHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "black",
     },
     studentsupportImage: {
       flex: "1",
@@ -37,12 +58,12 @@ const StudentSupport: React.FC = () => {
   };
 
   return (
-    <div style={styles.studentsupportContainer}>
-      <div style={styles.studentsupportText}>
+    <div style={theme === "dark" ? styles.studentsupportDarkContainer : styles.studentsupportLightContainer}>
+      <div style={theme === "dark" ? styles.studentsupportDarkText : styles.studentsupportLightText}>
         <h4 style={styles.studentsupportSubHeader} data-aos="fade-up">
         Extracurricular Programs
         </h4>
-        <h1 style={styles.studentsupportHeader} data-aos="fade-up">
+        <h1 style={theme === "dark" ? styles.studentsupportDarkHeader : styles.studentsupportLightHeader} data-aos="fade-up">
         Our Mission
         </h1>
         <p data-aos="fade-up">
