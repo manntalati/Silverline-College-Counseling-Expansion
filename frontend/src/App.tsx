@@ -17,7 +17,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import GetInvolved from "./components/GetInvolved/GetInvolved";
 import AboutSection from "./components/AboutSection";
-import ServicesSection from "./components/ServicesSection/ServicesSection";
+import ServicesSection from "./components/ServicesSection";
 import Team from "./components/Team/Team";
 import { ThemeProvider } from "./components/ThemeContext";
 

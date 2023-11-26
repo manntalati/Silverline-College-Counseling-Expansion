@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import eng from "../../images/Home/eng.webp";
-import flexible from "../../images/Home/flexibile.webp";
-import community from "../../images/Home/community.webp";
-import { useTheme } from "../ThemeContext";
-import styles from "./styles.module.css";
+import eng from "../images/Home/eng.webp";
+import flexible from "../images/Home/flexibile.webp";
+import community from "../images/Home/community.webp";
+import { useTheme } from "./ThemeContext";
 
 interface Service {
 	img: string;
@@ -38,23 +37,53 @@ const ServicesSection: React.FC = () => {
 
 	const { theme, toggleTheme } = useTheme();
 
+	const styles: { [key: string]: React.CSSProperties} = {
+		servicesDarkBackground: {
+			backgroundColor: "#181A1B"
+		},
+		servicesLightBackground: {
+			backgroundColor: "#D6D3CD"
+		},
+		servicesDarkHeader: {
+			color: "white !important",
+			fontWeight: "600 !important",
+		},
+		servicesLightHeader: {
+			color: "black !important",
+			fontWeight: "600 !important",
+		},
+		servicesDarkText: {
+			color: "#D6D3CD !important",
+		},
+		servicesLightText: {
+			color: "#181A1B !important",
+		},
+		servicesButtonStyle: {
+			backgroundColor: "#4d68e1 !important",
+			color: "white",
+		},
+		servicesSubHeaderStyle: {
+			color: "#9784a1 !important",
+		},
+	};
+
 	return (
 		<div
 			className={` section section-3 ${
-				theme === "dark" ? styles.bgDark : styles.bgLight
+				theme === "dark" ? styles.servicesDarkBackground : styles.servicesLightBackground
 			}`}
 		>
 			<div className="container">
 				<div className="row align-items-center justify-content-between  mb-5">
 					<div className="col-lg-6" data-aos="fade-up">
-						<span className={`subheading ${styles.subHeader}`}>
+						<span className={`subheading ${styles.servicesSubHeaderStyle}`}>
 							Services
 						</span>
 						<h2
 							className={`heading mb-3 ${
 								theme === "dark"
-									? styles.headerDark
-									: styles.headerLight
+									? styles.servicesDarkHeader
+									: styles.servicesLightHeader
 							}`}
 						>
 							A Plethora of Resources
@@ -155,8 +184,8 @@ const ServicesSection: React.FC = () => {
 										<h3
 											className={`${
 												theme === "dark"
-													? styles.headerDark
-													: styles.headerLight
+													? styles.servicesDarkHeader
+													: styles.servicesLightHeader
 											}`}
 										>
 											{services[currentService].title}
@@ -164,8 +193,8 @@ const ServicesSection: React.FC = () => {
 										<span
 											className={`meta ${
 												theme === "dark"
-													? styles.textDark
-													: styles.textLight
+													? styles.servicesDarkText
+													: styles.servicesLightText
 											}`}
 										>
 											{services[currentService].desc}
@@ -183,7 +212,7 @@ const ServicesSection: React.FC = () => {
 					<p className="my-5" data-aos="fade-up" data-aos-delay="300">
 						<a
 							href="./services"
-							className={`btn btn-primary text-lg-center ${styles.btn}`}
+							className={`btn btn-primary text-lg-center ${styles.servicesButtonStyle}`}
 						>
 							View all services
 						</a>
