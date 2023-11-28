@@ -19,8 +19,7 @@ function Footer() {
               <h3>Navigation</h3>
               <ul className="list-unstyled float-left links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/services">Services</a></li>
+                <li><a href="/services">Our Services</a></li>
                 <li><a href="/community">Our Community</a></li>
                 <li><a href="/getinvolved">Get Involved</a></li>
                 <li><a href="/reviews">Reviews</a></li>

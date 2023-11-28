@@ -110,14 +110,14 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
                 elementName === "getInvolved" ? "active" : "non"
               }
             >
-              <Link to="/getinvolved">Join Our Community</Link>
+              <Link to="/getinvolved">Get Involved</Link>
             </li>
             <li
               className={
                 elementName === "reviews" ? "active" : "non"
               }
             >
-              <Link to="/reviews">Our Reviews</Link>
+              <Link to="/reviews">Reviews</Link>
             </li>
           </ul>
           <ul className="js-clone-nav d-none d-lg-inline-block text-end site-menu float-end">
