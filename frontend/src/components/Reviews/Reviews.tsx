@@ -10,7 +10,7 @@ const Review: React.FC = () => {
 	return (
 		<div
 			className={
-				theme === "dark"
+				theme === "#181A1B"
 					? styles.reviewsPageDark
 					: styles.reviewsPageLight
 			}
@@ -19,7 +19,7 @@ const Review: React.FC = () => {
 			<NavBar pageName="reviews" />
 			<h1
 				className={
-					theme === "dark"
+					theme === "#181A1B"
 						? styles.reviewsTitleDark
 						: styles.reviewsTitleLight
 				}
@@ -28,7 +28,7 @@ const Review: React.FC = () => {
 			</h1>
 			<p
 				className={
-					theme === "dark"
+					theme === "#181A1B"
 						? styles.reviewsSubtitleDark
 						: styles.reviewsSubtitleLight
 				}
@@ -37,7 +37,7 @@ const Review: React.FC = () => {
 			</p>
 			<p
 				className={
-					theme === "dark"
+					theme === "#181A1B"
 						? styles.reviewsSubtitleDark
 						: styles.reviewsSubtitleLight
 				}
@@ -48,7 +48,7 @@ const Review: React.FC = () => {
 			<div className={styles.reviewsContainer}>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -57,7 +57,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -66,7 +66,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -84,7 +84,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -99,7 +99,7 @@ const Review: React.FC = () => {
 				{/* Add more reviews here */}
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -108,7 +108,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -117,7 +117,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -135,7 +135,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -151,7 +151,7 @@ const Review: React.FC = () => {
 				{/* Add more reviews here */}
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -160,7 +160,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -169,7 +169,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -187,7 +187,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -203,7 +203,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -212,7 +212,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -221,7 +221,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -239,7 +239,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -254,7 +254,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -263,7 +263,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -272,7 +272,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -290,7 +290,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -302,7 +302,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -311,7 +311,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -320,7 +320,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -338,7 +338,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -350,7 +350,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -359,7 +359,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -368,7 +368,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -386,7 +386,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -399,7 +399,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -408,7 +408,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -417,7 +417,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -435,7 +435,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -450,7 +450,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -459,7 +459,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -468,7 +468,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -486,7 +486,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -500,7 +500,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -509,7 +509,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -518,7 +518,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -536,7 +536,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -555,7 +555,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -564,7 +564,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -573,7 +573,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -591,7 +591,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -605,7 +605,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -614,7 +614,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -623,7 +623,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -641,7 +641,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -651,7 +651,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -660,7 +660,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -669,7 +669,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -687,7 +687,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -699,7 +699,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -708,7 +708,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -717,7 +717,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -735,7 +735,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -745,7 +745,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -754,7 +754,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -763,7 +763,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -781,7 +781,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -789,7 +789,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -798,7 +798,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -807,7 +807,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -825,7 +825,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -835,7 +835,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -844,7 +844,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -853,7 +853,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -871,7 +871,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -882,7 +882,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -891,7 +891,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -900,7 +900,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -918,7 +918,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -930,7 +930,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -939,7 +939,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -948,7 +948,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -966,7 +966,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -976,7 +976,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -985,7 +985,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -994,7 +994,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1012,7 +1012,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1023,7 +1023,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1032,7 +1032,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1041,7 +1041,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1059,7 +1059,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1069,7 +1069,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1078,7 +1078,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1087,7 +1087,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1105,7 +1105,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1116,7 +1116,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1125,7 +1125,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1134,7 +1134,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1152,7 +1152,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1162,7 +1162,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1171,7 +1171,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1180,7 +1180,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1198,7 +1198,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1208,7 +1208,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1217,7 +1217,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1226,7 +1226,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1244,7 +1244,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1254,7 +1254,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1263,7 +1263,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1272,7 +1272,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1290,7 +1290,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1301,7 +1301,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1310,7 +1310,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1319,7 +1319,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1337,7 +1337,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1348,7 +1348,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1357,7 +1357,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1366,7 +1366,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1384,7 +1384,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1395,7 +1395,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1404,7 +1404,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1413,7 +1413,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1431,7 +1431,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1439,7 +1439,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1448,7 +1448,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1457,7 +1457,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1475,7 +1475,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1483,7 +1483,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1492,7 +1492,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1501,7 +1501,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1519,7 +1519,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1527,7 +1527,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1536,7 +1536,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1545,7 +1545,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1563,7 +1563,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1571,7 +1571,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1580,7 +1580,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1589,7 +1589,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1607,7 +1607,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1615,7 +1615,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1624,7 +1624,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1633,7 +1633,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1651,7 +1651,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1659,7 +1659,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1668,7 +1668,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1677,7 +1677,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1695,7 +1695,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1703,7 +1703,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1712,7 +1712,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1721,7 +1721,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1739,7 +1739,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1747,7 +1747,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1756,7 +1756,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1765,7 +1765,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1783,7 +1783,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1791,7 +1791,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1800,7 +1800,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1809,7 +1809,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1827,7 +1827,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1835,7 +1835,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1844,7 +1844,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1853,7 +1853,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1871,7 +1871,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1879,7 +1879,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1888,7 +1888,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1897,7 +1897,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1915,7 +1915,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1923,7 +1923,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1932,7 +1932,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1941,7 +1941,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -1959,7 +1959,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -1967,7 +1967,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -1976,7 +1976,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -1985,7 +1985,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2003,7 +2003,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2011,7 +2011,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2020,7 +2020,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2029,7 +2029,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2047,7 +2047,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2055,7 +2055,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2064,7 +2064,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2073,7 +2073,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2091,7 +2091,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2099,7 +2099,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2108,7 +2108,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2117,7 +2117,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2135,7 +2135,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2143,7 +2143,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2152,7 +2152,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2161,7 +2161,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2179,7 +2179,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2187,7 +2187,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2196,7 +2196,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2205,7 +2205,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2223,7 +2223,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2232,7 +2232,7 @@ const Review: React.FC = () => {
 
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2241,7 +2241,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2250,7 +2250,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2268,7 +2268,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2276,7 +2276,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2285,7 +2285,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2294,7 +2294,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2312,7 +2312,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2320,7 +2320,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2329,7 +2329,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2338,7 +2338,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2356,7 +2356,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2364,7 +2364,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2373,7 +2373,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2382,7 +2382,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2400,7 +2400,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2408,7 +2408,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2417,7 +2417,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2426,7 +2426,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2444,7 +2444,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2452,7 +2452,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2461,7 +2461,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2470,7 +2470,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2488,7 +2488,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2496,7 +2496,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2505,7 +2505,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2514,7 +2514,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2532,7 +2532,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2540,7 +2540,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2549,7 +2549,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2558,7 +2558,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2576,7 +2576,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2585,7 +2585,7 @@ const Review: React.FC = () => {
 
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2594,7 +2594,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2603,7 +2603,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2621,7 +2621,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2629,7 +2629,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2638,7 +2638,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2647,7 +2647,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2665,7 +2665,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2673,7 +2673,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2682,7 +2682,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2691,7 +2691,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2709,7 +2709,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2717,7 +2717,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2726,7 +2726,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2735,7 +2735,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2753,7 +2753,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2761,7 +2761,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2770,7 +2770,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2779,7 +2779,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2797,7 +2797,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2806,7 +2806,7 @@ const Review: React.FC = () => {
 
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2815,7 +2815,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2824,7 +2824,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2842,7 +2842,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2850,7 +2850,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2859,7 +2859,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2868,7 +2868,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2886,7 +2886,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2894,7 +2894,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2903,7 +2903,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2912,7 +2912,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2930,7 +2930,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2938,7 +2938,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2947,7 +2947,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -2956,7 +2956,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -2974,7 +2974,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}
@@ -2982,7 +2982,7 @@ const Review: React.FC = () => {
 				</div>
 				<div
 					className={
-						theme === "dark"
+						theme === "#181A1B"
 							? styles.reviewDark
 							: styles.reviewLight
 					}
@@ -2991,7 +2991,7 @@ const Review: React.FC = () => {
 						<div>
 							<h3
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewNameDark
 										: styles.reviewNameLight
 								}
@@ -3000,7 +3000,7 @@ const Review: React.FC = () => {
 							</h3>
 							<span
 								className={
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.reviewOriginDark
 										: styles.reviewOriginLight
 								}
@@ -3018,7 +3018,7 @@ const Review: React.FC = () => {
 					</div>
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.reviewContentDark
 								: styles.reviewContentLight
 						}

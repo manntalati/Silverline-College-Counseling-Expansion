@@ -69,9 +69,7 @@ const ServicesSection: React.FC = () => {
 
 	return (
 		<div
-			className={` section section-3 ${
-				theme === "dark" ? styles.servicesDarkBackground : styles.servicesLightBackground
-			}`}
+			className={` section section-3` + theme}
 		>
 			<div className="container">
 				<div className="row align-items-center justify-content-between  mb-5">
@@ -81,7 +79,7 @@ const ServicesSection: React.FC = () => {
 						</span>
 						<h2
 							className={`heading mb-3 ${
-								theme === "dark"
+								theme === "#181A1B"
 									? styles.servicesDarkHeader
 									: styles.servicesLightHeader
 							}`}
@@ -183,7 +181,7 @@ const ServicesSection: React.FC = () => {
 									<div className="mt-4">
 										<h3
 											className={`${
-												theme === "dark"
+												theme === "#181A1B"
 													? styles.servicesDarkHeader
 													: styles.servicesLightHeader
 											}`}
@@ -192,7 +190,7 @@ const ServicesSection: React.FC = () => {
 										</h3>
 										<span
 											className={`meta ${
-												theme === "dark"
+												theme === "#181A1B"
 													? styles.servicesDarkText
 													: styles.servicesLightText
 											}`}

@@ -1,6 +1,9 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 
 const QuickHelp: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
 		quickhelpContainerStyle: {
 			backgroundColor: "#1E2022",

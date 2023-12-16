@@ -1,6 +1,9 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 
 const Opportunities: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
 		opportunitiesBodyStyle: {
 			fontSize: "1.1rem",
@@ -15,7 +18,7 @@ const Opportunities: React.FC = () => {
 	};
 
   return (
-    <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+    <div className={`background` + theme}>
       <div className="container">
         <h1 style={styles.opportunitiesTitleStyle} data-aos="fade-up">
           Opportunities

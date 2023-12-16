@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 
-type Theme = "dark" | "light";
+type Theme = "#181A1B" | "#D6D3CD";
 type ThemeContextType = {
 	theme: Theme;
 	toggleTheme: () => void;
@@ -13,14 +13,14 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState<Theme>("dark");
+	const [theme, setTheme] = useState<Theme>("#181A1B");
 
 	useEffect(() => {
 		document.body.className = theme;
 	}, [theme]);
 
 	const toggleTheme = () => {
-		setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+		setTheme((prevTheme) => (prevTheme === "#181A1B" ? "#D6D3CD" : "#181A1B"));
 		console.log("Theme: " + theme);
 	};
 

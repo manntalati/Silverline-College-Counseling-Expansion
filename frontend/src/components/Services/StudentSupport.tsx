@@ -58,12 +58,12 @@ const StudentSupport: React.FC = () => {
   };
 
   return (
-    <div style={theme === "dark" ? styles.studentsupportDarkContainer : styles.studentsupportLightContainer}>
-      <div style={theme === "dark" ? styles.studentsupportDarkText : styles.studentsupportLightText}>
+    <div style={theme === "#181A1B" ? styles.studentsupportDarkContainer : styles.studentsupportLightContainer}>
+      <div style={theme === "#181A1B" ? styles.studentsupportDarkText : styles.studentsupportLightText}>
         <h4 style={styles.studentsupportSubHeader} data-aos="fade-up">
         Extracurricular Programs
         </h4>
-        <h1 style={theme === "dark" ? styles.studentsupportDarkHeader : styles.studentsupportLightHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.studentsupportDarkHeader : styles.studentsupportLightHeader} data-aos="fade-up">
         Our Mission
         </h1>
         <p data-aos="fade-up">

@@ -61,12 +61,12 @@ const FoundingIdea: React.FC = () => {
   };
 
   return (
-    <div style={theme === "dark" ? styles.foundingideaDarkContainer : styles.foundingideaLightContainer}>
-      <div style={theme === "dark" ? styles.foundingideaDarkText : styles.foundingideaLightText}>
+    <div style={theme === "#181A1B" ? styles.foundingideaDarkContainer : styles.foundingideaLightContainer}>
+      <div style={theme === "#181A1B" ? styles.foundingideaDarkText : styles.foundingideaLightText}>
         <h4 style={styles.foundingideaSubHeader} data-aos="fade-up">
         Educational Advisory
         </h4>
-        <h1 style={theme === "dark" ? styles.foundingideaDarkHeader : styles.foundingideaLightHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.foundingideaDarkHeader : styles.foundingideaLightHeader} data-aos="fade-up">
         About Silverline
         </h1>
         <p data-aos="fade-up">

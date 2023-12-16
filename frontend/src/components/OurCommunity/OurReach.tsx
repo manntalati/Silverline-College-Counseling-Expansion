@@ -1,7 +1,10 @@
 import React from "react";
 import CollapseBtn from "./CollapseBtn";
+import { useTheme } from "../ThemeContext";
 
 const OurReach: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
 		reachBodyStyle: {
 			fontSize: "1.1rem",
@@ -16,7 +19,7 @@ const OurReach: React.FC = () => {
 	};
 
   return (
-    <div style={{ backgroundColor: "#181A1B", padding: "7rem" }}>
+    <div className={`background` + theme}>
       <div className="container">
         <h1 style={styles.reachTitleStyle} data-aos="fade-up">
           Our Reach

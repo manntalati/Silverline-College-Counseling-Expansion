@@ -11,12 +11,6 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
   const { theme, toggleTheme } = useTheme();
 
   const styles: { [key: string]: React.CSSProperties} = {
-    navBarDarkBackground: {
-      backgroundColor: "#181A1B"
-    },
-    navBarLightBackground: {
-      backgroundColor: "#D6D3CD"
-    },
     navBarLogoStyle: {
       maxHeight: "70px",
       marginTop: "-15px",
@@ -66,8 +60,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
 
   return (
     <nav
-      className={`site-nav ${theme === "dark" ? styles.navBarDarkBackground : styles.navBarLightBackground
-        }`}
+      className={`site-nav` + theme}
     >
       <div className="container nav1">
         <img
@@ -157,7 +150,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
                 onClick={toggleTheme}
                 className={`toggleButtonStyle ${styles.navBarToggleThemeButtonStyle}`}
               >
-                {theme === "dark" ? (
+                {theme === "#181A1B" ? (
                   <i className="fas fa-sun"></i>
                 ) : (
                   <i className="fas fa-moon"></i>

@@ -57,13 +57,13 @@ const CommunityEvents: React.FC = () => {
   };
 
   return (
-    <div style={theme === "dark" ? styles.communityeventsDarkContainer : styles.communityeventsLightContainer}>
+    <div style={theme === "#181A1B" ? styles.communityeventsDarkContainer : styles.communityeventsLightContainer}>
       <img src={lectureImg} alt="Lecture" style={styles.communityeventsImage} />
-      <div style={theme === "dark" ? styles.communityeventsDarkText : styles.communityeventsLightText}>
+      <div style={theme === "#181A1B" ? styles.communityeventsDarkText : styles.communityeventsLightText}>
         <h4 style={styles.communityeventsSubHeader} data-aos="fade-up">
           FREE RESOURCES
         </h4>
-        <h1 style={theme === "dark" ? styles.communityeventsDarkHeader : styles.communityeventsLightHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.communityeventsDarkHeader : styles.communityeventsLightHeader} data-aos="fade-up">
           Content
         </h1>
         <p data-aos="fade-up">

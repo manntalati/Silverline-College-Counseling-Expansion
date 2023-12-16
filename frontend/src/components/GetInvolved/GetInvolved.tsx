@@ -11,14 +11,12 @@ const GetInvolved: React.FC = () => {
 			<NavBar pageName="getInvolved" />
 			<h1> \n\n</h1>
 			<div
-				className={`${
-					theme === "dark" ? styles.bgDark : styles.bgLight
-				} ${styles.outerContainer}`}
+				className={`background` + theme}
 			>
 				<div className={`${styles.innerContainer}`}>
 					<h1
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.headerDark
 								: styles.headerLight
 						}`}
@@ -36,7 +34,7 @@ const GetInvolved: React.FC = () => {
 					<br />
 					<p
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.textDark
 								: styles.textLight
 						}`}
@@ -50,7 +48,7 @@ const GetInvolved: React.FC = () => {
 					</p>
 					<p
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.textDark
 								: styles.textLight
 						}`}
@@ -67,7 +65,7 @@ const GetInvolved: React.FC = () => {
 					</p>
 					<p
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.textDark
 								: styles.textLight
 						}`}
@@ -85,7 +83,7 @@ const GetInvolved: React.FC = () => {
 					<br />
 					<h1
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.headerDark
 								: styles.headerLight
 						}`}
@@ -103,7 +101,7 @@ const GetInvolved: React.FC = () => {
 					<br />
 					<h1
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.headerDark
 								: styles.headerLight
 						}`}
@@ -121,7 +119,7 @@ const GetInvolved: React.FC = () => {
 					<br />
 					<p
 						className={`${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.textDark
 								: styles.textLight
 						}`}

@@ -57,18 +57,18 @@ const SocialServices: React.FC = () => {
   };
 
   return (
-    <div style={theme === "dark" ? styles.socialservicesDarkContainer : styles.socialservicesLightContainer}>
+    <div style={theme === "#181A1B" ? styles.socialservicesDarkContainer : styles.socialservicesLightContainer}>
       <img
         src={shortsImg}
         alt="Shorts"
         style={{ ...styles.socialservicesImage, animation: "fade-up" }}
         data-aos="fade-up"
       />
-      <div style={{ ...theme === "dark" ? styles.socialservicesDarkText : styles.socialservicesLightText, animation: "fade-up" }} data-aos="fade-up">
+      <div style={{ ...theme === "#181A1B" ? styles.socialservicesDarkText : styles.socialservicesLightText, animation: "fade-up" }} data-aos="fade-up">
         <h4 style={styles.socialservicesSubHeader} data-aos="fade-up">
           SOCIAL SERVICES
         </h4>
-        <h1 style={theme === "dark" ? styles.socialservicesDarkHeader : styles.socialservicesLightHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.socialservicesDarkHeader : styles.socialservicesLightHeader} data-aos="fade-up">
           Youtube Shorts
         </h1>
         <p data-aos="fade-up">

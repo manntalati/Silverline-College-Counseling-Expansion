@@ -49,12 +49,6 @@ const Lectures: React.FC = () => {
 		lecturesOverviewStyle: {
 			marginBottom: "0.625rem",
 		},
-		lecturesDarkBackground: {
-			backgroundColor: "#181A1B !important",
-		},
-		lecturesLightBackground: {
-			backgroundColor: "#D6D3CD !important",
-		},
 		lecturesDarkHeader: {
 			backgroundColor: "white !important",
 		},
@@ -71,9 +65,7 @@ const Lectures: React.FC = () => {
 
 	return (
 		<div
-			className={`${
-				theme === "dark" ? styles.lecturesDarkBackground : styles.lecturesLightBackground
-			} section section-3`}
+			className={`background` + theme}
 		>
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
@@ -84,7 +76,7 @@ const Lectures: React.FC = () => {
 						<span className="subheading">Lectures</span>
 						<h2
 							className={`heading mb-3 ${
-								theme === "dark"
+								theme === "#181A1B"
 									? styles.lecturesDarkHeader
 									: styles.lecturesLightHeader
 							}`}
@@ -109,7 +101,7 @@ const Lectures: React.FC = () => {
 								<div className={`infoStyle ${styles.lecturesInfoStyle}`}>
 									<h5
 										className={`name ${
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.lecturesDarkName
 												: styles.lecturesLightName
 										}`}
@@ -122,7 +114,7 @@ const Lectures: React.FC = () => {
 									<div className={`overviewStyle ${styles.lecturesOverviewStyle}`}>
 										<p
 											className={`text ${
-												theme === "dark"
+												theme === "#181A1B"
 													? styles.lecturesDarkText
 													: styles.lecturesLightText
 											}`}
@@ -148,7 +140,7 @@ const Lectures: React.FC = () => {
 								<div className={`infoStyle ${styles.lecturesInfoStyle}`}>
 									<h5
 										className={`name ${
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.lecturesDarkName
 												: styles.lecturesLightName
 										}`}
@@ -161,7 +153,7 @@ const Lectures: React.FC = () => {
 									<div className={`overviewStyle ${styles.lecturesOverviewStyle}`}>
 										<p
 											className={`text ${
-												theme === "dark"
+												theme === "#181A1B"
 													? styles.lecturesDarkText
 													: styles.lecturesLightText
 											}`}
@@ -190,7 +182,7 @@ const Lectures: React.FC = () => {
 								<div className={`infoStyle ${styles.lecturesInfoStyle}`}>
 									<h5
 										className={`name ${
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.lecturesDarkName
 												: styles.lecturesLightName
 										}`}
@@ -203,7 +195,7 @@ const Lectures: React.FC = () => {
 									<div className={`overviewStyle ${styles.lecturesOverviewStyle}`}>
 										<p
 											className={`text ${
-												theme === "dark"
+												theme === "#181A1B"
 													? styles.lecturesDarkText
 													: styles.lecturesLightText
 											}`}

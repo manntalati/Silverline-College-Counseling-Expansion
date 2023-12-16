@@ -44,17 +44,17 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 			/>
 			<h3
 				className={
-					theme === "dark" ? styles.nameDark : styles.nameLight
+					theme === "#181A1B" ? styles.nameDark : styles.nameLight
 				}
 			>
 				{name}
 			</h3>
-			<p className={theme === "dark" ? styles.desDark : styles.desLight}>
+			<p className={theme === "#181A1B" ? styles.desDark : styles.desLight}>
 				{des}
 			</p>
 			<p
 				className={
-					theme === "dark"
+					theme === "#181A1B"
 						? styles.quoteIconDark
 						: styles.quoteIconLight
 				}
@@ -63,7 +63,7 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 			</p>
 			<p
 				className={
-					theme === "dark" ? styles.quoteDark : styles.quoteLight
+					theme === "#181A1B" ? styles.quoteDark : styles.quoteLight
 				}
 			>
 				{content}
@@ -79,7 +79,7 @@ const Testimonials: React.FC = () => {
 	return (
 		<div
 			className={
-				theme === "dark" ? styles.outerDivDark : styles.outerDivLight
+				theme === "#181A1B" ? styles.outerDivDark : styles.outerDivLight
 			}
 		>
 			<div className={styles.centered}>
@@ -87,7 +87,7 @@ const Testimonials: React.FC = () => {
 					<p className={styles.subHeader}>Satisfied Students</p>
 					<h1
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.titleHeaderDark
 								: styles.titleHeaderLight
 						}
@@ -116,12 +116,12 @@ const Testimonials: React.FC = () => {
 								key={idx}
 								onClick={() => setVal(idx)}
 								className={`${
-									theme === "dark"
+									theme === "#181A1B"
 										? styles.roundButtonDark
 										: styles.roundButtonLight
 								} ${
 									idx === val
-										? theme === "dark"
+										? theme === "#181A1B"
 											? styles.activeButtonDark
 											: styles.activeButtonLight
 										: styles.inactiveButton

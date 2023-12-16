@@ -21,14 +21,12 @@ const Partners: React.FC = () => {
 		<>
 			<NavBar pageName="partners" />
 			<div
-				className={`section ${
-					theme === "dark" ? styles.bgDark : styles.bgLight
-				}`}
+				className={`section` + theme}
 			>
 				<div className={`container ${styles.divContainer}`}>
 					<h1
 						className={`pt-3 ${
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.headerDark
 								: styles.headerLight
 						}`}
@@ -38,7 +36,7 @@ const Partners: React.FC = () => {
 					<br />
 					<p
 						className={
-							theme === "dark"
+							theme === "#181A1B"
 								? styles.textDark
 								: styles.textLight
 						}
@@ -79,7 +77,7 @@ const Partners: React.FC = () => {
 									<h6 className={styles.box1}>The Pond</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -125,7 +123,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -167,7 +165,7 @@ const Partners: React.FC = () => {
 									<h6 className={styles.box3}>Canva</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -211,7 +209,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -251,7 +249,7 @@ const Partners: React.FC = () => {
 									<h6 className={styles.box5}>365toJapan</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -294,7 +292,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -338,7 +336,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -380,7 +378,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -424,7 +422,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -469,7 +467,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
@@ -513,7 +511,7 @@ const Partners: React.FC = () => {
 									</h6>
 									<p
 										className={
-											theme === "dark"
+											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
 										}
