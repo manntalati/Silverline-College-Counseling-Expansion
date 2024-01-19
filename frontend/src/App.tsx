@@ -9,7 +9,7 @@ import Lectures from "./components/Lectures";
 import Reviews from "./components/Reviews/Reviews";
 import Services from "./components/Services/Services";
 import OurCommunity from "./components/OurCommunity/OurCommunity";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
