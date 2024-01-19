@@ -8,12 +8,10 @@ const OurReach: React.FC = () => {
   const styles: { [key: string]: React.CSSProperties } = {
 		reachBodyStyle: {
 			fontSize: "1.1rem",
-      fontWeight: "bold",
       color: "#D6D3CD",
 		},
 		reachTitleStyle: {
 			fontSize: "2.5rem",
-      fontWeight: "bold",
       color: "#918CA1",
 		},
 	};

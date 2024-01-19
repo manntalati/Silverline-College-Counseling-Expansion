@@ -42,7 +42,6 @@ const FoundingIdea: React.FC = () => {
     },
     foundingideaDarkHeader: {
       fontSize: "46px",
-      fontWeight: "bold",
       color: "white",
     },
     foundingideaLightHeader: {

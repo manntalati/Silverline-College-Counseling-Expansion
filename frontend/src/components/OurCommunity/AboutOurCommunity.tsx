@@ -7,12 +7,10 @@ const AboutOurCommunity: React.FC = () => {
 	const styles: { [key: string]: React.CSSProperties } = {
 		communityBodyStyle: {
 			fontSize: "1.1rem",
-			fontWeight: "bold",
 			color: "#D6D3CD",
 		},
 		communityTitleStyle: {
 			fontSize: "2.5rem",
-			fontWeight: "bold",
 			color: "#918CA1",
 		},
 	};

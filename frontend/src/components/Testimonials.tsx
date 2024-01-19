@@ -298,6 +298,13 @@ const Testimonials: React.FC = () => {
 					</div>
 				</div>
 			</div>
+			<p
+			className="button"
+			data-aos="fade up"
+			data-aos-delay="300"
+			>
+				<a href="/reviews">View More Reviews</a>
+			</p>
 		</div>
 	);
 };

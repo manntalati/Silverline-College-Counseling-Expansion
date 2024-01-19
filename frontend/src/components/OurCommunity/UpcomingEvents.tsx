@@ -22,12 +22,10 @@ const UpcomingEvents: React.FC = () => {
   const styles: { [key: string]: React.CSSProperties } = {
 		eventsBodyStyle: {
 			fontSize: "1.1rem",
-      fontWeight: "bold",
       color: "#D6D3CD",
 		},
 		eventsTitleStyle: {
 			fontSize: "2.5rem",
-      fontWeight: "bold",
       color: "#918CA1",
 		},    
 	};

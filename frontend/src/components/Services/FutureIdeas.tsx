@@ -49,12 +49,10 @@ const FutureIdeas: React.FC = () => {
     },
     futureideasDarkHeader: {
       fontSize: "42px",
-      fontWeight: "bold",
       color: "white",
     },
     futureideasLightHeader: {
       fontSize: "42px",
-      fontWeight: "bold",
       color: "black",
     },
     futureideasButton: {
@@ -67,14 +65,14 @@ const FutureIdeas: React.FC = () => {
   };
 
   return (
-    <div style={theme === "dark" ? styles.futureideasDarkContainer : styles.futureideasLightContainer}>
+    <div style={theme === "#181A1B" ? styles.futureideasDarkContainer : styles.futureideasLightContainer}>
       <h2 style={styles.futureideasSubHeader} data-aos="fade-up">
         FUTURE IDEAS
       </h2>
-      <h1 style={theme === "dark" ? styles.futureideasDarkHeader : styles.futureideasLightHeader} data-aos="fade-up">
+      <h1 style={theme === "#181A1B" ? styles.futureideasDarkHeader : styles.futureideasLightHeader} data-aos="fade-up">
         What's Next?
       </h1>
-      <p style={theme === "dark" ? styles.futureideasDarkText : styles.futurueideasLightText} data-aos="fade-up">
+      <p style={theme === "#181A1B" ? styles.futureideasDarkText : styles.futurueideasLightText} data-aos="fade-up">
         Looking forward, we hope to partner with underfunded schools and provide
         resources and tutoring for students who are looking for extra help.
         Along with that, we plan on eventually expanding our focus to developing

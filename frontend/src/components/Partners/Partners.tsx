@@ -13,33 +13,58 @@ import partner9 from "../../images/partners/chipotle-mexican-grill-logo-svg-vect
 import partner10 from "../../images/partners/wish.webp";
 import partner11 from "../../images/partners/chelmsford.webp";
 import { useTheme } from "../ThemeContext";
-import styles from "./styles.module.css";
+import styles1 from "./styles.module.css";
 
 const Partners: React.FC = () => {
 	const { theme, toggleTheme } = useTheme();
+
+	const styles: { [key: string]: React.CSSProperties } = {
+		partnersDivContainer: {
+			position: "relative",
+			color: "#D6D3CD",
+		},
+		partnersHeaderDark: {
+			color: "white",
+			fontWeight: 600,
+		},
+		partnersHeaderLight: {
+			color: "black",
+			fontWeight: 600,
+		},
+		partnersTextDark: {
+			color: "#D6D3CD",
+		},
+		partnersTextLight: {
+			color: "#181A1B",
+		},
+		partnersLogo: {
+			background: "none !important",
+		},
+	}
+
 	return (
 		<>
 			<NavBar pageName="partners" />
 			<div
 				className={`section` + theme}
 			>
-				<div className={`container ${styles.divContainer}`}>
+				<div className={`container ${styles.partnersDivContainer}`}>
 					<h1
-						className={`pt-3 ${
+						className={`header ${
 							theme === "#181A1B"
-								? styles.headerDark
-								: styles.headerLight
+								? styles.partnersHeaderDark
+								: styles.partnersHeaderLight
 						}`}
 					>
 						Our Partners & Sponsors
 					</h1>
 					<br />
 					<p
-						className={
+						className={`text ${
 							theme === "#181A1B"
-								? styles.textDark
-								: styles.textLight
-						}
+								? styles.partnersTextDark
+								: styles.partnersTextLight
+						}`}
 					>
 						Several businesses, non-profits, and organizations in
 						the United States help bring the Silverline image to
@@ -65,7 +90,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://diveintothepond.com/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner1}
@@ -74,13 +99,13 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box1}>The Pond</h6>
+									<h6 className={styles1.box1}>The Pond</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
-												? styles.textDark
-												: styles.textLight
-										}
+												? styles.partnersTextDark
+												: styles.partnersTextLight
+										}`}
 									>
 										The Pond is an all-in-one service for
 										students applying to college. The Pond
@@ -109,7 +134,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.joinbumper.com/ambassadors"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner2}
@@ -118,15 +143,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box2}>
+									<h6 className={styles1.box2}>
 										Bumper Investing
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
-												? styles.textDark
-												: styles.textLight
-										}
+												? styles.partnersTextDark
+												: styles.partnersTextLight
+										}`}
 									>
 										Bumper is an educational investing
 										platform that helps teens begin
@@ -153,7 +178,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.canva.com/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner3}
@@ -162,13 +187,13 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box3}>Canva</h6>
+									<h6 className={styles1.box3}>Canva</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
-												? styles.textDark
-												: styles.textLight
-										}
+												? styles.partnersTextDark
+												: styles.partnersTextLight
+										}`}
 									>
 										Canva is a powerful design tool that can
 										be used in education to create projects.
@@ -195,7 +220,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://rdcrss.org/silverlinetutoringinc"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner4}
@@ -204,15 +229,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box4}>
+									<h6 className={styles1.box4}>
 										American Red Cross
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										The American Red Cross shelters, feeds
 										and provides comfort to victims of
@@ -237,7 +262,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://365tojapan.com/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner5}
@@ -246,13 +271,13 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box5}>365toJapan</h6>
+									<h6 className={styles1.box5}>365toJapan</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										365toJapan is an educational blog
 										covering the course of an enthusiastic
@@ -278,7 +303,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.linkedin.com/company/sultan-s-marketing/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner6}
@@ -287,15 +312,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box6}>
+									<h6 className={styles1.box6}>
 										Sultan's Marketing
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										Sultan’s Marketing is a startup
 										marketing company that offers social
@@ -322,7 +347,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.community-fundraiser.com/virtual-fundraiser/events/promotions/104b6bfb-4dbd-b890-b2a1-4f237692f082/en/landing"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner7}
@@ -331,15 +356,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box7}>
+									<h6 className={styles1.box7}>
 										Panda Express
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										Panda Express is an American fast-food
 										restaurant chain that serves American
@@ -364,7 +389,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.equalityinforensics.org/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner8}
@@ -373,15 +398,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box8}>
+									<h6 className={styles1.box8}>
 										Equality in Forensics
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										Equality in Forensics is a student-run
 										NPO that provides free, online resources
@@ -408,7 +433,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.chipotle.com/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner9}
@@ -417,15 +442,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box9}>
+									<h6 className={styles1.box9}>
 										Chipotle of Drumhill Chelmsford, MA
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										Chipotle Mexican Grill, Inc. is an
 										American chain of fast-casual
@@ -453,7 +478,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://www.thewishproject.org/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner10}
@@ -462,15 +487,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box10}>
+									<h6 className={styles1.box10}>
 										The Wish Project
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										The Wish Project’s mission is to help
 										families in need establish long-term
@@ -497,7 +522,7 @@ const Partners: React.FC = () => {
 								<a
 									href="https://chs.chelmsfordschools.org/"
 									target="_0"
-									className={`text-center ${styles.logo}`}
+									className={`text-center ${styles.partnersLogo}`}
 								>
 									<img
 										src={partner11}
@@ -506,15 +531,15 @@ const Partners: React.FC = () => {
 									/>
 								</a>
 								<div className="m-body">
-									<h6 className={styles.box11}>
+									<h6 className={styles1.box11}>
 										Chelmsford High School
 									</h6>
 									<p
-										className={
+										className={`text ${
 											theme === "#181A1B"
 												? styles.textDark
 												: styles.textLight
-										}
+										}`}
 									>
 										Silverline is partnered with Chelmsford
 										High School. Chelmsford High School is a

@@ -24,14 +24,12 @@ const QuickHelp: React.FC = () => {
 		},
     quickhelpBodyStyle: {
 			fontSize: "1.1rem",
-      fontWeight: "bold",
       color: "#D6D3CD",
       width: "100%", // Set the body width to 100%
       maxWidth: "800px", // Limit the maximum width of the body
 		},
     quickhelpTitleStyle: {
 			fontSize: "2.5rem",
-      fontWeight: "bold",
       color: "#918CA1",
       margin: 0, // Remove any default margin
       marginBottom: "1rem", // Add margin bottom to separate title from body

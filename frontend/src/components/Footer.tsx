@@ -19,7 +19,12 @@ function Footer() {
               <h3>Navigation</h3>
               <ul className="list-unstyled float-left links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/services">Our Services</a></li>
+                <button>About Us</button>
+                <ul className= "about">
+                  <li><a href="/services">Our Services</a></li>
+                  <li><a href="/team">Team</a></li>
+                  <li><a href="/partners">Our Partners</a></li>
+                </ul>
                 <li><a href="/community">Our Community</a></li>
                 <li><a href="/getinvolved">Get Involved</a></li>
                 <li><a href="/reviews">Reviews</a></li>
@@ -30,8 +35,8 @@ function Footer() {
           <div className="col-lg-3">
             <div className="widget">
               <h3>Contact</h3>
-              <address>Massachusetts, United States</address>
               <ul className="list-unstyled links mb-4">
+                <li><address>Massachusetts, United States</address></li>
                 <li><a href="tel://7862959992">(786) 295-9992</a></li>
                 <li><a href="mailto:silverlinetutoring2021@gmail.com">silverlinetutoring2021@gmail.com</a></li>
               </ul>
