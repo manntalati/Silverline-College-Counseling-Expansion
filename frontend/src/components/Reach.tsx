@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "../ThemeContext";
-import styles from "./styles.module.css";
+import { useTheme } from "./ThemeContext";
 
 const Reach: React.FC = () => {
 	const [isCounting, setIsCounting] = useState(false);
@@ -36,10 +35,35 @@ const Reach: React.FC = () => {
 
 	const { theme, toggleTheme } = useTheme();
 
+	const styles: { [key: string]: React.CSSProperties} = {
+		reachBackgroundStyle: {
+			backgroundColor: "#9784A1",
+		},
+		reachHeaderStyle: {
+			color: "white !important",
+			fontWeight: 600,
+		},
+		reachIconStyle: {
+			fontSize: "3.5rem",
+			color: "white !important",
+		},
+		reachNumStyle: {
+			fontSize: "2.5rem",
+			color: "white",
+		},
+		reachSubtitleStyle: {
+			fontSize: "1.4rem",
+			color: "#D6D3CD",
+		},
+		reachGapStyle: {
+			paddingTop: "20px !important",
+		},
+	};
+
 	return (
 		<>
-			<div className={`container-fluid p-5 text-center ${styles.bg}`}>
-				<h1 className={`text-white my-5 ${styles.header}`}>
+			<div className={`container-fluid p-5 text-center ${styles.reachBackgroundStyle}`}>
+				<h1 className={`text-white my-5 ${styles.reachHeaderStyle}`}>
 					Our Reach
 				</h1>
 				<div className="container">
@@ -48,15 +72,15 @@ const Reach: React.FC = () => {
 							<div className="card bg-transparent border-0 text-white">
 								<div className="card-body text-center">
 									<i
-										className={`fa-solid fa-map ${styles.icon}`}
+										className={`fa-solid fa-map ${styles.reachIconStyle}`}
 									></i>
 									<h3
-										className={`card-title mt-2 mb-1 ${styles.num}`}
+										className={`card-title mt-2 mb-1 ${styles.reachNumStyle}`}
 									>
 										{countriesCount}
 									</h3>
 									<p
-										className={`card-text ${styles.subtitle}`}
+										className={`card-text ${styles.reachSubtitleStyle}`}
 									>
 										Countries
 									</p>
@@ -67,15 +91,15 @@ const Reach: React.FC = () => {
 							<div className="card bg-transparent border-0 text-white">
 								<div className="card-body text-center">
 									<i
-										className={`fa-solid fa-user ${styles.icon}`}
+										className={`fa-solid fa-user ${styles.reachIconStyle}`}
 									></i>
 									<h3
-										className={`card-title mt-2 mb-1 ${styles.num}`}
+										className={`card-title mt-2 mb-1 ${styles.reachNumStyle}`}
 									>
 										5000
 									</h3>
 									<p
-										className={`card-text ${styles.subtitle}`}
+										className={`card-text ${styles.reachSubtitleStyle}`}
 									>
 										Members
 									</p>
@@ -86,15 +110,15 @@ const Reach: React.FC = () => {
 							<div className="card bg-transparent border-0 text-white">
 								<div className="card-body text-center">
 									<i
-										className={`fa-solid fa-clock ${styles.icon}`}
+										className={`fa-solid fa-clock ${styles.reachIconStyle}`}
 									></i>
 									<h3
-										className={`card-title mt-2 mb-1 ${styles.num}`}
+										className={`card-title mt-2 mb-1 ${styles.reachNumStyle}`}
 									>
 										{programsCount}
 									</h3>
 									<p
-										className={`card-text ${styles.subtitle}`}
+										className={`card-text ${styles.reachSubtitleStyle}`}
 									>
 										Extracurricular programs
 									</p>
@@ -105,15 +129,15 @@ const Reach: React.FC = () => {
 							<div className="card bg-transparent border-0 text-white">
 								<div className="card-body text-center">
 									<i
-										className={`fa-solid fa-chalkboard-user ${styles.icon}`}
+										className={`fa-solid fa-chalkboard-user ${styles.reachIconStyle}`}
 									></i>
 									<h3
-										className={`card-title mt-2 mb-1 ${styles.num}`}
+										className={`card-title mt-2 mb-1 ${styles.reachNumStyle}`}
 									>
 										{employeesCount}
 									</h3>
 									<p
-										className={`card-text ${styles.subtitle}`}
+										className={`card-text ${styles.reachSubtitleStyle}`}
 									>
 										Employees
 									</p>
@@ -123,7 +147,7 @@ const Reach: React.FC = () => {
 					</div>
 				</div>
 				<p
-					className={`text-center ${styles.gap}`}
+					className={`text-center ${styles.reachGapStyle}`}
 					data-aos="fade-up"
 					data-aos-delay="300"
 				>

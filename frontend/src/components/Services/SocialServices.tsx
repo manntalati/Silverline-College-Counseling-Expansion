@@ -1,19 +1,35 @@
 import React from "react";
 import shortsImg from "../../images/services/shor1ts.webp";
+import { useTheme } from "../ThemeContext";
 
 const SocialServices: React.FC = () => {
+  const {theme, toggleTheme} = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
-    socialservicesContainer: {
+    socialservicesDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    socialservicesText: {
+    socialservicesLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    socialservicesDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "white",
+      marginRight: "50px",
+    },
+    socialservicesLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "black",
       marginRight: "50px",
     },
     socialservicesSubHeader: {
@@ -22,10 +38,15 @@ const SocialServices: React.FC = () => {
       color: "#918CA1",
       fontWeight: "700",
     },
-    socialservicesHeader: {
+    socialservicesDarkHeader: {
       fontSize: "46px",
       fontWeight: "bold",
       color: "white",
+    },
+    socialservicesLightHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "black",
     },
     socialservicesImage: {
       flex: "1",
@@ -36,18 +57,18 @@ const SocialServices: React.FC = () => {
   };
 
   return (
-    <div style={styles.socialservicesContainer}>
+    <div style={theme === "#181A1B" ? styles.socialservicesDarkContainer : styles.socialservicesLightContainer}>
       <img
         src={shortsImg}
         alt="Shorts"
         style={{ ...styles.socialservicesImage, animation: "fade-up" }}
         data-aos="fade-up"
       />
-      <div style={{ ...styles.socialservicesText, animation: "fade-up" }} data-aos="fade-up">
+      <div style={{ ...theme === "#181A1B" ? styles.socialservicesDarkText : styles.socialservicesLightText, animation: "fade-up" }} data-aos="fade-up">
         <h4 style={styles.socialservicesSubHeader} data-aos="fade-up">
           SOCIAL SERVICES
         </h4>
-        <h1 style={styles.socialservicesHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.socialservicesDarkHeader : styles.socialservicesLightHeader} data-aos="fade-up">
           Youtube Shorts
         </h1>
         <p data-aos="fade-up">

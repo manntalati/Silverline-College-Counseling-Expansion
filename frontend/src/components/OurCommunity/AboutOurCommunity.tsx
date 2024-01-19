@@ -1,21 +1,22 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 
 const AboutOurCommunity: React.FC = () => {
+	const { theme, toggleTheme } = useTheme();
+
 	const styles: { [key: string]: React.CSSProperties } = {
 		communityBodyStyle: {
 			fontSize: "1.1rem",
-			fontWeight: "bold",
 			color: "#D6D3CD",
 		},
 		communityTitleStyle: {
 			fontSize: "2.5rem",
-			fontWeight: "bold",
 			color: "#918CA1",
 		},
 	};
 	
 	return (
-		<div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+		<div className= {`background` + theme}>
 			<div className="container">
 				<h1 style={styles.communityTitleStyle} data-aos="fade-up">
 					About Our Community

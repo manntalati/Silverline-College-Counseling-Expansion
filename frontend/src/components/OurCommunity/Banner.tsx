@@ -1,7 +1,10 @@
 import React from "react";
 import bannerImg from "../../images/community/banner.webp";
+import { useTheme } from "../ThemeContext";
 
 const Banner: React.FC = () => {
+	const { theme, toggleTheme } = useTheme();
+
 	const styles: { [key: string]: React.CSSProperties } = {
 		bannerStyle: {
 			position: "relative",

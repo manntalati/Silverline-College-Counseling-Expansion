@@ -1,19 +1,35 @@
 import React from "react";
 import lectureImg from "../../images/services/lectu1res 2.webp";
+import { useTheme } from "../ThemeContext"
 
 const CommunityEvents: React.FC = () => {
+  const { theme, toggleTheme } = useTheme(); 
+
   const styles: { [key: string]: React.CSSProperties } = {
-    communityeventsContainer: {
+    communityeventsDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    communityeventsText: {
+    communityeventsLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    communityeventsDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "white",
+      marginRight: "50px",
+    },
+    communityeventsLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "black",
       marginRight: "50px",
     },
     communityeventsSubHeader: {
@@ -22,10 +38,15 @@ const CommunityEvents: React.FC = () => {
       color: "#918CA1",
       fontWeight: "700",
     },
-    communityeventsHeader: {
+    communityeventsDarkHeader: {
       fontSize: "46px",
       fontWeight: "bold",
       color: "white",
+    },
+    communityeventsLightHeader: {
+      fontSize: "46px",
+      fontWeight: "bold",
+      color: "black",
     },
     communityeventsImage: {
       flex: "1",
@@ -36,13 +57,13 @@ const CommunityEvents: React.FC = () => {
   };
 
   return (
-    <div style={styles.communityeventsContainer}>
+    <div style={theme === "#181A1B" ? styles.communityeventsDarkContainer : styles.communityeventsLightContainer}>
       <img src={lectureImg} alt="Lecture" style={styles.communityeventsImage} />
-      <div style={styles.communityeventsText}>
+      <div style={theme === "#181A1B" ? styles.communityeventsDarkText : styles.communityeventsLightText}>
         <h4 style={styles.communityeventsSubHeader} data-aos="fade-up">
           FREE RESOURCES
         </h4>
-        <h1 style={styles.communityeventsHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.communityeventsDarkHeader : styles.communityeventsLightHeader} data-aos="fade-up">
           Content
         </h1>
         <p data-aos="fade-up">

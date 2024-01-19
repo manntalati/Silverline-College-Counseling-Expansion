@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTheme } from "../ThemeContext";
 
 const UpcomingEvents: React.FC = () => {
   useEffect(() => {
@@ -16,21 +17,21 @@ const UpcomingEvents: React.FC = () => {
   }, []
   );
 
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
 		eventsBodyStyle: {
 			fontSize: "1.1rem",
-      fontWeight: "bold",
       color: "#D6D3CD",
 		},
 		eventsTitleStyle: {
 			fontSize: "2.5rem",
-      fontWeight: "bold",
       color: "#918CA1",
 		},    
 	};
 
   return (
-    <div style={{ backgroundColor: "#1E2022", padding: "7rem" }}>
+    <div className={`background` + theme}>
       <div className="container">
         <h1 style={styles.eventsTitleStyle} data-aos="fade-up">
           Upcoming Events

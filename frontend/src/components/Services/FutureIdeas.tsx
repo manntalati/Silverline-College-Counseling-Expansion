@@ -1,19 +1,39 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 
 const FutureIdeas: React.FC = () => {
+  const {theme, toggleTheme} = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
-    futureideasContainer: {
+    futureideasDarkContainer: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       backgroundColor: "#181A1B",
       padding: "40px",
     },
-    futureideasText: {
+    futureideasLightContainer: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+      padding: "40px",
+    },
+    futureideasDarkText: {
       textAlign: "center",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "white",
+      padding: "5px",
+      marginLeft: "40px",
+      marginRight: "40px",
+      marginTop: "50px",
+    },
+    futureideasLightText: {
+      textAlign: "center",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "black",
       padding: "5px",
       marginLeft: "40px",
       marginRight: "40px",
@@ -24,11 +44,16 @@ const FutureIdeas: React.FC = () => {
       textTransform: "uppercase",
       color: "#918CA1",
       fontWeight: "700",
+      margin: "auto",
+      width: "50%"
     },
-    futureideasHeader: {
+    futureideasDarkHeader: {
       fontSize: "42px",
-      fontWeight: "bold",
       color: "white",
+    },
+    futureideasLightHeader: {
+      fontSize: "42px",
+      color: "black",
     },
     futureideasButton: {
       display: "flex",
@@ -40,14 +65,14 @@ const FutureIdeas: React.FC = () => {
   };
 
   return (
-    <div style={styles.futureideasContainer}>
+    <div style={theme === "#181A1B" ? styles.futureideasDarkContainer : styles.futureideasLightContainer}>
       <h2 style={styles.futureideasSubHeader} data-aos="fade-up">
         FUTURE IDEAS
       </h2>
-      <h1 style={styles.futureideasHeader} data-aos="fade-up">
+      <h1 style={theme === "#181A1B" ? styles.futureideasDarkHeader : styles.futureideasLightHeader} data-aos="fade-up">
         What's Next?
       </h1>
-      <p style={styles.futureideasText} data-aos="fade-up">
+      <p style={theme === "#181A1B" ? styles.futureideasDarkText : styles.futurueideasLightText} data-aos="fade-up">
         Looking forward, we hope to partner with underfunded schools and provide
         resources and tutoring for students who are looking for extra help.
         Along with that, we plan on eventually expanding our focus to developing

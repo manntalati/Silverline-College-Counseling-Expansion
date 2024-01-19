@@ -1,19 +1,36 @@
 import React from "react";
 import tutoringImg from "../../images/services/tutoring.webp";
+import { useTheme } from "../ThemeContext"
 
 const FoundingIdea: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const styles: { [key: string]: React.CSSProperties } = {
-    foundingideaContainer: {
+    foundingideaDarkContainer: {
       display: "flex",
       alignItems: "center",
       backgroundColor: "#181A1B",
     },
-    foundingideaText: {
+    foundingideaLightContainer: {
+      display: "flex",
+      alignItems: "center",
+      backgroundColor: "#D6D3CD",
+    },
+    foundingideaDarkText: {
       flex: "1",
       padding: "40px",
       fontSize: "1.1rem",
       fontWeight: "200",
-      color: "#EAEAEA",
+      color: "white",
+      marginTop: "50px",
+      marginLeft: "50px",
+    },
+    foundingideaLightText: {
+      flex: "1",
+      padding: "40px",
+      fontSize: "1.1rem",
+      fontWeight: "200",
+      color: "black",
       marginTop: "50px",
       marginLeft: "50px",
     },
@@ -23,10 +40,14 @@ const FoundingIdea: React.FC = () => {
       color: "#918CA1",
       fontWeight: "700",
     },
-    foundingideaHeader: {
+    foundingideaDarkHeader: {
+      fontSize: "46px",
+      color: "white",
+    },
+    foundingideaLightHeader: {
       fontSize: "46px",
       fontWeight: "bold",
-      color: "white",
+      color: "black",
     },
     foundingideaImage: {
       flex: "1",
@@ -39,12 +60,12 @@ const FoundingIdea: React.FC = () => {
   };
 
   return (
-    <div style={styles.foundingideaContainer}>
-      <div style={styles.foundingideaText}>
+    <div style={theme === "#181A1B" ? styles.foundingideaDarkContainer : styles.foundingideaLightContainer}>
+      <div style={theme === "#181A1B" ? styles.foundingideaDarkText : styles.foundingideaLightText}>
         <h4 style={styles.foundingideaSubHeader} data-aos="fade-up">
         Educational Advisory
         </h4>
-        <h1 style={styles.foundingideaHeader} data-aos="fade-up">
+        <h1 style={theme === "#181A1B" ? styles.foundingideaDarkHeader : styles.foundingideaLightHeader} data-aos="fade-up">
         About Silverline
         </h1>
         <p data-aos="fade-up">
