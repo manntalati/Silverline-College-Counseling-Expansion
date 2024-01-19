@@ -98,25 +98,25 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div style={styles.faqContainer}
-    className={`section ${
-      theme === "dark" ? styles.bgDark : styles.bgLight
-      }`}>
+    <div
+      style={styles.faqContainer}
+      className={`section ${
+        theme === "#181A1B" ? styles.bgDark : styles.bgLight
+      }`}
+    >
       <div className="container" style={styles.faqText}>
-        <h1 className={`title ${
-							theme === "dark"
-								? styles.headerDark
-								: styles.headerLight
-						}`}
-            data-aos="fade-up" 
-            style={styles.faqHeader}>
+        <h1
+          className={`title ${
+            theme === "#181A1B" ? styles.headerDark : styles.headerLight
+          }`}
+          data-aos="fade-up"
+          style={styles.faqHeader}
+        >
           Frequently Asked Questions
         </h1>
         <h2
           className={`sub-heading ${
-            theme === "dark"
-              ? styles.headerDark
-              : styles.headerLight
+            theme === "#181A1B" ? styles.headerDark : styles.headerLight
           }`}
           data-aos="fade-up"
           data-aos-delay="100"
@@ -130,19 +130,17 @@ const FAQ: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay={200 * (index + 1)}
           >
-            <h3 className={`question ${
-							theme === "dark"
-								? styles.headerDark
-								: styles.headerLight
-						}`}
-            style={styles.faqQuestionStyle}>
+            <h3
+              className={`question ${
+                theme === "#181A1B" ? styles.headerDark : styles.headerLight
+              }`}
+              style={styles.faqQuestionStyle}
+            >
               {faq.question}
             </h3>
             <p
               className={`answer ${
-                theme === "dark"
-                  ? styles.headerDark
-                  : styles.headerLight
+                theme === "#181A1B" ? styles.headerDark : styles.headerLight
               }`}
               data-testid="faq-answer"
               style={styles.faqAnswerStyle}
