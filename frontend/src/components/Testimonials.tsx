@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import anonymous from "../../images/anonymous.webp";
 import { useTheme } from "./ThemeContext";
 
 interface Testimonial {
@@ -75,7 +74,7 @@ const TestimonialItem: React.FC<Testimonial> = ({ name, des, content }) => {
 	return (
 		<div className={`${styles.testimonialsNameContainer}`}>
 			<img
-				src={anonymous}
+				src=""
 				height={75}
 				width={75}
 				className={`${styles.testimonialsImage}`}
